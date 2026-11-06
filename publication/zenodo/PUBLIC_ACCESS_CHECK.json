@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-11-06T05:25:26.326017+00:00",
+  "authenticated": false,
+  "zenodo": [
+    {
+      "id": 23987251,
+      "doi": "10.5281/zenodo.23987251",
+      "published_file_count": 10,
+      "public_landing_page": true,
+      "pdfs_downloaded_verified": [
+        "spectrum_en.pdf",
+        "spectrum_es.pdf",
+        "companion_en.pdf",
+        "companion_es.pdf"
+      ]
+    },
+    {
+      "id": 23987256,
+      "doi": "10.5281/zenodo.23987256",
+      "published_file_count": 11,
+      "public_landing_page": true,
+      "pdfs_downloaded_verified": [
+        "companion_es.pdf",
+        "profiles_en.pdf",
+        "profiles_es.pdf",
+        "companion_en.pdf"
+      ]
+    }
+  ],
+  "status": "PASS",
+  "github": {
+    "repository": "https://github.com/jtraverso/cdr-steiner-preprints",
+    "private": false,
+    "release": "https://github.com/jtraverso/cdr-steiner-preprints/releases/tag/v1.0",
+    "assets_verified": 9
+  }
+}

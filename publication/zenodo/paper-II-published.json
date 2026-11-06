@@ -1,0 +1,23 @@
+{
+  "id": 23987256,
+  "doi": "10.5281/zenodo.23987256",
+  "version": "1.0",
+  "submitted": true,
+  "state": "done",
+  "record_url": "https://zenodo.org/records/23987256",
+  "publication_date": "2026-11-06",
+  "license": "CC-BY-4.0",
+  "files": {
+    "companion_es.pdf": "e1a49423b2eb6aa6c86a5793b8962186",
+    "JOINT_DOCUMENT_AUDIT.json": "f2007a5f442b26ef3c7f5137f43d485b",
+    "BKLS_PALOMAR.json": "b04b598b7adeaff0cda2cd21c43b9337",
+    "RELEASE_CHECKS.json": "618962f4a62daf8bd97e68db5df6c8f1",
+    "profiles_en.pdf": "40e63a229a4a2a674e66c1b74ee6c141",
+    "profiles_es.pdf": "98d0c7d353ee0f149593c01ba9ce216f",
+    "companion_en.pdf": "5310b47505cde9c6f48c096bc1aae732",
+    "CDR_shared_Lean_source_7643193.zip": "ccf59c7b96f641c725025d9201a7c868",
+    "finite_grid.csv": "f4a675ca90dd689bba69781b06402275",
+    "CDR_preprints_v1.0.zip": "1932bf980481d96c623c81548c85b812",
+    "CDR_preprints_v1.0.zip.sha256": "0d2d45145cb0ec006d5ae233169b6613"
+  }
+}

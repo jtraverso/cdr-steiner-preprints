@@ -27,3 +27,5 @@ BKLS is publicly registered as [PALOMAR-2026-11-06-000002 v1](https://palomar-re
 Supplementary references [S1], [S2], etc. print the resource addresses in each PDF. The bibliography checker also checks actual PDF hyperlink destinations. The [publication checks](publication/RELEASE_CHECKS.json) supplement the retained mathematical audit; no new Lean build was performed.
 
 The articles, companion and original figures are available under [CC BY 4.0](LICENSE.md). The Lean sources retain their upstream licenses.
+
+[Download release v1.0](https://github.com/jtraverso/cdr-steiner-preprints/releases/tag/v1.0) · [Publication receipts and public-access verification](publication/zenodo/). Both Zenodo records are published.
