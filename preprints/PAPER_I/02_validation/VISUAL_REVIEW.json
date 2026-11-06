@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "version": "1.0",
+  "reviewed_at_utc": "2026-11-06T05:21:07.412990+00:00",
+  "pdfs": {
+    "preprints/PAPER_I/01_manuscript/spectrum_en.pdf": "108421306a2eee9a5295892304380c56136264cbecb3a28e68417624e7964d43",
+    "preprints/PAPER_I/01_manuscript/spectrum_es.pdf": "592a6365fd67505d2453bbe40ccd44b7f07ea01a3eef76b56f25ef5855c1fd14",
+    "preprints/PAPER_I/05_formalization/companion_en.pdf": "32e5bdc6f8db2904ef1e57b70171982ddaf27b510478c2955ab0a9582aec580c",
+    "preprints/PAPER_I/05_formalization/companion_es.pdf": "22feb6570b6419b20475567814c33e00e070361ab9717ab8d923890da4df3d32"
+  },
+  "all_pages_covered_by_contact_sheets": true,
+  "shared_companion_duplicates_pixel_equal": true,
+  "detail_inspection": "All six unique document contact sheets, all changed pages at full resolution, all title pages and bibliographies; unchanged pages compared by rendered pixel hashes.",
+  "findings_resolved": [
+    "Full reference URLs now visible and legible, line wrapping inspected",
+    "Theorem 6.2 criterion and commands rendered without missing glyphs"
+  ],
+  "open_findings": [],
+  "comparison": "Same 1.0 edition and series preamble; main mathematical statements and frozen Lean archive preserved.",
+  "editorial_patch": "Bibliography and supplementary-material layout refreshed for preprint 1.0; previous general review retained."
+}

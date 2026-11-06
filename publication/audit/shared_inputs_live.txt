@@ -1,0 +1,3 @@
+'CDRBicolour.Base.gridOK_eq' does not depend on any axioms
+'OneFactor.lineGraph_colorable_of_isRegular67' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OneFactor.overfull_criterion67' depends on axioms: [propext, Classical.choice, Quot.sound]

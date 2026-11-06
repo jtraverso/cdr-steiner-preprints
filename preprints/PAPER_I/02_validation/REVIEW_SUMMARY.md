@@ -1,0 +1,1 @@
+Preprint 1.0: AUDIT_RESULT.json identifies the delivered artifacts. The joint report retains the mathematical, finite-data and axiom audit. The publication checks in publication/RELEASE_CHECKS.json cover the final document updates. Internal audit is distinct from peer review and fresh Lean compilation.

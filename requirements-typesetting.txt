@@ -1,0 +1,4 @@
+# PDF audit/rendering; the static release verifiers use only Python stdlib.
+PyMuPDF>=1.24
+Pillow>=10
+# Install Pandoc and Tectonic separately; see each paper's 03_reproducibility/.

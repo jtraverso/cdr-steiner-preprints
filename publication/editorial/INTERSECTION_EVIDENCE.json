@@ -1,0 +1,17 @@
+{
+  "status": "PASS_EVIDENCE_CONSISTENCY",
+  "theorem": "CDRBicolour.Absorption.Refined.cdr_prescribed_intersection",
+  "archive_sha256": "20bdbe78c88b2ebdd44daa7fe15355ce121430b0bd6e85e13951edc60472f5c9",
+  "finite_enumeration": false,
+  "fresh_lean_build": false,
+  "sources_checked": [
+    "CDRBicolour/Absorption/Intersection.lean",
+    "CDRBicolour/Absorption/Refined/Completion.lean",
+    "checks/AxiomsIntersection.lean"
+  ],
+  "scope": "Consistency of frozen source and archived axiom record, not a new kernel check",
+  "kernel_reproduction_commands": [
+    "lake build CDRBicolour.Absorption.Refined.Completion",
+    "lake env lean checks/AxiomsIntersection.lean"
+  ]
+}

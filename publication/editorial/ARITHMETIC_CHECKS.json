@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "variable": "u=k-4>=0",
+  "endpoint_original_coefficients": [
+    [
+      -7,
+      28,
+      24
+    ],
+    [
+      -7,
+      4,
+      72,
+      72
+    ]
+  ],
+  "endpoint_shifted_coefficients": [
+    [
+      489,
+      220,
+      24
+    ],
+    [
+      5769,
+      4036,
+      936,
+      72
+    ]
+  ],
+  "meaning": [
+    "3(a-5)-a",
+    "(6k+3)(a-6k-5)-a"
+  ],
+  "conclusion": "Both endpoint inequalities hold for every k>=4; coefficient verification is exact.",
+  "corrected_feedback_factor": "a-6k-5 from delta>=a-3"
+}

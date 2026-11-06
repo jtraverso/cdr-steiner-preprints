@@ -1,0 +1,1 @@
+Run python 03_reproducibility/build.py from this paper directory. Requires Pandoc and Tectonic. Each delivered TeX is generated from the corresponding Markdown. The two shared companion copies are byte-identical.

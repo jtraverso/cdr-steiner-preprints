@@ -1,0 +1,34 @@
+note: using only cached resource files
+note: Running TeX ...
+note: Rerunning TeX because "companion_en.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\JTRAVE~1\AppData\Local\Temp\tmpaeffjto3\companion_en.log` (25.64453125 KiB)
+note: Writing `C:\Users\JTRAVE~1\AppData\Local\Temp\tmpaeffjto3\companion_en.pdf` (57.8427734375 KiB)
+note: Skipped writing 1 intermediate files (use --keep-intermediates to keep them)
+warning: companion_en.tex:120: Underfull \hbox (badness 1297) in paragraph at lines 119--120
+warning: companion_en.tex:190: Underfull \hbox (badness 1565) in paragraph at lines 189--190
+warning: companion_en.tex:226: Underfull \hbox (badness 3492) in paragraph at lines 225--226
+warning: companion_en.tex:226: Underfull \hbox (badness 1748) in paragraph at lines 225--226
+warning: companion_en.tex:120: Underfull \hbox (badness 1297) in paragraph at lines 119--120
+warning: companion_en.tex:190: Underfull \hbox (badness 1565) in paragraph at lines 189--190
+warning: companion_en.tex:226: Underfull \hbox (badness 3492) in paragraph at lines 225--226
+warning: companion_en.tex:226: Underfull \hbox (badness 1748) in paragraph at lines 225--226
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+
+note: using only cached resource files
+note: Running TeX ...
+note: Rerunning TeX because "companion_en.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\JTRAVE~1\AppData\Local\Temp\tmpaeffjto3\companion_en.log` (25.64453125 KiB)
+note: Writing `C:\Users\JTRAVE~1\AppData\Local\Temp\tmpaeffjto3\companion_en.pdf` (57.8427734375 KiB)
+note: Skipped writing 1 intermediate files (use --keep-intermediates to keep them)
+warning: companion_en.tex:120: Underfull \hbox (badness 1297) in paragraph at lines 119--120
+warning: companion_en.tex:190: Underfull \hbox (badness 1565) in paragraph at lines 189--190
+warning: companion_en.tex:226: Underfull \hbox (badness 3492) in paragraph at lines 225--226
+warning: companion_en.tex:226: Underfull \hbox (badness 1748) in paragraph at lines 225--226
+warning: companion_en.tex:120: Underfull \hbox (badness 1297) in paragraph at lines 119--120
+warning: companion_en.tex:190: Underfull \hbox (badness 1565) in paragraph at lines 189--190
+warning: companion_en.tex:226: Underfull \hbox (badness 3492) in paragraph at lines 225--226
+warning: companion_en.tex:226: Underfull \hbox (badness 1748) in paragraph at lines 225--226
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.

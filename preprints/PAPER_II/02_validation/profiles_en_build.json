@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "md": "ad0df69c1c41782753df53875095f543c92b01c62db556663b0a236f8924cd55",
+  "tex": "2c731b6de045e70cbf1bbfc400488ba988a018b9bd521557737bfef4a2d1b434",
+  "pdf": "5d72c167d37b49bd17299c8b11bd565b195acddffc8c9a44d113e5a95b3d807c",
+  "layout_issues": [],
+  "compile_passes": 2,
+  "engine": "Tectonic",
+  "log": "02_validation/compiler_logs/profiles_en.log",
+  "log_sha256": "de78a1a98db09a64fb22bc840d0669f8a6fd8ec83a9851110485f445eaad9a19",
+  "output_pdf": "profiles_en.pdf"
+}

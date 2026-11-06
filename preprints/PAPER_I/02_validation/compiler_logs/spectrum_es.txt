@@ -1,0 +1,32 @@
+note: using only cached resource files
+note: Running TeX ...
+note: Rerunning TeX because "spectrum_es.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\JTRAVE~1\AppData\Local\Temp\tmpznh1etqf\spectrum_es.log` (25.443359375 KiB)
+note: Writing `C:\Users\JTRAVE~1\AppData\Local\Temp\tmpznh1etqf\spectrum_es.pdf` (156.220703125 KiB)
+note: Skipped writing 1 intermediate files (use --keep-intermediates to keep them)
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: spectrum_es.tex:262: Underfull \hbox (badness 10000) in paragraph at lines 261--262
+warning: spectrum_es.tex:268: Underfull \hbox (badness 6252) in paragraph at lines 267--268
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: spectrum_es.tex:262: Underfull \hbox (badness 10000) in paragraph at lines 261--262
+warning: spectrum_es.tex:268: Underfull \hbox (badness 6252) in paragraph at lines 267--268
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+
+
+note: using only cached resource files
+note: Running TeX ...
+note: Rerunning TeX because "spectrum_es.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\JTRAVE~1\AppData\Local\Temp\tmpznh1etqf\spectrum_es.log` (25.443359375 KiB)
+note: Writing `C:\Users\JTRAVE~1\AppData\Local\Temp\tmpznh1etqf\spectrum_es.pdf` (156.220703125 KiB)
+note: Skipped writing 1 intermediate files (use --keep-intermediates to keep them)
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: spectrum_es.tex:262: Underfull \hbox (badness 10000) in paragraph at lines 261--262
+warning: spectrum_es.tex:268: Underfull \hbox (badness 6252) in paragraph at lines 267--268
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: spectrum_es.tex:262: Underfull \hbox (badness 10000) in paragraph at lines 261--262
+warning: spectrum_es.tex:268: Underfull \hbox (badness 6252) in paragraph at lines 267--268
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).

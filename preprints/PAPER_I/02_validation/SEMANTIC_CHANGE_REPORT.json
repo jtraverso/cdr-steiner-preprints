@@ -1,0 +1,19 @@
+{
+  "edition": "1.0",
+  "baseline": "31db6b0",
+  "main_theorem_statements": "UNCHANGED",
+  "protected_display_formula_multisets": "BASELINE_PRESERVED_WITH_DOCUMENTED_ADDITIONS",
+  "authorized_changes": [
+    "Explicit equivalent composite-descent formulation with the square exception",
+    "Two overfull-subset calculations added; endpoint uses a-6k-5 under delta>=a-3",
+    "Mass-error estimate expanded",
+    "Theorem 6.2 proof status explicitly formal, incomplete written sketch replaced by a formal dependency guide",
+    "k<4 implies n<=487",
+    "Bilingual titles and preprint metadata aligned",
+    "Factor 3 explicitly takes priority as the outer factor",
+    "Printed full reference URLs",
+    "Symbolic proof status, elementary residual-intersection criterion and reproduction evidence for Theorem 6.2"
+  ],
+  "lean_sources_changed": false,
+  "unresolved_queries": []
+}

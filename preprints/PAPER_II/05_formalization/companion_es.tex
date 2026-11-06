@@ -1,0 +1,239 @@
+% Adapted from the author's public Erdos Paper IV v1.23 series_template.tex.
+% Layout provenance is recorded in 02_validation; the Markdown is semantic authority.
+\documentclass[spanish,11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf,BoldItalicFont=lmroman10-bolditalic.otf]
+\setsansfont{lmsans10-regular.otf}[BoldFont=lmsans10-bold.otf]
+\setmonofont{lmmono10-regular.otf}[Scale=MatchLowercase]
+\usepackage{amsmath,amssymb}
+\providecommand{\mathscr}{\mathcal}
+\usepackage[spanish,es-noshorthands,es-tabla]{babel}
+\usepackage{microtype,parskip}
+\usepackage{longtable,booktabs,array,calc}
+\usepackage{xcolor,xurl}
+\usepackage{hyperref,bookmark}
+\usepackage{etoolbox,needspace}
+\setcounter{secnumdepth}{-\maxdimen}
+\setlength{\emergencystretch}{3em}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\newcounter{none}
+\AtBeginEnvironment{longtable}{\Needspace{8\baselineskip}\small}
+\pretocmd{\section}{\Needspace{5\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{4\baselineskip}}{}{}
+\pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
+\urlstyle{same}
+
+\usepackage{graphicx}
+\providecommand{\pandocbounded}[1]{#1}
+\hypersetup{pdftitle={Pruebas en Lean y testigos finitos de los dos artículos sobre bicoloraciones de sistemas triples de Steiner},pdfauthor={Juan Pablo Traverso Gianini},pdflang={es},colorlinks=true,linkcolor=blue,urlcolor=blue}
+\title{Pruebas en Lean y testigos finitos de los dos artículos sobre bicoloraciones de sistemas triples de Steiner}
+\author{Juan Pablo Traverso Gianini\\\small Investigador independiente, Santiago, Chile\\\small \href{mailto:jtraverso@gmail.com}{jtraverso@gmail.com}\\\small \href{https://orcid.org/0009-0003-6068-4096}{ORCID: 0009-0003-6068-4096}}
+\date{}
+\begin{document}
+\raggedbottom
+\maketitle
+\textbf{Documento técnico de los artículos I y II.}\\\textbf{Preprint 1.0 — 6 de noviembre de 2026.}
+
+Este documento identifica las fuentes de las pruebas de los dos manuscritos y precisa el alcance de su verificación. El teorema del espectro se aplica a todos los perfiles admisibles de orden suficientemente grande. La caracterización de tamaños de clase cubre todos los perfiles positivos y su demostración incluye un cálculo explícito con tablas finitas.
+
+El resultado principal del artículo I es cdr\_type\_spectrum. La declaración auxiliar cdr\_eventually aplica T al grafo completo (proposición 3.2). El artículo II demuestra existencia para todo orden. En la prueba escrita, los últimos casos finitos se deducen de CDR 1999; la prueba formal archivada verifica tablas explícitas.
+
+\subsection{1. Fuentes, módulo principal y alcance de la compilación}\label{fuentes-muxf3dulo-principal-y-alcance-de-la-compilaciuxf3n}
+
+La referencia matemática es la revisión 7643193 de CDR {[}S1{]}. El identificador completo del commit es \textbf{76431935a1\allowbreak{}d61dbd7d51\allowbreak{}2f32c941e3\allowbreak{}7de38f6ba0}. Su registro de compilación da cuenta de 10 331 tareas de Lake completadas. Esta revisión permite reproducir el criterio 6/7 y la base finita registrados. Registro de compilación {[}S2{]} · Auditoría de axiomas {[}S3{]}.
+
+La revisión usa Lean 4.35.0-rc3 y Mathlib c55e6e786f\allowbreak{}49471c72fb\allowbreak{}ddbec54158\allowbreak{}08896aec1e. La configuración de Lake localiza las dependencias mediante rutas locales. CDR usa los 999 módulos que corresponden al cierre de importaciones seleccionado de Paper III. El registro de procedencia distingue los hashes de las fuentes originales de los obtenidos tras incorporar las opciones de recursos del compilador. Al comparar con el archivo publicado de Paper III se observan también cambios en comentarios históricos y opciones de recursos insertadas. No se hallaron cambios en el código matemático de los 999 módulos. Para el conteo se usan otros 27 módulos con rutas de importación renombradas. Estas dependencias forman parte de la compilación de CDR. Paper III cuenta con su propio paquete publicado. Registro de procedencia · Paper III (DOI 10.5281/zenodo.23867836).
+
+\subsection{2. Cómo leer la prueba formal del espectro}\label{cuxf3mo-leer-la-prueba-formal-del-espectro}
+
+Los nombres abreviados de esta sección llevan el prefijo CDRBicolour.Absorption y el subespacio de nombres que indica la fuente enlazada. El módulo raíz importa los resultados de la tabla. El informe calcula los axiomas de las declaraciones individuales.
+
+{\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Paso matemático
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fuente formal
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Teorema 1, ambas implicaciones y criterio aritmético exacto & \textbf{Corners.Spectrum} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Corners/\allowbreak{}Spectrum.\allowbreak{}lean}), declaración \textbf{cdr\_\allowbreak{}type\_\allowbreak{}spectrum} \\
+Balance en cada vértice, cociente y resto, obstrucción de grado cero & \textbf{Corners.Necessary} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Corners/\allowbreak{}Necessary.\allowbreak{}lean}) \\
+Dos descomposiciones intercambiables y conteo exacto en el interior & \textbf{Trade} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Exact/\allowbreak{}Trade.\allowbreak{}lean}), \textbf{Exact.Final} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Exact/\allowbreak{}Final.\allowbreak{}lean}), \textbf{cdr\_\allowbreak{}aac\_\allowbreak{}exact} \\
+Colocación inicial, corrección de la semilla y completación con tres tipos & \textbf{Corners.LowerT} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Corners/\allowbreak{}Lower\allowbreak{}T.\allowbreak{}lean}), \textbf{corner\_\allowbreak{}lower}; \textbf{Seed3} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Corners/\allowbreak{}Seed3.\allowbreak{}lean}) \\
+Extender un empaquetamiento o prescribir la intersección de dos sistemas & \textbf{Completion} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Completion.\allowbreak{}lean}), \textbf{cdr\_\allowbreak{}completion}; \textbf{Refined.Completion} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Refined/\allowbreak{}Completion.\allowbreak{}lean}), \textbf{cdr\_\allowbreak{}prescribed\_\allowbreak{}intersection} \\
+Separar conteos de Pasch y contar sistemas etiquetados & \textbf{PaschDiversity} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Pasch\allowbreak{}Diversity.\allowbreak{}lean}), \textbf{cdr\_\allowbreak{}many\_\allowbreak{}pasch\_\allowbreak{}counts}; \textbf{Wilson.Final} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Count/\allowbreak{}Wilson/\allowbreak{}Final.\allowbreak{}lean}), \textbf{realCount\_\allowbreak{}log\_\allowbreak{}asymptotic} \\
+\end{longtable}
+}
+
+Los tres axiomas estándar del informe son la extensionalidad proposicional, la elección clásica y la regla de los cocientes, denominados en Lean propext, Classical.choice y Quot.sound. Son las únicas dependencias axiomáticas que el informe registra para el espectro y los demás resultados asintóticos de la tabla. El artículo desarrolla el conteo en un punto, el intercambio de una unidad, las aplicaciones de T y T+ y la unión de las pruebas de necesidad y suficiencia. Las pruebas extensas de los lemas de inversión, colocación, retículo y conteo se encuentran en las fuentes enlazadas.
+
+\subsection{3. Cómo leer la prueba para todo orden}\label{cuxf3mo-leer-la-prueba-para-todo-orden}
+
+La declaración final es \textbf{cdr\_\allowbreak{}characterization}, en el espacio de nombres CDRBicolour. Supone positivos los tres tamaños y da la equivalencia entre realización y admisibilidad. Su demostración de suficiencia es independiente del uso de Paper III en el artículo sobre el espectro. \textbf{Caracterización} (\texttt{CDRBicolour/\allowbreak{}Characterization.\allowbreak{}lean}). La implicación necesaria, admissible\_of\_realises, usa las condiciones de la proposición 1.2 de Dinitz y Stinson. Las rutas que siguen corresponden al archivo ZIP común.
+
+{\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Paso matemático
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fuente formal
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Producto, asignación de las clases y descenso en orden compuesto & \textbf{Product} (\texttt{CDRBicolour/\allowbreak{}Product.\allowbreak{}lean}); \textbf{Descent.L165} (\texttt{CDRBicolour/\allowbreak{}Descent/\allowbreak{}L165.\allowbreak{}lean}) \\
+Coloración equitativa y emparejamientos perfectos finales & \textbf{Master.Equitable} (\texttt{CDRBicolour/\allowbreak{}Master/\allowbreak{}Equitable.\allowbreak{}lean}), \textbf{eqMaster\_\allowbreak{}realises} \\
+Diferencia cuatro y grafo restante en la familia de diferencia dos & \textbf{Master.L168} (\texttt{CDRBicolour/\allowbreak{}Master/\allowbreak{}L168.\allowbreak{}lean}); \textbf{L183.P2} (\texttt{CDRBicolour/\allowbreak{}L183/\allowbreak{}P2.\allowbreak{}lean}) \\
+Emparejar los colores que faltan en un vértice y completar la familia estrecha & \textbf{L184.Assembly} (\texttt{CDRBicolour/\allowbreak{}L184/\allowbreak{}Assembly.\allowbreak{}lean}); \textbf{P2RouteClosed} (\texttt{CDRBicolour/\allowbreak{}P2Route\allowbreak{}Closed.\allowbreak{}lean}) \\
+Malla exhaustiva, testigos individuales e inducción & \textbf{Base.Cover} (\texttt{CDRBicolour/\allowbreak{}Base/\allowbreak{}Cover.\allowbreak{}lean}); \textbf{datos} (\texttt{CDRBicolour/\allowbreak{}Base/\allowbreak{}Data}); \textbf{Universal} (\texttt{CDRBicolour/\allowbreak{}Universal.\allowbreak{}lean}) \\
+\end{longtable}
+}
+
+La cobertura de la malla se comprueba en el núcleo de Lean. En el informe de la revisión fijada, los tres enunciados para todo orden dependen de los tres axiomas estándar \textbf{y de 49 certificados de decisión por cómputo nativo}, uno por tabla. Para esta revisión decodificamos todas las tablas de forma independiente. Para cada par comprobamos el tercer punto, las dos consultas inversas y el patrón de colores. También cotejamos la lista de tablas con los perfiles que quedan después del barrido. Pasaron la comprobación \textbf{1 203 132 pares no ordenados}. En el primer artículo verificamos además que las dos filas impresas del intercambio coinciden con la fuente formal y cubren las mismas 27 aristas. Esta comprobación independiente con Python corrobora los datos. Los certificados nativos siguen formando parte de las dependencias de las declaraciones Lean.
+
+\subsection{4. Una instantánea común y dos informes de axiomas}\label{una-instantuxe1nea-comuxfan-y-dos-informes-de-axiomas}
+
+Los artículos usan una sola revisión de las fuentes de CDR. Cada teorema importa las dependencias que requiere su prueba. La compilación registrada en esta edición completó 10 331 tareas de Lake. Las consultas archivadas de los módulos compilados en el equipo del autor coinciden con los conjuntos de axiomas registrados para las doce declaraciones finales. La auditoría de esta edición vuelve a comprobar esos registros y el archivo de fuentes; no ejecuta una nueva compilación de Lean. En una consulta aparte, la declaración de cobertura gridOK\_eq resultó libre de axiomas. Las dos declaraciones importadas que usan 6/7 dependen únicamente de los tres axiomas estándar. El cálculo finito independiente comprobó 49 tablas, de orden máximo 487. El perfil de mayor orden es (154,156,177). La tabla de la sección 5 del artículo II reparte los 1551 perfiles en casos disjuntos. El perfil (696,702,745), de orden 2143, se resuelve por la rama equitativa y no requiere tabla.
+
+Plantholt figura como PALOMAR-2026-11-04-000016 v2 (5 de noviembre), verificada por Comparator, nanoda y con-ron. La dependencia es la revisión \textbf{f8900944da\allowbreak{}7743b1facd\allowbreak{}771139c9eb\allowbreak{}dbfd8aaa28} de la rama pública principal del repositorio de Plantholt. Contiene el resultado de Chetwynd y Hilton de 1985 y su aplicación al criterio de Plantholt. En grafos regulares sobre \(2n\) puntos, la hipótesis \(12n\le7d\) equivale a \(d\ge6(2n)/7\). Fuentes de la dependencia {[}S4{]}.
+
+Para reproducir la auditoría hay que restaurar la revisión fijada de CDR y sus dependencias de ruta, incluida la adaptación de Vizing y los módulos renombrados para el conteo. Tras compilar el objetivo predeterminado de Lake se ejecutan checks/AxiomsFreeze.lean y checks/SharedInputs.lean en el entorno Lean del proyecto. El paquete de revisión incluye las salidas y un verificador independiente en Python de los datos finitos. Estas consultas utilizaron la compilación local ya terminada. El archivo incluye las dependencias con rutas relativas. Esta revisión comprueba el archivo y la compilación existente; una reconstrucción en otro equipo es un experimento aparte.
+
+\subsection{5. Cómo se enlazan las declaraciones de Lean con las pruebas}\label{cuxf3mo-se-enlazan-las-declaraciones-de-lean-con-las-pruebas}
+
+\textbf{Existencia en orden grande.} En Asymptotic.lean, cdr\_eventually elige el umbral antes de fijar los tamaños de las tres clases. El grafo sobre el que se aplica el teorema es el completo con la partición prescrita. La prueba toma el mayor entre 400 y el umbral que devuelve main\_theorem\_T con parámetros \((1/32,4,6)\). Entrega a T las cuatro verificaciones cdr\_H1, cdr\_H2, cdr\_H3' y cdr\_H4. El último paso, realises\_of\_decomposition, convierte la descomposición en triángulos en el sistema triple buscado. Así se obtiene el resultado auxiliar de existencia de la proposición 3.2.
+
+Las cuatro comprobaciones en el grafo completo se pueden leer por separado. \textbf{H1} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Host.\allowbreak{}lean}) · \textbf{H2} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Lattice.\allowbreak{}lean}) · \textbf{H3/H4} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Hinge.\allowbreak{}lean}) · \textbf{proposición 3.2} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Asymptotic.\allowbreak{}lean}).
+
+\textbf{Conteos exactos.} Corners.Necessary parte de un sistema y cuenta los pares que pasan por un vértice. Corners.Spectrum reúne las dos condiciones resultantes en ExactNec. La prueba de suficiencia comprueba primero si se pueden colocar de antemano los bloques escasos en el orden original de las clases. Si se cumple la desigualdad requerida, Graphs construye los grados internos, Plant asigna los terceros puntos y Lower reúne los bloques elegidos. Residual calcula los números de vecinos que quedan; Seed3 y Lattice3 establecen las condiciones fraccionaria y entera en esas aristas. LowerT aplica T con los tres tipos mayoritarios. Si la desigualdad se cumple al intercambiar las clases, Symmetry devuelve la construcción al orden original. Si falla en ambos órdenes, large\_counts\_R sitúa los seis conteos en el intervalo que trata Exact.Final. Allí se aplica T+ y se eligen los intercambios reservados. Tanto la necesidad como la suficiencia se refieren al mismo entero \(t\).
+
+Los pasos intermedios del espectro exacto se encuentran en estas fuentes. \textbf{Sucesión de grados} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Corners/\allowbreak{}Graphs.\allowbreak{}lean}) · \textbf{Colocación} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Corners/\allowbreak{}Plant.\allowbreak{}lean}) · \textbf{Retículo entero} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Corners/\allowbreak{}Lattice3.\allowbreak{}lean}) · \textbf{Corrección de masa} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Exact/\allowbreak{}Final.\allowbreak{}lean}) · \textbf{División en casos} (\texttt{CDRBicolour/\allowbreak{}Absorption/\allowbreak{}Corners/\allowbreak{}Spectrum.\allowbreak{}lean}).
+
+\textbf{Todos los órdenes.} Characterization da las dos implicaciones de la caracterización. Para la suficiencia, Universal ordena las clases y procede por inducción fuerte en su tamaño total. Descent.L165 combina sistemas menores en orden compuesto. Master.Equitable construye cinco tipos de bloque mediante coloraciones sucesivas de aristas. En la familia de diferencia dos, el empaquetamiento deja un grafo sobre la última clase. L183.P2 prueba que sus aristas se pueden colorear con el número requerido de colores y L184.Assembly incorpora los últimos pares. Base.Cover identifica los casos que quedan por debajo de 5059. Verificar un testigo demuestra una realización concreta. El teorema de cobertura y la inducción permiten usar esas realizaciones en el enunciado universal.
+
+El registro de trabajo describe cómo se fueron obteniendo las construcciones. Para seguir las demostraciones de estos artículos, los enunciados y las importaciones de la revisión fijada son la referencia definitiva. Conviene leer las notas sobre los extremos junto con Corners.Spectrum, donde se reúnen los dos extremos y el intervalo interior. GATES · Construcciones en los extremos.
+
+\subsection{6. Cómo reproducir un testigo y leer la auditoría}\label{cuxf3mo-reproducir-un-testigo-y-leer-la-auditoruxeda}
+
+Cada tabla guarda dos dígitos en base 64 para cada par no ordenado, en orden lexicográfico. Se decodifica el tercer punto, se comprueba que difiere de los dos dados y se buscan en la tabla los otros dos pares de la terna. Cada consulta debe devolver el punto que falta. Por último se comprueba que los tres puntos tienen exactamente dos colores. Para la menor tabla se recuperan \(012,034,056,136,145,235,246\), los siete bloques de la figura 1 del artículo I. La comprobación de las 49 tablas recorre 1 203 132 pares y se puede repetir independientemente de Lean.
+
+La primera orden verifica el paquete, el informe de Lean y los testigos desde el repositorio de publicación. Para repetir las consultas de declaraciones, extraiga el archivo común, restaure el entorno compilado y ejecute las dos últimas órdenes desde la raíz de ese proyecto. Estas consultas leen objetos existentes. En una instalación que solo tenga las fuentes hay que obtener primero las dependencias fijadas y compilarlas.
+
+\begingroup\small\ttfamily\raggedright 
+\noindent\hspace*{0.0em}python scripts/verify\_\allowbreak{}repository.py\par
+\noindent\hspace*{0.0em}lake env lean checks/AxiomsFreeze.lean\par
+\noindent\hspace*{0.0em}lake env lean checks/SharedInputs.lean\par\endgroup
+
+\subsection{7. Enunciados y alcance de la verificación}\label{enunciados-y-alcance-de-la-verificaciuxf3n}
+
+Se transcriben las definiciones y los enunciados de las fuentes congeladas. Los nombres son relativos a sus espacios de nombres. Las pruebas se encuentran en el archivo común.
+
+\begingroup\small\ttfamily\raggedright 
+\noindent\hspace*{0.0em}def Realises (a b c : \(\mathbb N\)) : Prop :=\par
+\noindent\hspace*{0.9em}\(\exists\) (S : STS (Fin (a + b + c))) (col : Fin (a + b + c) \(\to\) Fin 3),\par
+\noindent\hspace*{1.8em}IsStrictBicolouring S col \(\land\)\par
+\noindent\hspace*{2.7em}classSize col 0 = a \(\land\) classSize col 1 = b \(\land\) classSize col 2 = c\par
+\noindent\hspace*{0.0em}\par
+\noindent\hspace*{0.0em}def AdmissibleProfile (a b c : \(\mathbb N\)) : Prop :=\par
+\noindent\hspace*{0.9em}0 < a \(\land\) 0 < b \(\land\) 0 < c \(\land\)\par
+\noindent\hspace*{0.9em}((a + b + c) \% 6 = 1 \(\lor\) (a + b + c) \% 6 = 3) \(\land\)\par
+\noindent\hspace*{0.9em}((a : \(\mathbb Z\)) \textasciicircum{} 2 + b \textasciicircum{} 2 + c \textasciicircum{} 2 - a * b - a * c - b * c = a + b + c) \(\land\)\par
+\noindent\hspace*{0.9em}\(\neg\) (a = 2 \(\land\) b = 2) \(\land\) \(\neg\) (a = 2 \(\land\) c = 2) \(\land\) \(\neg\) (b = 2 \(\land\) c = 2)\par
+\noindent\hspace*{0.0em}\par
+\noindent\hspace*{0.0em}def CDRConjecture : Prop :=\par
+\noindent\hspace*{0.9em}\(\forall\) a b c : \(\mathbb N\), AdmissibleProfile a b c \(\to\) Realises a b c\par
+\noindent\hspace*{0.0em}\par
+\noindent\hspace*{0.0em}theorem cdr\_\allowbreak{}conjecture : CDRConjecture\par
+\noindent\hspace*{0.0em}\par
+\noindent\hspace*{0.0em}theorem cdr\_\allowbreak{}characterization \{a b c : \(\mathbb N\)\} (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) :\par
+\noindent\hspace*{1.8em}Realises a b c \(\leftrightarrow\) AdmissibleProfile a b c\par
+\noindent\hspace*{0.0em}\par
+\noindent\hspace*{0.0em}theorem cdr\_\allowbreak{}characterization\_\allowbreak{}bicolourable3 \{a b c : \(\mathbb N\)\} (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) :\par
+\noindent\hspace*{1.8em}CDR.Bicolourable3 (a + b + c) a b c \(\leftrightarrow\) AdmissibleProfile a b c\par
+\noindent\hspace*{0.0em}\par
+\noindent\hspace*{0.0em}def LowerNec (a b c t : \(\mathbb N\)) : Prop :=\par
+\noindent\hspace*{0.9em}\(\exists\) d q r : Fin 3 \(\to\) \(\mathbb N\), (\(\forall\) X, r X < sz a b c X) \(\land\)\par
+\noindent\hspace*{1.8em}(\(\forall\) X, (d X : \(\mathbb Z\)) = sz a b c X - 1 - sz a b c (X + 1) + 2 * q X) \(\land\)\par
+\noindent\hspace*{1.8em}(\(\forall\) X, sz a b c X * d X + 2 * r X = 2 * (sz a b c (X + 2) * q (X + 2) + r (X + 2))) \(\land\)\par
+\noindent\hspace*{1.8em}(\(\forall\) X, \(\neg\) (d X = 0 \(\land\) (r X = 1 \(\lor\) r X = 2))) \(\land\) c * q 2 + r 2 = t\par
+\noindent\hspace*{0.0em}\par
+\noindent\hspace*{0.0em}def ExactNec (a b c t : \(\mathbb N\)) : Prop :=\par
+\noindent\hspace*{0.9em}2 * t \(\le\) a * (a - 1) \(\land\) LowerNec a b c t \(\land\) LowerNec a c b (a * (a - 1) / 2 - t)\par
+\noindent\hspace*{0.0em}\par
+\noindent\hspace*{0.0em}def AACSpec (a b c t : \(\mathbb N\)) : Prop :=\par
+\noindent\hspace*{0.9em}\(\exists\) S : STS (Fin (a + b + c)), IsStrictBicolouring S (col3 a b c) \(\land\) typeCount S (col3 a b c) 0 2 = t\par
+\noindent\hspace*{0.0em}\par
+\noindent\hspace*{0.0em}theorem cdr\_\allowbreak{}type\_\allowbreak{}spectrum : \(\exists\) n\(_0\) : \(\mathbb N\), \(\forall\) a b c : \(\mathbb N\), AdmissibleProfile a b c \(\to\) n\(_0\) \(\le\) a + b + c \(\to\)\par
+\noindent\hspace*{1.8em}\(\forall\) t : \(\mathbb N\), AACSpec a b c t \(\leftrightarrow\) ExactNec a b c t\par
+\noindent\hspace*{0.0em}\par
+\noindent\hspace*{0.0em}theorem cdr\_\allowbreak{}eventually :\par
+\noindent\hspace*{1.8em}\(\exists\) n\(_0\) : \(\mathbb N\), \(\forall\) a b c : \(\mathbb N\), AdmissibleProfile a b c \(\to\) n\(_0\) \(\le\) a + b + c \(\to\) Realises a b c\par\endgroup
+
+Cada comprobación nativa de una tabla confía en el compilador y en la reducción ejecutada. La versión usada de Lean imprime un axioma nativo generado distinto por tabla. El verificador independiente en Python no elimina esos axiomas. La adaptación de Vizing satisface el nombre de paquete exigido por las dependencias; las declaraciones reales pertenecen a las fuentes de LeanPool incluidas.
+
+\subsection{Agradecimientos}\label{agradecimientos}
+
+El autor agradece profundamente a su esposa María Paz y a sus hijos Lucas, Juan Cristóbal, Francisca, Raimundo y Benjamín su amor, paciencia y apoyo.
+
+\subsection{Evidencia del Teorema 6.2}\label{evidencia-del-teorema-6.2}
+
+El teorema de intersección prescrita tiene una prueba simbólica en Lean para todos los órdenes admisibles suficientemente grandes; no se certifica mediante una enumeración finita. Sus dos completaciones residuales usan clases disjuntas de residuos. El criterio elemental de intersección y la guía de dependencias formales aparecen en el Apéndice B del Paper I. El archivo de fuentes sin cambios incluye \texttt{checks/\allowbreak{}Axioms\allowbreak{}Intersection.\allowbreak{}lean}. Tras restaurar las dependencias fijadas, se ejecutan \texttt{lake\ build\ CDRBicolour.\allowbreak{}Absorption.\allowbreak{}Refined.\allowbreak{}Completion} y \texttt{lake\ env\ lean\ checks/\allowbreak{}Axioms\allowbreak{}Intersection.\allowbreak{}lean}. El script del repositorio \texttt{scripts/\allowbreak{}verify\_\allowbreak{}intersection\_\allowbreak{}evidence.\allowbreak{}py} comprueba únicamente la coherencia de las fuentes y los registros archivados; no ejecuta Lean. Esta corrección editorial no repitió la compilación de Lean.
+
+\subsection{Auditoría por declaración}\label{auditoruxeda-por-declaraciuxf3n}
+
+{\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Declaración (en CDRBicolour) & Axiomas registrados \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{Absorption.\allowbreak{}Corners.\allowbreak{}cdr\_\allowbreak{}type\_\allowbreak{}spectrum} & 3 \\
+\texttt{Absorption.\allowbreak{}cdr\_\allowbreak{}eventually} & 3 \\
+\texttt{Absorption.\allowbreak{}cdr\_\allowbreak{}completion} & 3 \\
+\texttt{Absorption.\allowbreak{}Refined.\allowbreak{}cdr\_\allowbreak{}prescribed\_\allowbreak{}intersection} & 3 \\
+\texttt{Absorption.\allowbreak{}Pasch\allowbreak{}Seed.\allowbreak{}cdr\_\allowbreak{}many\_\allowbreak{}pasch\_\allowbreak{}counts} & 3 \\
+\texttt{Absorption.\allowbreak{}Pasch\allowbreak{}Seed.\allowbreak{}cdr\_\allowbreak{}many\_\allowbreak{}nonisomorphic} & 3 \\
+\texttt{Absorption.\allowbreak{}cdr\_\allowbreak{}aac\_\allowbreak{}dense} & 3 \\
+\texttt{Absorption.\allowbreak{}Exact.\allowbreak{}cdr\_\allowbreak{}aac\_\allowbreak{}exact} & 3 \\
+\texttt{Absorption.\allowbreak{}Count.\allowbreak{}Wilson.\allowbreak{}real\allowbreak{}Count\_\allowbreak{}log\_\allowbreak{}asymptotic} & 3 \\
+\texttt{cdr\_\allowbreak{}conjecture} & 3 + 49 \\
+\texttt{cdr\_\allowbreak{}characterization} & 3 + 49 \\
+\texttt{cdr\_\allowbreak{}characterization\_\allowbreak{}bicolourable3} & 3 + 49 \\
+\end{longtable}
+}
+
+\subsection{Referencias y herramientas computacionales}\label{referencias-y-herramientas-computacionales}
+
+C. J. Colbourn, J. H. Dinitz y A. Rosa, \emph{Bicoloring Steiner Triple Systems} (1999), Teorema 2.6. \url{https://doi.org/10.37236/1457}. J. P. Traverso Gianini, \emph{Triangle decompositions III} (2026), v1.0. \url{https://doi.org/10.5281/zenodo.23867836}.
+
+Claude, de Anthropic, y ChatGPT/Codex, de OpenAI, se utilizaron para explorar y comprobar argumentos y para preparar el manuscrito.
+
+Certo y Jacobian se utilizaron para explorar casos finitos, comprobar identidades y evaluar construcciones candidatas. Estos cálculos orientaron el desarrollo de los argumentos; las comprobaciones finitas no se trataron como pruebas de enunciados universales.
+
+El autor es responsable de los argumentos, las citas, el código y la exposición. Ningún sistema de IA figura como autor.
+
+\textbf{Registro de dependencias.} CCJS: PALOMAR-2026-11-04-000009 v2. Dinitz--Stinson: PALOMAR-2026-11-04-000014. Rudašová--Soták: PALOMAR-2026-11-05-000001. Vizing: PALOMAR-2026-10-15-000004. Conteo: PALOMAR-2026-10-22-000017 v2. BKLS: PALOMAR-2026-11-06-000002 v1, registrado el 6 de noviembre de 2026 {[}S5{]}. Su revisión es 736c78e, la misma que usa la dependencia congelada.
+
+\subsubsection{Material suplementario}\label{material-suplementario}
+
+\textbf{{[}S1{]}} Revisión 7643193 de CDR. \url{https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/archives/CDR_shared_Lean_source_7643193.zip}.
+
+\textbf{{[}S2{]}} Registro de compilación. \url{https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/EXISTING_BUILD.json}.
+
+\textbf{{[}S3{]}} Auditoría de axiomas. \url{https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/live_axioms.txt}.
+
+\textbf{{[}S4{]}} Fuentes de la dependencia. \url{https://github.com/jtraverso/plantholt-overfull-criterion/tree/f8900944da7743b1facd771139c9ebdbfd8aaa28}.
+
+\textbf{{[}S5{]}} Registro público de BKLS. \url{https://palomar-registry.org/entry?id=PALOMAR-2026-11-06-000002&version=1}.
+
+\end{document}

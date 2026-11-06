@@ -1,0 +1,280 @@
+[
+  {
+    "seed": "10.37236/1457",
+    "openalex_id": "W2152553909",
+    "index_count": 41,
+    "citing_titles": [
+      {
+        "id": "https://openalex.org/W4391974632",
+        "doi": "https://doi.org/10.1109/tcomm.2024.3367748",
+        "publication_year": 2024,
+        "display_name": "DNA-Based Data Storage Systems: A Review of Implementations and Code Constructions"
+      },
+      {
+        "id": "https://openalex.org/W2042908802",
+        "doi": "https://doi.org/10.1016/j.disc.2003.11.037",
+        "publication_year": 2004,
+        "display_name": "Colouring 4-cycle systems with equitably coloured blocks"
+      },
+      {
+        "id": "https://openalex.org/W2994522774",
+        "doi": "https://doi.org/10.37236/1772",
+        "publication_year": 2004,
+        "display_name": "On Feasible Sets of Mixed Hypergraphs"
+      },
+      {
+        "id": "https://openalex.org/W2962680068",
+        "doi": "https://doi.org/10.2298/aadm130827019g",
+        "publication_year": 2013,
+        "display_name": "Extending bicolorings for Steiner triple systems"
+      },
+      {
+        "id": "https://openalex.org/W1998949919",
+        "doi": "https://doi.org/10.1016/s0012-365x(02)00485-5",
+        "publication_year": 2003,
+        "display_name": "Strict colorings of Steiner triple and quadruple systems: a survey"
+      },
+      {
+        "id": "https://openalex.org/W2039789224",
+        "doi": "https://doi.org/10.1016/s0012-365x(03)00104-3",
+        "publication_year": 2003,
+        "display_name": "Voloshin's colourings of P3-designs"
+      },
+      {
+        "id": "https://openalex.org/W113547092",
+        "doi": null,
+        "publication_year": 2003,
+        "display_name": "Unique colorings of bi-hypergraphs"
+      },
+      {
+        "id": "https://openalex.org/W2010412261",
+        "doi": "https://doi.org/10.1016/j.disc.2013.11.016",
+        "publication_year": 2013,
+        "display_name": "Non-monochromatic non-rainbow colourings of σ -hypergraphs"
+      },
+      {
+        "id": "https://openalex.org/W4294691002",
+        "doi": "https://doi.org/10.1109/tit.2022.3204025",
+        "publication_year": 2022,
+        "display_name": "Balanced Set Codes With Small Intersections"
+      },
+      {
+        "id": "https://openalex.org/W2007023458",
+        "doi": "https://doi.org/10.1016/j.dam.2005.05.019",
+        "publication_year": 2005,
+        "display_name": "Coloring mixed hypertrees"
+      },
+      {
+        "id": "https://openalex.org/W2081804694",
+        "doi": "https://doi.org/10.1016/s0304-3975(02)00408-5",
+        "publication_year": 2003,
+        "display_name": "Mixed hypergraphs with bounded degree: edge-coloring of mixed multigraphs"
+      },
+      {
+        "id": "https://openalex.org/W2964776855",
+        "doi": "https://doi.org/10.1002/jcd.21707",
+        "publication_year": 2020,
+        "display_name": "Large monochromatic components in 3‐edge‐colored Steiner triple systems"
+      },
+      {
+        "id": "https://openalex.org/W2747641264",
+        "doi": "https://doi.org/10.11650/tjm/8042",
+        "publication_year": 2017,
+        "display_name": "Extended Bicolorings of Steiner Triple Systems of Order $2^{h}-1$"
+      },
+      {
+        "id": "https://openalex.org/W4221066240",
+        "doi": "https://doi.org/10.1002/jcd.21837",
+        "publication_year": 2022,
+        "display_name": "Edge balanced star‐hypergraph designs and vertex colorings of path designs"
+      },
+      {
+        "id": "https://openalex.org/W4280564734",
+        "doi": "https://doi.org/10.1002/jcd.21844",
+        "publication_year": 2022,
+        "display_name": "An update on the existence of Kirkman triple systems with steiner triple systems as subdesigns"
+      },
+      {
+        "id": "https://openalex.org/W2911383922",
+        "doi": "https://doi.org/10.1016/j.disc.2003.11.051",
+        "publication_year": 2004,
+        "display_name": "Mixed hypercacti"
+      },
+      {
+        "id": "https://openalex.org/W2092863811",
+        "doi": "https://doi.org/10.1016/j.dam.2005.10.012",
+        "publication_year": 2006,
+        "display_name": "Circular mixed hypergraphs II:The upper chromatic number"
+      },
+      {
+        "id": "https://openalex.org/W3027727420",
+        "doi": "https://doi.org/10.1137/19m1241106",
+        "publication_year": 2020,
+        "display_name": "Set-Codes with Small Intersections and Small Discrepancies"
+      },
+      {
+        "id": "https://openalex.org/W4248637723",
+        "doi": "https://doi.org/10.1002/net.20252",
+        "publication_year": 2008,
+        "display_name": "Grooming for two‐period optical networks"
+      },
+      {
+        "id": "https://openalex.org/W2145527772",
+        "doi": "https://doi.org/10.37236/1568",
+        "publication_year": 2001,
+        "display_name": "Colouring $4$-cycle Systems with Specified Block Colour Patterns: the Case of Embedding $P_3$-designs"
+      },
+      {
+        "id": "https://openalex.org/W1567534276",
+        "doi": "https://doi.org/10.1016/j.disc.2003.11.019",
+        "publication_year": 2004,
+        "display_name": "Some equitably 3-colourable cycle decompositions"
+      },
+      {
+        "id": "https://openalex.org/W1508659404",
+        "doi": "https://doi.org/10.1016/j.disc.2004.11.024",
+        "publication_year": 2005,
+        "display_name": "Strict colourings of STS(3v) s and uncolourable BSTS(3v) s"
+      },
+      {
+        "id": "https://openalex.org/W2032410645",
+        "doi": "https://doi.org/10.1007/s00373-004-0582-z",
+        "publication_year": 2004,
+        "display_name": "Partition of C4-Designs into Minimum and Maximum Number of P3-Designs"
+      },
+      {
+        "id": "https://openalex.org/W2036149276",
+        "doi": "https://doi.org/10.1016/j.disc.2006.11.063",
+        "publication_year": 2007,
+        "display_name": "On some colouring of 4-cycle systems with specified block colour patterns"
+      },
+      {
+        "id": "https://openalex.org/W2157160240",
+        "doi": null,
+        "publication_year": 2001,
+        "display_name": "Extremal gaps in BP3-designs"
+      },
+      {
+        "id": "https://openalex.org/W2741206412",
+        "doi": null,
+        "publication_year": 2014,
+        "display_name": "Feasible sets of small bicolorable STSs."
+      },
+      {
+        "id": "https://openalex.org/W2038918819",
+        "doi": "https://doi.org/10.1016/j.dam.2014.11.029",
+        "publication_year": 2014,
+        "display_name": "(2,2) -colourings and clique-free σ -hypergraphs"
+      },
+      {
+        "id": "https://openalex.org/W2492355443",
+        "doi": "https://doi.org/10.1515/9783110198119.87",
+        "publication_year": 2002,
+        "display_name": "A singular direct product for bicolorable Steiner triple systems"
+      },
+      {
+        "id": "https://openalex.org/W2975303716",
+        "doi": "https://doi.org/10.1109/isit.2019.8849651",
+        "publication_year": 2019,
+        "display_name": "Set-Codes with Small Intersections and Small Discrepancies"
+      },
+      {
+        "id": "https://openalex.org/W2951666996",
+        "doi": "https://doi.org/10.1002/jcd.21395",
+        "publication_year": 2014,
+        "display_name": "Large Cross‐Free Sets in Steiner Triple Systems"
+      },
+      {
+        "id": "https://openalex.org/W3121863309",
+        "doi": "https://doi.org/10.3390/math9030210",
+        "publication_year": 2021,
+        "display_name": "Steiner Configurations Ideals: Containment and Colouring"
+      },
+      {
+        "id": "https://openalex.org/W2926774295",
+        "doi": "https://doi.org/10.5802/alco.106",
+        "publication_year": 2020,
+        "display_name": "On the Wilson monoid of a pairwise balanced design"
+      },
+      {
+        "id": "https://openalex.org/W1840491757",
+        "doi": "https://doi.org/10.1007/3-540-44669-9_58",
+        "publication_year": 2001,
+        "display_name": "On Complexity of Colouring Mixed Hypertrees"
+      },
+      {
+        "id": "https://openalex.org/W1543959772",
+        "doi": "https://doi.org/10.1007/3-540-44683-4_42",
+        "publication_year": 2001,
+        "display_name": "Complexity Note on Mixed Hypergraphs"
+      },
+      {
+        "id": "https://openalex.org/W1539465523",
+        "doi": "https://doi.org/10.1007/3-540-36379-3_15",
+        "publication_year": 2002,
+        "display_name": "Complexity of Pattern Coloring of Cycle Systems"
+      },
+      {
+        "id": "https://openalex.org/W2059847124",
+        "doi": "https://doi.org/10.1007/s00373-010-0981-2",
+        "publication_year": 2010,
+        "display_name": "Automorphic Decompositions of Graphs"
+      },
+      {
+        "id": "https://openalex.org/W2397698427",
+        "doi": null,
+        "publication_year": 2010,
+        "display_name": "All proper colorings of every colorable BSTS(15)"
+      },
+      {
+        "id": "https://openalex.org/W1180849869",
+        "doi": null,
+        "publication_year": 2011,
+        "display_name": "Maximal induced colorable subhypergraphs of all uncolorable BST S(15)s"
+      },
+      {
+        "id": "https://openalex.org/W1495779344",
+        "doi": null,
+        "publication_year": 2011,
+        "display_name": "Extended colorings for BSTS(2v + 1)"
+      },
+      {
+        "id": "https://openalex.org/W2960265277",
+        "doi": "https://doi.org/10.26493/2590-9770.1230.f19",
+        "publication_year": 2019,
+        "display_name": "Mario Gionfriddo and mixed hypergraph coloring"
+      },
+      {
+        "id": "https://openalex.org/W7225010748",
+        "doi": "https://doi.org/10.5281/zenodo.23838455",
+        "publication_year": 2026,
+        "display_name": "A Steiner triple system with a broken chromatic spectrum"
+      }
+    ]
+  },
+  {
+    "seed": "10.1515/9783110198119.87",
+    "openalex_id": "W2492355443",
+    "index_count": 2,
+    "citing_titles": [
+      {
+        "id": "https://openalex.org/W2145527772",
+        "doi": "https://doi.org/10.37236/1568",
+        "publication_year": 2001,
+        "display_name": "Colouring $4$-cycle Systems with Specified Block Colour Patterns: the Case of Embedding $P_3$-designs"
+      },
+      {
+        "id": "https://openalex.org/W4241910450",
+        "doi": "https://doi.org/10.1016/b978-0-444-63555-6.50014-3",
+        "publication_year": 2015,
+        "display_name": "Bibliography"
+      }
+    ]
+  },
+  {
+    "seed": "10.1112/S0024609301008785",
+    "openalex_id": "W2169481769",
+    "index_count": 0,
+    "citing_titles": []
+  }
+]

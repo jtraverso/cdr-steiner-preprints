@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "version": "1.0",
+  "checked_at_utc": "2026-11-06T05:21:07.412990+00:00",
+  "scope": "Publication metadata, editorial semantic preservation, PDF rendering and URI destinations, source archive hashes and retained audit bindings. Not a repeated mathematical audit.",
+  "general_audit_repeated": false,
+  "lean_build_repeated": false,
+  "baseline_commit": "33b6cd05f6989ba93dab96cd9942422b29082b04",
+  "mathematical_bodies": [
+    {
+      "source": "preprints/PAPER_I/01_manuscript/spectrum_en.md",
+      "mathematical_body_unchanged": true,
+      "baseline_sha256": "3894f3cfc4d9db71e540071141c7e2d18db01e4530b073f03474288fd543f64c",
+      "release_sha256": "35601c79196f92fd28e04d5dbd792865551a38b30106c829686a67f0030465ce"
+    },
+    {
+      "source": "preprints/PAPER_I/01_manuscript/spectrum_es.md",
+      "mathematical_body_unchanged": true,
+      "baseline_sha256": "26c0f9ce2978cc8d8f160976936b69809a3bf97b5ad8005fcbf234a2b39133e0",
+      "release_sha256": "3168d96d331d40822b2a5a3c1721785ccd177065bb378f02d656b5cef33bcb0a"
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_en.md",
+      "mathematical_body_unchanged": true,
+      "baseline_sha256": "89b758b97d4dfff81836a3805e0dba0e31dc3b281000bf25e2a6992bf44a8dd6",
+      "release_sha256": "ad0df69c1c41782753df53875095f543c92b01c62db556663b0a236f8924cd55"
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_es.md",
+      "mathematical_body_unchanged": true,
+      "baseline_sha256": "6d6b09a9b0366c76f41108acff08a153580613e1ca62413a91dac75d11b7f8ef",
+      "release_sha256": "787926a0eaef10c5ea749f7df7cca68ba17da5d02470293238797e45d1492f70"
+    }
+  ],
+  "archive_sha256": "20bdbe78c88b2ebdd44daa7fe15355ce121430b0bd6e85e13951edc60472f5c9",
+  "archive_entries_verified": 1457,
+  "palomar": {
+    "id": "PALOMAR-2026-11-06-000002",
+    "version": 1,
+    "source_commit": "736c78e6addcdb77e95cd83e4e44c5c0700f13ef",
+    "status": "registered"
+  },
+  "reference_checks": [
+    {
+      "source": "preprints/PAPER_I/01_manuscript/spectrum_en.md",
+      "count": 18,
+      "status": "PASS"
+    },
+    {
+      "source": "preprints/PAPER_I/01_manuscript/spectrum_es.md",
+      "count": 18,
+      "status": "PASS"
+    },
+    {
+      "source": "preprints/PAPER_I/05_formalization/companion_en.md",
+      "count": 7,
+      "status": "PASS"
+    },
+    {
+      "source": "preprints/PAPER_I/05_formalization/companion_es.md",
+      "count": 7,
+      "status": "PASS"
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_en.md",
+      "count": 16,
+      "status": "PASS"
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_es.md",
+      "count": 16,
+      "status": "PASS"
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_en.md",
+      "count": 7,
+      "status": "PASS"
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_es.md",
+      "count": 7,
+      "status": "PASS"
+    }
+  ],
+  "artifact_checks": {
+    "status": "PASS",
+    "version": "1.0",
+    "documents": 8,
+    "bilingual_pairs": 4,
+    "mathematical_sources_changed": false,
+    "fresh_lean_build": false,
+    "scope": "Internal release, source, metadata, semantic and rendered-artifact checks; not peer review"
+  },
+  "visual_review": "PASS",
+  "publication_receipts": "publication/zenodo/"
+}

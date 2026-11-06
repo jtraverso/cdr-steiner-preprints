@@ -1,0 +1,46 @@
+note: using only cached resource files
+note: Running TeX ...
+note: Rerunning TeX because "companion_es.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\JTRAVE~1\AppData\Local\Temp\tmpfds2vcjh\companion_es.pdf` (58.7998046875 KiB)
+note: Writing `C:\Users\JTRAVE~1\AppData\Local\Temp\tmpfds2vcjh\companion_es.log` (26.474609375 KiB)
+note: Skipped writing 1 intermediate files (use --keep-intermediates to keep them)
+warning: companion_es.tex:41: Underfull \hbox (badness 2680) in paragraph at lines 40--41
+warning: companion_es.tex:41: Underfull \hbox (badness 1097) in paragraph at lines 40--41
+warning: companion_es.tex:116: Underfull \hbox (badness 5446) in paragraph at lines 115--116
+warning: companion_es.tex:116: Underfull \hbox (badness 1158) in paragraph at lines 115--116
+warning: companion_es.tex:190: Underfull \hbox (badness 1859) in paragraph at lines 189--190
+warning: companion_es.tex:226: Underfull \hbox (badness 1762) in paragraph at lines 225--226
+warning: companion_es.tex:226: Underfull \hbox (badness 10000) in paragraph at lines 225--226
+warning: companion_es.tex:41: Underfull \hbox (badness 2680) in paragraph at lines 40--41
+warning: companion_es.tex:41: Underfull \hbox (badness 1097) in paragraph at lines 40--41
+warning: companion_es.tex:116: Underfull \hbox (badness 5446) in paragraph at lines 115--116
+warning: companion_es.tex:116: Underfull \hbox (badness 1158) in paragraph at lines 115--116
+warning: companion_es.tex:190: Underfull \hbox (badness 1859) in paragraph at lines 189--190
+warning: companion_es.tex:226: Underfull \hbox (badness 1762) in paragraph at lines 225--226
+warning: companion_es.tex:226: Underfull \hbox (badness 10000) in paragraph at lines 225--226
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+
+note: using only cached resource files
+note: Running TeX ...
+note: Rerunning TeX because "companion_es.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\Users\JTRAVE~1\AppData\Local\Temp\tmpfds2vcjh\companion_es.pdf` (58.7998046875 KiB)
+note: Writing `C:\Users\JTRAVE~1\AppData\Local\Temp\tmpfds2vcjh\companion_es.log` (26.474609375 KiB)
+note: Skipped writing 1 intermediate files (use --keep-intermediates to keep them)
+warning: companion_es.tex:41: Underfull \hbox (badness 2680) in paragraph at lines 40--41
+warning: companion_es.tex:41: Underfull \hbox (badness 1097) in paragraph at lines 40--41
+warning: companion_es.tex:116: Underfull \hbox (badness 5446) in paragraph at lines 115--116
+warning: companion_es.tex:116: Underfull \hbox (badness 1158) in paragraph at lines 115--116
+warning: companion_es.tex:190: Underfull \hbox (badness 1859) in paragraph at lines 189--190
+warning: companion_es.tex:226: Underfull \hbox (badness 1762) in paragraph at lines 225--226
+warning: companion_es.tex:226: Underfull \hbox (badness 10000) in paragraph at lines 225--226
+warning: companion_es.tex:41: Underfull \hbox (badness 2680) in paragraph at lines 40--41
+warning: companion_es.tex:41: Underfull \hbox (badness 1097) in paragraph at lines 40--41
+warning: companion_es.tex:116: Underfull \hbox (badness 5446) in paragraph at lines 115--116
+warning: companion_es.tex:116: Underfull \hbox (badness 1158) in paragraph at lines 115--116
+warning: companion_es.tex:190: Underfull \hbox (badness 1859) in paragraph at lines 189--190
+warning: companion_es.tex:226: Underfull \hbox (badness 1762) in paragraph at lines 225--226
+warning: companion_es.tex:226: Underfull \hbox (badness 10000) in paragraph at lines 225--226
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.

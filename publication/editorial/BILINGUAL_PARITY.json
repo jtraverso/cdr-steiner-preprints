@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "version": "1.0",
+  "pairs": [
+    {
+      "paper": "PAPER_I",
+      "kind": "spectrum",
+      "displays": 19,
+      "formal_identifiers_equal": true,
+      "heading_counts": {
+        "en": 19,
+        "es": 19
+      },
+      "titles": {
+        "en": "The exact block-type spectrum in the Colbourn–Dinitz–Rosa problem",
+        "es": "El espectro exacto de tipos de bloque en el problema de Colbourn–Dinitz–Rosa"
+      }
+    },
+    {
+      "paper": "PAPER_I",
+      "kind": "companion",
+      "displays": 0,
+      "formal_identifiers_equal": true,
+      "heading_counts": {
+        "en": 13,
+        "es": 13
+      },
+      "titles": {
+        "en": "Lean proofs and finite witnesses for the two papers on Steiner bicolorings",
+        "es": "Pruebas en Lean y testigos finitos de los dos artículos sobre bicoloraciones de sistemas triples de Steiner"
+      }
+    },
+    {
+      "paper": "PAPER_II",
+      "kind": "profiles",
+      "displays": 14,
+      "formal_identifiers_equal": true,
+      "heading_counts": {
+        "en": 13,
+        "es": 13
+      },
+      "titles": {
+        "en": "A proof of the Colbourn–Dinitz–Rosa conjecture",
+        "es": "Una demostración de la conjetura de Colbourn–Dinitz–Rosa"
+      }
+    },
+    {
+      "paper": "PAPER_II",
+      "kind": "companion",
+      "displays": 0,
+      "formal_identifiers_equal": true,
+      "heading_counts": {
+        "en": 13,
+        "es": 13
+      },
+      "titles": {
+        "en": "Lean proofs and finite witnesses for the two papers on Steiner bicolorings",
+        "es": "Pruebas en Lean y testigos finitos de los dos artículos sobre bicoloraciones de sistemas triples de Steiner"
+      }
+    }
+  ]
+}

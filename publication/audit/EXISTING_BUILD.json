@@ -1,0 +1,11 @@
+{
+  "math_revision": "76431935a1d61dbd7d512f32c941e37de38f6ba0",
+  "documentation_revision": "f9e83ea46b4c72125d7e0190690e13a6cad3159b",
+  "existing_build_jobs_reported": 10331,
+  "new_build_performed": false,
+  "method": "Queried installed compiled objects for the axiom dependencies of twelve manuscript endpoints. Compared the results with the recorded audit. Independently checked each finite witness.",
+  "object_sha256": {
+    "CDRBicolour/Characterization.olean": "8e00b6fee57c4d9aedbbc22c8c43781bc97f3c1f0aa1940da340d588d5bda847",
+    "CDRBicolour/Absorption/Corners/Spectrum.olean": "6ffc67d7dc00adf58a678f99853c0da98aecb6e80e1948ce69aaa38846573d8b"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "finite_and_axiom_checks": {
+    "sorted_profiles": 1551,
+    "routes": {
+      "cyclic": 5,
+      "descent": 1201,
+      "equitable": 287,
+      "gap_four": 5,
+      "gap_two": 4,
+      "table": 49
+    },
+    "witnesses": 49,
+    "largest_order": 487,
+    "witness_pairs_verified": 1203132,
+    "trade_edges": 27,
+    "audited_declarations": 12,
+    "status": "PASS"
+  },
+  "archive_files": 1456,
+  "clean_build_performed": false
+}

@@ -1,0 +1,45 @@
+{
+  "balanced-edge-colourings": {
+    "url": "https://github.com/jtraverso/balanced-edge-colourings",
+    "rev": "736c78e6addcdb77e95cd83e4e44c5c0700f13ef",
+    "lean_files_verified": 49,
+    "palomar_id": "PALOMAR-2026-11-06-000002",
+    "palomar_version": 1,
+    "palomar_url": "https://palomar-registry.org/entry?id=PALOMAR-2026-11-06-000002&version=1"
+  },
+  "cdr-bicolouring-sts": {
+    "url": "https://github.com/jtraverso/cdr-bicolouring-sts",
+    "rev": "a768a98a648e94ad38d0d84501867c999927c546",
+    "lean_files_verified": 15
+  },
+  "overfull-critical-graphs": {
+    "url": "https://github.com/jtraverso/overfull-critical-graphs",
+    "rev": "b85da9ac66e0fb8b9873a8bea0c057f78c9d186c",
+    "lean_files_verified": 61
+  },
+  "plantholt-overfull-criterion": {
+    "url": "https://github.com/jtraverso/plantholt-overfull-criterion",
+    "rev": "f8900944da7743b1facd771139c9ebdbfd8aaa28",
+    "lean_files_verified": 34
+  },
+  "physical-typed-absorption": {
+    "published_blob": "1146e86aa1bd8d12fd62769477af2aa15a39e530",
+    "archive_url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/main/archives/PAPER_III_LEAN_SOURCE_v1.0.zip",
+    "modules": 999
+  },
+  "counting-sts-cone": {
+    "url": "https://github.com/jtraverso/counting-steiner-triple-systems",
+    "rev": "52fda83038df7442c576e17edffba591db703cb8",
+    "modules": 27
+  },
+  "vizing-shim": {
+    "vendored_in": "CDR LeanPool sources at 76431935a1d61dbd7d512f32c941e37de38f6ba0",
+    "upstream": "https://github.com/jtraverso/vizing",
+    "reference": "33b2de8",
+    "shim": "vendor/vizing-shim/lakefile.toml"
+  },
+  "mathlib": {
+    "url": "https://github.com/leanprover-community/mathlib4",
+    "rev": "c55e6e786f49471c72fbddbec5415808896aec1e"
+  }
+}

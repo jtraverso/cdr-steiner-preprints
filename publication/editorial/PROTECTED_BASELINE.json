@@ -1,0 +1,181 @@
+{
+  "commit": "31db6b0",
+  "documents": {
+    "preprints/PAPER_I/01_manuscript/spectrum_en.md": {
+      "sha256": "636323c7bb5c61f1003d00b88e8ec2ecc1c6de6a35e35b511a067cb58323faac",
+      "displays": [
+        "8a0a685e3bf132c6c10d5121f29b268e1b79c0044b2af98b0270b0a87bf475f6",
+        "6cb9347fcfcb6301373bc620112c581647c95718979d483a9b26c9ff494e2552",
+        "0c932c393d698bc2fa969ffa69bcb14c863c8aed70f3b5985b80c47f800522cd",
+        "d09b5ff0b31b3b4e034efe5afac14b6e0b137d0a2a12e0eed12682f5efc1e939",
+        "49160121b72c64de40badd1a9f8b7bd2d2f0ccc7d7a1ec8ae0c193dba2a8508b",
+        "c51d44315715f90f87db9148b4d27f0fccff5374e9b4d1117b9fffd2e71d79e4",
+        "db5485d967c840a33041920c73b9ea56794ccfc212b6c986441809a8b16ab442",
+        "1437700dfc95ed092f226d9224aa97204059dc22f6fe6f73a1f35ceb7681c58f",
+        "42185d63a26bd74afcdb82828907df19ffba11db65b00c75ca2ac3c8597bcf8f",
+        "5af6eef108167184e0db31f8fed0561edf458d7cd4d9e2b931003bcf7acaa4e3",
+        "1c5786387d058ef5e5735a022d2a38bd4cfb5e354d297dafd5655f58c3841061",
+        "e72d92d53edb9058ea1cbf4ef91a94d78509a8827e9c9f5ef01cc21d9850f319",
+        "415796094bcf86d2166a4d908c54a719ef1db90bdca972245f85e6d51cfa5d2b",
+        "7a6c5708455ef4e02e7274c11f0ef93b6bcc4fbc9fbbc2d1f36187daf5c3dbe9",
+        "3b3a0daadf3036e2c710db2f3339fcbe295a7c32584a8109e688fc92c6f30293",
+        "22aa4d8bb165e05397c3ccbab94faa8d51eb840c3f034df0b2cfa59a823546d0",
+        "43a1ff1d4addf04b78afb330a26e62649e78a87a70195a3e0046d9d770b392a2",
+        "2afa64418c04b16ce1ffd3890b8af51199edf12669b622ef35723fbe7d6e9538",
+        "a38ecd5fe7bb57e9cc941b7656027453634002e042b09525091b3b11a596664a"
+      ],
+      "normalized_displays": [
+        "\\begin{aligned}N_{AAB}&=\\binoma2-t,&N_{ACC}&=ac/2-t,\\\\N_{ABB}&=ab/2-N_{AAB},&N_{BBC}&=\\binomb2-N_{ABB},\\\\N_{BCC}&=bc/2-N_{BBC},&N_{ACC}+N_{BCC}&=\\binomc2.\\end{aligned}",
+        "a^2+b^2+c^2-ab-ac-bc=n",
+        "0\\let\\le\\binoma2,\\qquadL(a,b,c;t),\\qquadL\\left(a,c,b;\\binoma2-t\\right)",
+        "s_i-1=h_u+m_u,\\qquads_{i+1}=h_u+2k_u",
+        "s_id_i+2r_i=2K_{i+2}",
+        "\\begin{aligned}r_i&<s_i,&d_i&=s_i-1-s_{i+1}+2q_i,\\\\s_id_i+2r_i&=2(s_{i+2}q_{i+2}+r_{i+2}),&d_i=0&\\\\Longrightarrow\\r_i\\notin\\{1,2\\},\\end{aligned}",
+        "|\\mathcalJ|\\leqn^q,\\qquad|w_j(Q)|\\leq1\\quad(j\\in\\mathcalJ,\\Q\\in\\mathcalT),\\tag{2.9}",
+        "\\left|\\sum_{Q\\in\\mathcalD}w_j(Q)-M_\\mu(w_j)\\right|\\leq\\etan^2\\qquad(j\\in\\mathcalJ),\\tag{2.10}",
+        "|P(\\mathcalD)-P_\\mu|\\leq\\etan^2.\\tag{2.11}",
+        "w_{AAC}=\\frac{1-(c-1)/(2a)}{a-1},\\qquadw_{BBC}=\\frac{1-(c-1)/(2b)}{b-1}",
+        "bw_{AAB}=1-cw_{AAC},\\qquadaw_{ABB}=1-cw_{BBC}",
+        "\\tfrac12(ab+bc+ca)-\\binoma2-\\binomb2-\\binomc2",
+        "|b_\\tau-\\tau|\\leE,\\qquadE=(4K+1)C_0\\Deltan",
+        "b_{\\tau_-}\\lem_0-E,\\qquadb_{\\tau_+}\\gem_0+E",
+        "k=M/2+(m_0-D)\\in[M/4,3M/4]",
+        "K_i\\ge\\frac{n^2}{24\\cdot10^{15}}-\\frac{n^2}{10^{17}}\\ge\\frac{n^2}{10^{17}}",
+        "\\logR(a,b,c)=(1/6+o(1))n^2\\logn",
+        "w_{ABB}=\\frac{G'_{AB}-(a-1)w_{AAB}}{b-1},\\quadw_{BCC}=\\frac{G'_{CC}-aw_{ACC}}b,\\quadw_{BBC}=\\frac{G'_{BB}-aw_{ABB}}c",
+        "[rup]+[rvp]-[uvp]-[rux]-[rvx]+[uvx]"
+      ],
+      "main_statement": "**Theorem 1 (exact spectrum).** There is an $n_0$ such that for every admissible $(a,b,c)$ of order $n\\ge n_0$, an integer $t\\ge0$ is the number of $AAC$ blocks of a system on the prescribed classes if and only if\n$$\n0\\le t\\le\\binom a2,\\qquad\nL(a,b,c;t),\\qquad L\\left(a,c,b;\\binom a2-t\\right).\n$$\nSection 2 defines $L$ by integer arithmetic. Swapping $B$ and $C$ turns $AAB$ into $AAC$, so the two tests read the same obstruction from opposite ends."
+    },
+    "preprints/PAPER_I/01_manuscript/spectrum_es.md": {
+      "sha256": "103c0461c0ef8e06152f72f26b9f07f5c2495ced401f0d3d8f52d2eca9a94413",
+      "displays": [
+        "8a0a685e3bf132c6c10d5121f29b268e1b79c0044b2af98b0270b0a87bf475f6",
+        "6cb9347fcfcb6301373bc620112c581647c95718979d483a9b26c9ff494e2552",
+        "0c932c393d698bc2fa969ffa69bcb14c863c8aed70f3b5985b80c47f800522cd",
+        "d09b5ff0b31b3b4e034efe5afac14b6e0b137d0a2a12e0eed12682f5efc1e939",
+        "49160121b72c64de40badd1a9f8b7bd2d2f0ccc7d7a1ec8ae0c193dba2a8508b",
+        "c51d44315715f90f87db9148b4d27f0fccff5374e9b4d1117b9fffd2e71d79e4",
+        "db5485d967c840a33041920c73b9ea56794ccfc212b6c986441809a8b16ab442",
+        "1437700dfc95ed092f226d9224aa97204059dc22f6fe6f73a1f35ceb7681c58f",
+        "42185d63a26bd74afcdb82828907df19ffba11db65b00c75ca2ac3c8597bcf8f",
+        "5af6eef108167184e0db31f8fed0561edf458d7cd4d9e2b931003bcf7acaa4e3",
+        "1c5786387d058ef5e5735a022d2a38bd4cfb5e354d297dafd5655f58c3841061",
+        "e72d92d53edb9058ea1cbf4ef91a94d78509a8827e9c9f5ef01cc21d9850f319",
+        "415796094bcf86d2166a4d908c54a719ef1db90bdca972245f85e6d51cfa5d2b",
+        "7a6c5708455ef4e02e7274c11f0ef93b6bcc4fbc9fbbc2d1f36187daf5c3dbe9",
+        "3b3a0daadf3036e2c710db2f3339fcbe295a7c32584a8109e688fc92c6f30293",
+        "22aa4d8bb165e05397c3ccbab94faa8d51eb840c3f034df0b2cfa59a823546d0",
+        "43a1ff1d4addf04b78afb330a26e62649e78a87a70195a3e0046d9d770b392a2",
+        "2afa64418c04b16ce1ffd3890b8af51199edf12669b622ef35723fbe7d6e9538",
+        "a38ecd5fe7bb57e9cc941b7656027453634002e042b09525091b3b11a596664a"
+      ],
+      "normalized_displays": [
+        "\\begin{aligned}N_{AAB}&=\\binoma2-t,&N_{ACC}&=ac/2-t,\\\\N_{ABB}&=ab/2-N_{AAB},&N_{BBC}&=\\binomb2-N_{ABB},\\\\N_{BCC}&=bc/2-N_{BBC},&N_{ACC}+N_{BCC}&=\\binomc2.\\end{aligned}",
+        "a^2+b^2+c^2-ab-ac-bc=n",
+        "0\\let\\le\\binoma2,\\qquadL(a,b,c;t),\\qquadL\\left(a,c,b;\\binoma2-t\\right)",
+        "s_i-1=h_u+m_u,\\qquads_{i+1}=h_u+2k_u",
+        "s_id_i+2r_i=2K_{i+2}",
+        "\\begin{aligned}r_i&<s_i,&d_i&=s_i-1-s_{i+1}+2q_i,\\\\s_id_i+2r_i&=2(s_{i+2}q_{i+2}+r_{i+2}),&d_i=0&\\\\Longrightarrow\\r_i\\notin\\{1,2\\},\\end{aligned}",
+        "|\\mathcalJ|\\leqn^q,\\qquad|w_j(Q)|\\leq1\\quad(j\\in\\mathcalJ,\\Q\\in\\mathcalT),\\tag{2.9}",
+        "\\left|\\sum_{Q\\in\\mathcalD}w_j(Q)-M_\\mu(w_j)\\right|\\leq\\etan^2\\qquad(j\\in\\mathcalJ),\\tag{2.10}",
+        "|P(\\mathcalD)-P_\\mu|\\leq\\etan^2.\\tag{2.11}",
+        "w_{AAC}=\\frac{1-(c-1)/(2a)}{a-1},\\qquadw_{BBC}=\\frac{1-(c-1)/(2b)}{b-1}",
+        "bw_{AAB}=1-cw_{AAC},\\qquadaw_{ABB}=1-cw_{BBC}",
+        "\\tfrac12(ab+bc+ca)-\\binoma2-\\binomb2-\\binomc2",
+        "|b_\\tau-\\tau|\\leE,\\qquadE=(4K+1)C_0\\Deltan",
+        "b_{\\tau_-}\\lem_0-E,\\qquadb_{\\tau_+}\\gem_0+E",
+        "k=M/2+(m_0-D)\\in[M/4,3M/4]",
+        "K_i\\ge\\frac{n^2}{24\\cdot10^{15}}-\\frac{n^2}{10^{17}}\\ge\\frac{n^2}{10^{17}}",
+        "\\logR(a,b,c)=(1/6+o(1))n^2\\logn",
+        "w_{ABB}=\\frac{G'_{AB}-(a-1)w_{AAB}}{b-1},\\quadw_{BCC}=\\frac{G'_{CC}-aw_{ACC}}b,\\quadw_{BBC}=\\frac{G'_{BB}-aw_{ABB}}c",
+        "[rup]+[rvp]-[uvp]-[rux]-[rvx]+[uvx]"
+      ],
+      "main_statement": "**Teorema 1 (espectro exacto).** Existe un $n_0$ tal que, para todo perfil admisible $(a,b,c)$ de orden $n\\ge n_0$, un entero $t\\ge0$ es el número de bloques $AAC$ de algún sistema sobre las clases prescritas si y solo si\n$$\n0\\le t\\le\\binom a2,\\qquad\nL(a,b,c;t),\\qquad L\\left(a,c,b;\\binom a2-t\\right).\n$$\nLa sección 2 define $L$ por medio de enteros. Intercambiar $B$ y $C$ convierte los bloques $AAB$ en $AAC$. Por eso comprobamos la misma condición dos veces, una para cada elección del tercer color."
+    },
+    "preprints/PAPER_II/01_manuscript/profiles_en.md": {
+      "sha256": "1aaf949bd454102268f3712d416c3de33f07b717c9869e9f9daa0d2df321615b",
+      "displays": [
+        "399484a1ba8787b23c547a9ae26f989e82f778bff3ba94042e7694c0e2af76c2",
+        "690d3857f83bd4eae19b078ed2caccf89baa5de7dd115537f886b9198b28d8ed",
+        "454695e68a2ec3886ff7db4e26801e35b6d32578e4111ac3b92cfe6a657a8806",
+        "87589534db58eea394af1e7bd0a188536759bb57cae878c945c14901ad800590",
+        "dc9c5ee572c6a347ef3ad2a25550d9dc957c100e11fa83952419bed0eaffe5c0",
+        "db38b3a2bf7d61f6b525328c2bad874dd532612ec9854c535bda715c96a5b979",
+        "739c50e851285414b690f93800db507a3e1d2cf7b8f00b997b3c690b0d421b07",
+        "d0f08e047029c9ad0a86c78917fee5c254a0cd458efd9072cb65872d9765fa69",
+        "2ca5ef21b5dd7ae1bb9bea7e22192afbe1dde97c5f100292930c90aa8b63e56e",
+        "997550bb3460bb8243abea126c59152363c00c9e7e4066f59258dc3e4c7fcd4e",
+        "7e0d757a87af7629c56f572ef515927c5251e68ff255f7442f4db057210b22bf",
+        "0efc0b6c270ca567c772a133c390baafd6c17be731477e2e69779fa84b397f2f"
+      ],
+      "normalized_displays": [
+        "n\\equiv1,3\\pmod6,\\qquada^2+b^2+c^2-ab-ac-bc=n",
+        "\\binoma2+\\binomb2+\\binomc2=n(n-1)/6",
+        "n=x^2+xy+y^2,\\qquad3a=n-2x-y,\\quadb=a+x,\\quadc=b+y",
+        "(ua+vb+wc,\\;ub+vc+wa,\\;uc+va+wb)",
+        "E(p)=\\bigl(p(p-2)/3,\\p(p+1)/3,\\p(p+1)/3\\bigr)",
+        "\\begin{gathered}C\\equiv0\\pmod2,\\quadA<C,\\quadA<B,\\quadB-ATEXT,\\quadB-A\\ge3,\\\\6(C-A-1)\\leC,\\quad6C\\le7A,\\quad6h\\leB,\\quadB+5\\leh+C.\\end{gathered}",
+        "a=12k^2+14k+4,\\quadb=a+2,\\quadc=12k^2+20k+9",
+        "12k^2-46k-8\\ge0,\\qquad24k^2-44k-103\\ge0",
+        "[a-(6k+2)]+2(3k+1)=a",
+        "\\frac{a(a-1)}{a+t}=a-t-1+\\frac{t(t+1)}{a+t}",
+        "2e(H-x)\\lea(c-1)-2s-2(a-3)\\lea(c-3)",
+        "2e(S)-a(|S|-1)\\let(t+3-a)\\le0"
+      ],
+      "main_statement": "**Theorem 1.** Let $a,b,c$ be positive integers and let $n=a+b+c$. There exists a strictly 3-bicolored Steiner triple system with class sizes $a,b,c$ if and only if\n$$n\\equiv1,3\\pmod6,\\qquad a^2+b^2+c^2-ab-ac-bc=n,$$\nand no two of $a,b,c$ are both equal to 2. We call such a profile admissible."
+    },
+    "preprints/PAPER_II/01_manuscript/profiles_es.md": {
+      "sha256": "c981ef4e6caed2ac17058d5826ac6ca0f344c28d4b5a4536cb3f96f164121715",
+      "displays": [
+        "399484a1ba8787b23c547a9ae26f989e82f778bff3ba94042e7694c0e2af76c2",
+        "690d3857f83bd4eae19b078ed2caccf89baa5de7dd115537f886b9198b28d8ed",
+        "454695e68a2ec3886ff7db4e26801e35b6d32578e4111ac3b92cfe6a657a8806",
+        "87589534db58eea394af1e7bd0a188536759bb57cae878c945c14901ad800590",
+        "dc9c5ee572c6a347ef3ad2a25550d9dc957c100e11fa83952419bed0eaffe5c0",
+        "97291c96e2cc53430fb95c1393ab4036548787646cc419e401cd8e6ea6c7aa89",
+        "739c50e851285414b690f93800db507a3e1d2cf7b8f00b997b3c690b0d421b07",
+        "d0f08e047029c9ad0a86c78917fee5c254a0cd458efd9072cb65872d9765fa69",
+        "2ca5ef21b5dd7ae1bb9bea7e22192afbe1dde97c5f100292930c90aa8b63e56e",
+        "997550bb3460bb8243abea126c59152363c00c9e7e4066f59258dc3e4c7fcd4e",
+        "7e0d757a87af7629c56f572ef515927c5251e68ff255f7442f4db057210b22bf",
+        "0efc0b6c270ca567c772a133c390baafd6c17be731477e2e69779fa84b397f2f"
+      ],
+      "normalized_displays": [
+        "n\\equiv1,3\\pmod6,\\qquada^2+b^2+c^2-ab-ac-bc=n",
+        "\\binoma2+\\binomb2+\\binomc2=n(n-1)/6",
+        "n=x^2+xy+y^2,\\qquad3a=n-2x-y,\\quadb=a+x,\\quadc=b+y",
+        "(ua+vb+wc,\\;ub+vc+wa,\\;uc+va+wb)",
+        "E(p)=\\bigl(p(p-2)/3,\\p(p+1)/3,\\p(p+1)/3\\bigr)",
+        "\\begin{gathered}C\\equiv0\\pmod2,\\quadA<C,\\quadA<B,\\quadB-ATEXT,\\quadB-A\\ge3,\\\\6(C-A-1)\\leC,\\quad6C\\le7A,\\quad6h\\leB,\\quadB+5\\leh+C.\\end{gathered}",
+        "a=12k^2+14k+4,\\quadb=a+2,\\quadc=12k^2+20k+9",
+        "12k^2-46k-8\\ge0,\\qquad24k^2-44k-103\\ge0",
+        "[a-(6k+2)]+2(3k+1)=a",
+        "\\frac{a(a-1)}{a+t}=a-t-1+\\frac{t(t+1)}{a+t}",
+        "2e(H-x)\\lea(c-1)-2s-2(a-3)\\lea(c-3)",
+        "2e(S)-a(|S|-1)\\let(t+3-a)\\le0"
+      ],
+      "main_statement": "**Teorema 1.** Sean $a,b,c$ enteros positivos y $n=a+b+c$. Existe un sistema triple de Steiner con una 3-bicoloración estricta de tamaños de clase $a,b,c$ si y solo si\n$$n\\equiv1,3\\pmod6,\\qquad a^2+b^2+c^2-ab-ac-bc=n,$$\ny no hay dos entradas iguales a 2. Llamaremos admisible a un perfil que cumpla estas condiciones."
+    },
+    "preprints/PAPER_I/05_formalization/companion_en.md": {
+      "sha256": "a721fdb6085945ce566b88dd2d9c933881c656eb427def9865485c78377a09af",
+      "displays": [],
+      "normalized_displays": []
+    },
+    "preprints/PAPER_I/05_formalization/companion_es.md": {
+      "sha256": "5a12db84f4fd8e3eb3542fd24d97d1e158fad6fde5457493a70339bd79404f1c",
+      "displays": [],
+      "normalized_displays": []
+    },
+    "preprints/PAPER_II/05_formalization/companion_en.md": {
+      "sha256": "a721fdb6085945ce566b88dd2d9c933881c656eb427def9865485c78377a09af",
+      "displays": [],
+      "normalized_displays": []
+    },
+    "preprints/PAPER_II/05_formalization/companion_es.md": {
+      "sha256": "5a12db84f4fd8e3eb3542fd24d97d1e158fad6fde5457493a70339bd79404f1c",
+      "displays": [],
+      "normalized_displays": []
+    }
+  }
+}

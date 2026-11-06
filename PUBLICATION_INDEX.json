@@ -1,0 +1,28 @@
+{
+  "edition": "1.0",
+  "papers": [
+    {
+      "id": 23987251,
+      "title": "The exact block-type spectrum in the Colbourn–Dinitz–Rosa problem",
+      "doi": "10.5281/zenodo.23987251",
+      "directory": "preprints/PAPER_I",
+      "version": "1.0",
+      "title_es": "El espectro exacto de tipos de bloque en el problema de Colbourn–Dinitz–Rosa",
+      "record_url": "https://zenodo.org/records/23987251"
+    },
+    {
+      "id": 23987256,
+      "title": "A proof of the Colbourn–Dinitz–Rosa conjecture",
+      "doi": "10.5281/zenodo.23987256",
+      "directory": "preprints/PAPER_II",
+      "version": "1.0",
+      "title_es": "Una demostración de la conjetura de Colbourn–Dinitz–Rosa",
+      "record_url": "https://zenodo.org/records/23987256"
+    }
+  ],
+  "shared_source_sha256": "20bdbe78c88b2ebdd44daa7fe15355ce121430b0bd6e85e13951edc60472f5c9",
+  "distribution": "First public preprint edition",
+  "date": "2026-11-06",
+  "repository": "https://github.com/jtraverso/cdr-steiner-preprints",
+  "license": "CC-BY-4.0"
+}

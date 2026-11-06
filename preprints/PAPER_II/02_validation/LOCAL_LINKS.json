@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "status": "PASS",
+  "links": [
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_en.md",
+      "target": "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_I/01_manuscript/spectrum_en.pdf",
+      "status": "PASS_VERSIONED_REPOSITORY_PATH"
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_en.md",
+      "target": "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_II/02_validation/finite_grid.csv",
+      "status": "PASS_VERSIONED_REPOSITORY_PATH"
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_en.md",
+      "target": "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_II/05_formalization/companion_en.pdf",
+      "status": "PASS_VERSIONED_REPOSITORY_PATH"
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_en.md",
+      "target": "figures/pairing_en.png",
+      "status": "PASS_LOCAL"
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_es.md",
+      "target": "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_I/01_manuscript/spectrum_es.pdf",
+      "status": "PASS_VERSIONED_REPOSITORY_PATH"
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_es.md",
+      "target": "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_II/02_validation/finite_grid.csv",
+      "status": "PASS_VERSIONED_REPOSITORY_PATH"
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_es.md",
+      "target": "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_II/05_formalization/companion_es.pdf",
+      "status": "PASS_VERSIONED_REPOSITORY_PATH"
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_es.md",
+      "target": "figures/pairing_es.png",
+      "status": "PASS_LOCAL"
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_en.md",
+      "target": "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/archives/CDR_shared_Lean_source_7643193.zip",
+      "status": "PASS_VERSIONED_REPOSITORY_PATH"
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_en.md",
+      "target": "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/EXISTING_BUILD.json",
+      "status": "PASS_VERSIONED_REPOSITORY_PATH"
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_en.md",
+      "target": "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/live_axioms.txt",
+      "status": "PASS_VERSIONED_REPOSITORY_PATH"
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_es.md",
+      "target": "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/archives/CDR_shared_Lean_source_7643193.zip",
+      "status": "PASS_VERSIONED_REPOSITORY_PATH"
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_es.md",
+      "target": "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/EXISTING_BUILD.json",
+      "status": "PASS_VERSIONED_REPOSITORY_PATH"
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_es.md",
+      "target": "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/live_axioms.txt",
+      "status": "PASS_VERSIONED_REPOSITORY_PATH"
+    }
+  ],
+  "external_online_status": "Not inferred from local link checks"
+}

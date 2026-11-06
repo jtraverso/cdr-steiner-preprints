@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "scope": "Editorial link and rendering checks only. No general audit or Lean build repeated.",
+  "base_commit": "33b6cd05f6989ba93dab96cd9942422b29082b04",
+  "documents": [
+    {
+      "source": "preprints/PAPER_I/01_manuscript/spectrum_en.md",
+      "pdf": "108421306a2eee9a5295892304380c56136264cbecb3a28e68417624e7964d43",
+      "printed_destinations": 18,
+      "supplemental_references": [
+        "S1"
+      ],
+      "changed_pages": [
+        1,
+        15,
+        16
+      ]
+    },
+    {
+      "source": "preprints/PAPER_I/01_manuscript/spectrum_es.md",
+      "pdf": "592a6365fd67505d2453bbe40ccd44b7f07ea01a3eef76b56f25ef5855c1fd14",
+      "printed_destinations": 18,
+      "supplemental_references": [
+        "S1"
+      ],
+      "changed_pages": [
+        1,
+        16
+      ]
+    },
+    {
+      "source": "preprints/PAPER_I/05_formalization/companion_en.md",
+      "pdf": "32e5bdc6f8db2904ef1e57b70171982ddaf27b510478c2955ab0a9582aec580c",
+      "printed_destinations": 7,
+      "supplemental_references": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "changed_pages": [
+        1,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "source": "preprints/PAPER_I/05_formalization/companion_es.md",
+      "pdf": "22feb6570b6419b20475567814c33e00e070361ab9717ab8d923890da4df3d32",
+      "printed_destinations": 7,
+      "supplemental_references": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "changed_pages": [
+        1,
+        3,
+        7
+      ]
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_en.md",
+      "pdf": "5d72c167d37b49bd17299c8b11bd565b195acddffc8c9a44d113e5a95b3d807c",
+      "printed_destinations": 16,
+      "supplemental_references": [
+        "S1",
+        "S2"
+      ],
+      "changed_pages": [
+        1,
+        12
+      ]
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_es.md",
+      "pdf": "8565ae26e83e6223c2eb2426e333c043c60e257cc340ffc4358fef608f2b2044",
+      "printed_destinations": 16,
+      "supplemental_references": [
+        "S1",
+        "S2"
+      ],
+      "changed_pages": [
+        1,
+        13
+      ]
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_en.md",
+      "pdf": "32e5bdc6f8db2904ef1e57b70171982ddaf27b510478c2955ab0a9582aec580c",
+      "printed_destinations": 7,
+      "supplemental_references": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "changed_pages": [
+        1,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_es.md",
+      "pdf": "22feb6570b6419b20475567814c33e00e070361ab9717ab8d923890da4df3d32",
+      "printed_destinations": 7,
+      "supplemental_references": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "changed_pages": [
+        1,
+        3,
+        7
+      ]
+    }
+  ]
+}

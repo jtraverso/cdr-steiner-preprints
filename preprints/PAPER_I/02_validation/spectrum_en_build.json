@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "md": "35601c79196f92fd28e04d5dbd792865551a38b30106c829686a67f0030465ce",
+  "tex": "70cd5ef5bb87b4ee3e7741e2cac116d333e1c126e0b3ee07d42cc8f27764b471",
+  "pdf": "108421306a2eee9a5295892304380c56136264cbecb3a28e68417624e7964d43",
+  "layout_issues": [],
+  "compile_passes": 2,
+  "engine": "Tectonic",
+  "log": "02_validation/compiler_logs/spectrum_en.log",
+  "log_sha256": "da535b67d6da249f5936dcf7e083a996847863ad75f19e75fee11d92f5a23ab4",
+  "output_pdf": "spectrum_en.pdf"
+}

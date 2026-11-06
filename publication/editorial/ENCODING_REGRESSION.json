@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "baseline": "0a28b1ad68bd1216117c7d00074ca6debe33d185",
+  "original_corrupted_files": [
+    {
+      "file": "PUBLICATION_INDEX.json",
+      "baseline_sha256": "c707326a57f5f0348e366f4e4739801b951f3eba9f794cb2cd3dfd8331fb7f87",
+      "encoding_guard_rejects": true
+    },
+    {
+      "file": "BILINGUAL_PARITY.json",
+      "baseline_sha256": "6cfe6eebc6167333ccb4aa91054fd2fd2df48914deed40406e3183128308067e",
+      "encoding_guard_rejects": true
+    },
+    {
+      "file": "EDITORIAL_REPORT.md",
+      "baseline_sha256": "46d2da3d29ab3b99aadfeb544eea0997ac8cc3c89f5fe18e2708aa28c141af01",
+      "encoding_guard_rejects": true
+    }
+  ],
+  "unit_tests": 4,
+  "coverage": [
+    "Three reported corruption patterns",
+    "JSON-escaped corruption",
+    "Invalid UTF-8",
+    "Correct bilingual Unicode"
+  ],
+  "active_text_result": {
+    "status": "PASS",
+    "text_files": 103,
+    "json_strings": 3530,
+    "scope": "Active publication text; unchanged archives, archived audit transcripts and compiler logs excluded."
+  },
+  "both_verifiers_invoke_guard": true
+}

@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "source_revision": "7643193",
+  "documents": [
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_en.md",
+      "sha256": "04c6fcc891c9c886730bd928baaf2d051c18e3b37f10c414314c0dd2b597ada9"
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_es.md",
+      "sha256": "d2ffed6edbf89dee5a765fe405de37e82ad2e622788f3d97de0cf3c8e6045509"
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_en.md",
+      "sha256": "436f9d16e2edd9dee8bfd6784dc73ef6b75d026ea8129bf85a8bda136e184664"
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_es.md",
+      "sha256": "f730e595918f8e209ecdadbb383a3f4969094792a9ddb62aa53b6011e36b9092"
+    }
+  ],
+  "proof_status": "Theorem 6.2 explicitly has a complete formal proof; the remaining proof map distinguishes written arguments and named dependencies."
+}

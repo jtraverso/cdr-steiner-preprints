@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite this preprint using the following metadata."
+title: "A proof of the Colbourn–Dinitz–Rosa conjecture"
+version: "1.0"
+doi: "10.5281/zenodo.23987256"
+date-released: "2026-11-06"
+url: "https://github.com/jtraverso/cdr-steiner-preprints/tree/v1.0/preprints/PAPER_II"
+authors:
+  - family-names: "Traverso Gianini"
+    given-names: "Juan Pablo"
+    orcid: "https://orcid.org/0009-0003-6068-4096"
+preferred-citation:
+  type: unpublished
+  title: "A proof of the Colbourn–Dinitz–Rosa conjecture"
+  year: 2026
+  version: "1.0"
+  url: "https://github.com/jtraverso/cdr-steiner-preprints/tree/v1.0/preprints/PAPER_II"
+  authors:
+    - family-names: "Traverso Gianini"
+      given-names: "Juan Pablo"

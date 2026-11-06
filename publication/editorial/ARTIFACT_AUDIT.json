@@ -1,0 +1,773 @@
+{
+  "status": "PASS",
+  "version": "1.0",
+  "documents": [
+    {
+      "source": "preprints/PAPER_I/01_manuscript/spectrum_en.md",
+      "markdown_sha256": "35601c79196f92fd28e04d5dbd792865551a38b30106c829686a67f0030465ce",
+      "tex_sha256": "70cd5ef5bb87b4ee3e7741e2cac116d333e1c126e0b3ee07d42cc8f27764b471",
+      "pdf_sha256": "108421306a2eee9a5295892304380c56136264cbecb3a28e68417624e7964d43",
+      "pages": 16,
+      "display_count": 19,
+      "render_sha256": "5fb0c045f95748bfc24b315933963a03f33a88b967b9e672e9747431d7f28b68",
+      "page_renders": [
+        {
+          "page": 1,
+          "sha256": "879d38917ebe3301706168bd7a0ab26dbc1c91e5e9cfa1f92c3218d70ee27438",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 2,
+          "sha256": "ab37d7cdfa49f799539a6e581c9cd9c3aaf92a12c86c1194f61e6e5086f54591",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 3,
+          "sha256": "d715c90c00c938b36843ab3ff7936c6c2ac6c1c91d02d6e2861ef0c456730348",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 4,
+          "sha256": "6f0c2ed3c39bb086a80e2a3ae7c9508d39a62175047be2e52431d8c46decfb73",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 5,
+          "sha256": "f47f6deadd40d020973e39ea83e4269e74e1b24f0298072dd29032208ca31b5d",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 6,
+          "sha256": "f7a869d0bf8093e731a3a9c7392949e24b1a35d19d99c9aa85f4a0be7ac37c43",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 7,
+          "sha256": "d9c0b6f76fa72906184288fa1c79c7acaab160128a82d822a17b41c7e444e0bb",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 8,
+          "sha256": "591a80d24cb4e9b52288fc43e635899673beb9b6b1000e6d811a49d256d9e15e",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 9,
+          "sha256": "6e26efa8a29576cc93cae4f14fc85f4d401fedba767ad5a6379d1fe5e046682f",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 10,
+          "sha256": "9efe1998891aad986a4ad209c95fae2e669df1cd9594678fd5546d0d50d49d86",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 11,
+          "sha256": "cc9387a591c243f6841ad6789175065ae5d2c1c6234d9ffc56e91c7e836be8e8",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 12,
+          "sha256": "86836d6d0eaa118aa245956916ce9f2eb0345f1748813cdc3f1f4981f4f46871",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 13,
+          "sha256": "1c6501eb0997fb37a6dd535bdc7eba82acfb3c3ea6c083b1cb0fb79b7a6c6bcf",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 14,
+          "sha256": "6f07079a6fa45592175f71456daea2ddfee76fc2180caadaca8c36ed33a0ac2f",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 15,
+          "sha256": "bc23bc74fee37ffc25e5f1ecdcf6d1da1fd640b045dc56e28c95755ba864e937",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 16,
+          "sha256": "0e465938634c8bdeda753b50f5c2267bb3c0a04ef60245dea477be819dc4be9f",
+          "width": 893,
+          "height": 1263
+        }
+      ],
+      "layout_issues": [],
+      "compile_passes": 2,
+      "printed_reference_urls": {
+        "status": "PASS",
+        "count": 18,
+        "urls": [
+          "https://doi.org/10.5281/zenodo.23867836",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_II/01_manuscript/profiles_en.pdf",
+          "https://doi.org/10.37236/1457",
+          "https://cs.uwaterloo.ca/~dstinson/papers/bicoloring.pdf",
+          "https://ajc.maths.uq.edu.au/pdf/59/ajc_v59_p107.pdf",
+          "https://arxiv.org/abs/1807.05770",
+          "https://intlpress.com/site/pub/files/_fulltext/journals/joc/2019/0010/0002/JOC-2019-0010-0002-a005.pdf",
+          "https://arxiv.org/abs/2606.31143",
+          "https://doi.org/10.1093/imamat/9.1.23",
+          "https://doi.org/10.4153/CJM-1975-122-4",
+          "https://doi.org/10.4153/CJM-1978-077-9",
+          "https://doi.org/10.4007/annals.2024.200.3.4",
+          "https://doi.org/10.1007/BF01215371",
+          "https://doi.org/10.1002/rsa.20487",
+          "https://doi.org/10.4171/JEMS/779",
+          "https://github.com/jtraverso/certo-math",
+          "https://github.com/morluto/jacobian",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_I/05_formalization/companion_en.pdf"
+        ],
+        "method": "Printed bibliography text and exact external PDF URI annotations"
+      }
+    },
+    {
+      "source": "preprints/PAPER_I/01_manuscript/spectrum_es.md",
+      "markdown_sha256": "3168d96d331d40822b2a5a3c1721785ccd177065bb378f02d656b5cef33bcb0a",
+      "tex_sha256": "88925e5e9d3cbadd33c2e5fbd47df7d2ead45f6ccba0538937508515bc3a6037",
+      "pdf_sha256": "592a6365fd67505d2453bbe40ccd44b7f07ea01a3eef76b56f25ef5855c1fd14",
+      "pages": 16,
+      "display_count": 19,
+      "render_sha256": "482a7cfec109d394b9c82d9511066b1dc25a5a8c46656abcfebeb87019e057ed",
+      "page_renders": [
+        {
+          "page": 1,
+          "sha256": "4e8dd8536b9481e5cdab76446b28175b956d53b29bd67928ac182fd5bed50e10",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 2,
+          "sha256": "15eef485e755b046a1e2c1e5b5bcef1a683de479a7fd240ec96605e41b9c8038",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 3,
+          "sha256": "9e71c4729181b54eb3270d810986a80c85e9eb6261b11a948a6d4ef605b62437",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 4,
+          "sha256": "434dd49adf2b6a3da36686645f0e67269cf2b191cdd8fd16886010f928e8aed2",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 5,
+          "sha256": "b890e7c92af7055051c908d55c12488dd8c87bcd3b4b25b8a94dd01d3300960b",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 6,
+          "sha256": "4fa0ab3d75a820f25e00d8e75ab5911b9c5d453b70e95b6481ebbf419c327347",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 7,
+          "sha256": "c849e25856afb74568ce6cb12e55cde489eda9ea5e95e24f84bd8787a77ce11a",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 8,
+          "sha256": "98010a8dc0bf654d32dc5e7635cebba1ecf8be7a57eb8c41515f4c8cfc01b8b1",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 9,
+          "sha256": "80a9b8556eb95e2a920e4c3c57c6dd5b740405c8ebe252e2a3a834cd2d7c7a16",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 10,
+          "sha256": "802581fd671eddbb05328eb95bc020ccac79583f61b990b91c29a423111c37bc",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 11,
+          "sha256": "cf75a195485b045c6b3a5442c8abba9d775597913f6cf6262b1ee7e05a7f4309",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 12,
+          "sha256": "37d8f8cdfe84c8eb64ac27c59ee5b9021aca61ee695524158788c87e1aa9d4f0",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 13,
+          "sha256": "932b0b0ccf7bdd1f8c55ec464319a1f9f5890df774c00f856eac24f4449d909f",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 14,
+          "sha256": "a55c554090bcb8ebe44bff74bb9d4bb9dfe2512a51bd2c02ebf137a0604cdc61",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 15,
+          "sha256": "d2328cbbe66a0853ce3e2a3a1b8128e6b51f100e20b49fc11509a70aa4e436ab",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 16,
+          "sha256": "fe687c0e5a3808bd94f8728526b919588ada9208b202542dce52733f4a06bc4a",
+          "width": 893,
+          "height": 1263
+        }
+      ],
+      "layout_issues": [],
+      "compile_passes": 2,
+      "printed_reference_urls": {
+        "status": "PASS",
+        "count": 18,
+        "urls": [
+          "https://doi.org/10.5281/zenodo.23867836",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_II/01_manuscript/profiles_es.pdf",
+          "https://doi.org/10.37236/1457",
+          "https://cs.uwaterloo.ca/~dstinson/papers/bicoloring.pdf",
+          "https://ajc.maths.uq.edu.au/pdf/59/ajc_v59_p107.pdf",
+          "https://arxiv.org/abs/1807.05770",
+          "https://intlpress.com/site/pub/files/_fulltext/journals/joc/2019/0010/0002/JOC-2019-0010-0002-a005.pdf",
+          "https://arxiv.org/abs/2606.31143",
+          "https://doi.org/10.1093/imamat/9.1.23",
+          "https://doi.org/10.4153/CJM-1975-122-4",
+          "https://doi.org/10.4153/CJM-1978-077-9",
+          "https://doi.org/10.4007/annals.2024.200.3.4",
+          "https://doi.org/10.1007/BF01215371",
+          "https://doi.org/10.1002/rsa.20487",
+          "https://doi.org/10.4171/JEMS/779",
+          "https://github.com/jtraverso/certo-math",
+          "https://github.com/morluto/jacobian",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_I/05_formalization/companion_es.pdf"
+        ],
+        "method": "Printed bibliography text and exact external PDF URI annotations"
+      }
+    },
+    {
+      "source": "preprints/PAPER_I/05_formalization/companion_en.md",
+      "markdown_sha256": "7ea65485924c8857dacd4b6f24d13635df3688ff1f3876d1235f95034c08f8d1",
+      "tex_sha256": "7b9f7692368b840c3e4a71918e34e567f573a0f49fa9f4dbce5969bf4254655d",
+      "pdf_sha256": "32e5bdc6f8db2904ef1e57b70171982ddaf27b510478c2955ab0a9582aec580c",
+      "pages": 7,
+      "display_count": 0,
+      "render_sha256": "26cf36e2a92f9a21cfb6415473536b0cf9f7d40fa25e5aaa89f6f2bf21b478eb",
+      "page_renders": [
+        {
+          "page": 1,
+          "sha256": "d8373d779d11b4849b6a4253f886f40721840cf65e3de3ec674bd2d04168354c",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 2,
+          "sha256": "76cf319b91f529e80b07f00ea0994809a9319a499a0f8b9211fe2246c5bdb115",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 3,
+          "sha256": "561f9901346261c2f2f9d309ae320a1756087211d7d0027569e332d334ce9214",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 4,
+          "sha256": "b96c7edd1b4ebc729e83694f76ae05430699639b6339b03d19d8f9c18801b5c0",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 5,
+          "sha256": "f3b3f42f5eb561f452c90c89e56b81e678e2cf56e2812a510cbbdf9c64358691",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 6,
+          "sha256": "c6f8c079ba49700a388e6c4744166b716fdef5f6dad4699b4af80261e5279e60",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 7,
+          "sha256": "ea325731a004cc3f83f568eb4b70870e034968f5e927d6b2003ef7fddfc15a43",
+          "width": 893,
+          "height": 1263
+        }
+      ],
+      "layout_issues": [],
+      "compile_passes": 2,
+      "printed_reference_urls": {
+        "status": "PASS",
+        "count": 7,
+        "urls": [
+          "https://doi.org/10.37236/1457",
+          "https://doi.org/10.5281/zenodo.23867836",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/archives/CDR_shared_Lean_source_7643193.zip",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/EXISTING_BUILD.json",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/live_axioms.txt",
+          "https://github.com/jtraverso/plantholt-overfull-criterion/tree/f8900944da7743b1facd771139c9ebdbfd8aaa28",
+          "https://palomar-registry.org/entry?id=PALOMAR-2026-11-06-000002&version=1"
+        ],
+        "method": "Printed bibliography text and exact external PDF URI annotations"
+      }
+    },
+    {
+      "source": "preprints/PAPER_I/05_formalization/companion_es.md",
+      "markdown_sha256": "cc524c03bcd79b5de05b514edac9228b87e979cb94c73cbf7003a0c7b5a5a0d9",
+      "tex_sha256": "2d041e4de32e205e5137bd34d2bbab9f233ebf77b1bd5f7ff272a4dda1e45d47",
+      "pdf_sha256": "22feb6570b6419b20475567814c33e00e070361ab9717ab8d923890da4df3d32",
+      "pages": 7,
+      "display_count": 0,
+      "render_sha256": "ff52e0cb07f93de25f4564bfd3317017f2990c29f723262f08af83c5cd55f9d6",
+      "page_renders": [
+        {
+          "page": 1,
+          "sha256": "22fddb219ffe6bb11d75a4899cd08db70e61a6173a21a0fd0067e338c7bb8580",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 2,
+          "sha256": "fe7c8f2e1442a1ea4820e6b8e633dac1f35713b5e88c4b092772df3d418e2768",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 3,
+          "sha256": "57901ad81c16ed3f7001d33cb86d455c805419c0822760baa8505c015ec33277",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 4,
+          "sha256": "3a4d33a0880895a3bc35cfd9b33c7aaf697573caa51747b96db35927fbe4ed1c",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 5,
+          "sha256": "9e1bcf65a0ed0ec60799be17ddc1e72ac0b9ddab4cba435dda18d0e2285365b4",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 6,
+          "sha256": "cd18a3e524b14cc555bfff5ce1346fc5a652da3be7ab60299fe84948f8aed01b",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 7,
+          "sha256": "ee87f4c4ac77b6e003337ae9062c09db09b1ab5b73531958e45651fab55a56df",
+          "width": 893,
+          "height": 1263
+        }
+      ],
+      "layout_issues": [],
+      "compile_passes": 2,
+      "printed_reference_urls": {
+        "status": "PASS",
+        "count": 7,
+        "urls": [
+          "https://doi.org/10.37236/1457",
+          "https://doi.org/10.5281/zenodo.23867836",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/archives/CDR_shared_Lean_source_7643193.zip",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/EXISTING_BUILD.json",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/live_axioms.txt",
+          "https://github.com/jtraverso/plantholt-overfull-criterion/tree/f8900944da7743b1facd771139c9ebdbfd8aaa28",
+          "https://palomar-registry.org/entry?id=PALOMAR-2026-11-06-000002&version=1"
+        ],
+        "method": "Printed bibliography text and exact external PDF URI annotations"
+      }
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_en.md",
+      "markdown_sha256": "ad0df69c1c41782753df53875095f543c92b01c62db556663b0a236f8924cd55",
+      "tex_sha256": "2c731b6de045e70cbf1bbfc400488ba988a018b9bd521557737bfef4a2d1b434",
+      "pdf_sha256": "5d72c167d37b49bd17299c8b11bd565b195acddffc8c9a44d113e5a95b3d807c",
+      "pages": 12,
+      "display_count": 14,
+      "render_sha256": "c05b546d2b5fae2b56909b83839ffc6a51a065285364b9163d98da494fb85715",
+      "page_renders": [
+        {
+          "page": 1,
+          "sha256": "8373efefc883a80754330771a5eb38164fe5950977aa3dcb26a5f9c500492356",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 2,
+          "sha256": "af3f573a7decd3cd04a3ea571d34637401f10a1295414bf2f939ecce540b047a",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 3,
+          "sha256": "1984047a61a4ed8637473121d8d7b7eb15bd19922da72876a2c81b377e4c52a9",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 4,
+          "sha256": "43a2c8dbc6f25c3ff3dd1acd43a49f096a5edd7c1b3028036fda6f9742569fac",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 5,
+          "sha256": "d13c314a39f2517d92c7d608dfd1e93ef42d36497fcfb6e6cd02e47f8b745768",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 6,
+          "sha256": "1d12483824fd78974d5f9fdb955b33ff536f4b59dc113fc38fc690874e4afd67",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 7,
+          "sha256": "3527f143f5b17a49de85494f54524d8e3991d88126ad8d720b64112f7b53797a",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 8,
+          "sha256": "67a270df8583df87813fa6d9aa0212c62e8140c5f1b1869ebfdc59b9a0d2a0ca",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 9,
+          "sha256": "90b8b226fd0c8a429177361314eff4962b59e4d4d8e5bdf86a3e2ab9a4130008",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 10,
+          "sha256": "ced244b33a7094809f01a310a90b380073eba5b5bb3cd878158c4a8770741ae8",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 11,
+          "sha256": "b0fdf290acea4ec1d779ade772d89c88bc0f4ba1ec9e92729626ad8eabf9e8a0",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 12,
+          "sha256": "c3a245aee66271c4cd2689f3b9758beef519e5c75ed29d7726294ea48fbbe849",
+          "width": 893,
+          "height": 1263
+        }
+      ],
+      "layout_issues": [],
+      "compile_passes": 2,
+      "printed_reference_urls": {
+        "status": "PASS",
+        "count": 16,
+        "urls": [
+          "https://doi.org/10.37236/1457",
+          "https://cs.uwaterloo.ca/~dstinson/papers/bicoloring.pdf",
+          "https://doi.org/10.1112/S0024609301008785",
+          "https://doi.org/10.2298/AADM130827019G",
+          "https://doi.org/10.1093/imamat/9.1.23",
+          "https://doi.org/10.1112/plms/s3-50.2.193",
+          "https://doi.org/10.1137/21M1432776",
+          "https://doi.org/10.1002/jgt.20013",
+          "https://doi.org/10.1016/S0095-8956(03)00073-X",
+          "https://www.sciencedirect.com/science/article/pii/S0012365X07005237",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_I/01_manuscript/spectrum_en.pdf",
+          "https://doi.org/10.5281/zenodo.23867836",
+          "https://github.com/jtraverso/certo-math",
+          "https://github.com/morluto/jacobian",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_II/02_validation/finite_grid.csv",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_II/05_formalization/companion_en.pdf"
+        ],
+        "method": "Printed bibliography text and exact external PDF URI annotations"
+      }
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/profiles_es.md",
+      "markdown_sha256": "787926a0eaef10c5ea749f7df7cca68ba17da5d02470293238797e45d1492f70",
+      "tex_sha256": "f66ec26648d4a71dfb57589917a6ffa474cd103756a2dc65721cc4435a0e7d63",
+      "pdf_sha256": "8565ae26e83e6223c2eb2426e333c043c60e257cc340ffc4358fef608f2b2044",
+      "pages": 13,
+      "display_count": 14,
+      "render_sha256": "aa1d9ca14a0dfac1b32e571d49d20bcc189acc5db1b85a7c4bd91c40151e2937",
+      "page_renders": [
+        {
+          "page": 1,
+          "sha256": "cfe9fda4c6c32803ead2bb1c2c566e5cb45db4c955110153fbd67c8c3aa8d781",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 2,
+          "sha256": "64c8c04506aa3714dd949b7a785b2c9e021e163ff88c173329821eb5452578b9",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 3,
+          "sha256": "78c4974008d141879fcf3f73a90fe4875af291126d170fda9cc030004b6dbdb0",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 4,
+          "sha256": "028d25450f30e4e3bac6b569ed41a92e276d314578dcdef0bb28f0e5a52caa1b",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 5,
+          "sha256": "6ec44b9632ee192d9578bdcb934e3214f640b57d8f9d73287e0bcc63c60d11ae",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 6,
+          "sha256": "e013ccf7712199e3339e63b9e353fa16e7f0fc073947dccbc5b6fd743eb77d20",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 7,
+          "sha256": "4b3e12b2e2a89cb0de69f440cdcbc2bea351f90abb0f5245533bd09ac493d5c2",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 8,
+          "sha256": "208fd6f4ce07209e29436fb853d0795e34e8c3534d9a70419c68132500f8ea16",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 9,
+          "sha256": "c5f8edf57e4b748632f8857b175bbf014c65c0aa7848c62423f47a0adcd1dde5",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 10,
+          "sha256": "d85f9a84f8316831f8a36cd63ae59ac964e85f4b8afcaa431d1864e225b8104a",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 11,
+          "sha256": "7bc2675233aee5c3516e9412bc467db9ba0c2c0a6cba735df6ff90656dc7248c",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 12,
+          "sha256": "93dd999ca5b39bb67d64cda79d56204fd9f2f18230048238d8d481cc517accad",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 13,
+          "sha256": "41ece87bf1d09836832ae8eb3d37ac36d8054219958e4ea8ab32079cbb56b14f",
+          "width": 893,
+          "height": 1263
+        }
+      ],
+      "layout_issues": [],
+      "compile_passes": 2,
+      "printed_reference_urls": {
+        "status": "PASS",
+        "count": 16,
+        "urls": [
+          "https://doi.org/10.37236/1457",
+          "https://cs.uwaterloo.ca/~dstinson/papers/bicoloring.pdf",
+          "https://doi.org/10.1112/S0024609301008785",
+          "https://doi.org/10.2298/AADM130827019G",
+          "https://doi.org/10.1093/imamat/9.1.23",
+          "https://doi.org/10.1112/plms/s3-50.2.193",
+          "https://doi.org/10.1137/21M1432776",
+          "https://doi.org/10.1002/jgt.20013",
+          "https://doi.org/10.1016/S0095-8956(03)00073-X",
+          "https://www.sciencedirect.com/science/article/pii/S0012365X07005237",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_I/01_manuscript/spectrum_es.pdf",
+          "https://doi.org/10.5281/zenodo.23867836",
+          "https://github.com/jtraverso/certo-math",
+          "https://github.com/morluto/jacobian",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_II/02_validation/finite_grid.csv",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/preprints/PAPER_II/05_formalization/companion_es.pdf"
+        ],
+        "method": "Printed bibliography text and exact external PDF URI annotations"
+      }
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_en.md",
+      "markdown_sha256": "7ea65485924c8857dacd4b6f24d13635df3688ff1f3876d1235f95034c08f8d1",
+      "tex_sha256": "7b9f7692368b840c3e4a71918e34e567f573a0f49fa9f4dbce5969bf4254655d",
+      "pdf_sha256": "32e5bdc6f8db2904ef1e57b70171982ddaf27b510478c2955ab0a9582aec580c",
+      "pages": 7,
+      "display_count": 0,
+      "render_sha256": "26cf36e2a92f9a21cfb6415473536b0cf9f7d40fa25e5aaa89f6f2bf21b478eb",
+      "page_renders": [
+        {
+          "page": 1,
+          "sha256": "d8373d779d11b4849b6a4253f886f40721840cf65e3de3ec674bd2d04168354c",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 2,
+          "sha256": "76cf319b91f529e80b07f00ea0994809a9319a499a0f8b9211fe2246c5bdb115",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 3,
+          "sha256": "561f9901346261c2f2f9d309ae320a1756087211d7d0027569e332d334ce9214",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 4,
+          "sha256": "b96c7edd1b4ebc729e83694f76ae05430699639b6339b03d19d8f9c18801b5c0",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 5,
+          "sha256": "f3b3f42f5eb561f452c90c89e56b81e678e2cf56e2812a510cbbdf9c64358691",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 6,
+          "sha256": "c6f8c079ba49700a388e6c4744166b716fdef5f6dad4699b4af80261e5279e60",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 7,
+          "sha256": "ea325731a004cc3f83f568eb4b70870e034968f5e927d6b2003ef7fddfc15a43",
+          "width": 893,
+          "height": 1263
+        }
+      ],
+      "layout_issues": [],
+      "compile_passes": 2,
+      "printed_reference_urls": {
+        "status": "PASS",
+        "count": 7,
+        "urls": [
+          "https://doi.org/10.37236/1457",
+          "https://doi.org/10.5281/zenodo.23867836",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/archives/CDR_shared_Lean_source_7643193.zip",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/EXISTING_BUILD.json",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/live_axioms.txt",
+          "https://github.com/jtraverso/plantholt-overfull-criterion/tree/f8900944da7743b1facd771139c9ebdbfd8aaa28",
+          "https://palomar-registry.org/entry?id=PALOMAR-2026-11-06-000002&version=1"
+        ],
+        "method": "Printed bibliography text and exact external PDF URI annotations"
+      }
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/companion_es.md",
+      "markdown_sha256": "cc524c03bcd79b5de05b514edac9228b87e979cb94c73cbf7003a0c7b5a5a0d9",
+      "tex_sha256": "2d041e4de32e205e5137bd34d2bbab9f233ebf77b1bd5f7ff272a4dda1e45d47",
+      "pdf_sha256": "22feb6570b6419b20475567814c33e00e070361ab9717ab8d923890da4df3d32",
+      "pages": 7,
+      "display_count": 0,
+      "render_sha256": "ff52e0cb07f93de25f4564bfd3317017f2990c29f723262f08af83c5cd55f9d6",
+      "page_renders": [
+        {
+          "page": 1,
+          "sha256": "22fddb219ffe6bb11d75a4899cd08db70e61a6173a21a0fd0067e338c7bb8580",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 2,
+          "sha256": "fe7c8f2e1442a1ea4820e6b8e633dac1f35713b5e88c4b092772df3d418e2768",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 3,
+          "sha256": "57901ad81c16ed3f7001d33cb86d455c805419c0822760baa8505c015ec33277",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 4,
+          "sha256": "3a4d33a0880895a3bc35cfd9b33c7aaf697573caa51747b96db35927fbe4ed1c",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 5,
+          "sha256": "9e1bcf65a0ed0ec60799be17ddc1e72ac0b9ddab4cba435dda18d0e2285365b4",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 6,
+          "sha256": "cd18a3e524b14cc555bfff5ce1346fc5a652da3be7ab60299fe84948f8aed01b",
+          "width": 893,
+          "height": 1263
+        },
+        {
+          "page": 7,
+          "sha256": "ee87f4c4ac77b6e003337ae9062c09db09b1ab5b73531958e45651fab55a56df",
+          "width": 893,
+          "height": 1263
+        }
+      ],
+      "layout_issues": [],
+      "compile_passes": 2,
+      "printed_reference_urls": {
+        "status": "PASS",
+        "count": 7,
+        "urls": [
+          "https://doi.org/10.37236/1457",
+          "https://doi.org/10.5281/zenodo.23867836",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/archives/CDR_shared_Lean_source_7643193.zip",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/EXISTING_BUILD.json",
+          "https://github.com/jtraverso/cdr-steiner-preprints/blob/v1.0/publication/audit/live_axioms.txt",
+          "https://github.com/jtraverso/plantholt-overfull-criterion/tree/f8900944da7743b1facd771139c9ebdbfd8aaa28",
+          "https://palomar-registry.org/entry?id=PALOMAR-2026-11-06-000002&version=1"
+        ],
+        "method": "Printed bibliography text and exact external PDF URI annotations"
+      }
+    }
+  ],
+  "full_page_render_count": 85
+}

@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "source_revision": "76431935a1d61dbd7d512f32c941e37de38f6ba0",
+  "default_target": "CDRBicolour",
+  "library_globs": [
+    "CDRBicolour",
+    "CDRBicolour.+"
+  ],
+  "root_import_count": 185,
+  "root_imports_refined_completion": true,
+  "root_imports_spectrum": true,
+  "archived_build_jobs": 10331,
+  "fresh_lean_build": false,
+  "new_formal_code": false,
+  "recorded_intersection_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "trust_boundary": "All-order endpoints retain the 49 recorded native decision axioms; the exact spectrum and prescribed intersection do not use them."
+}
