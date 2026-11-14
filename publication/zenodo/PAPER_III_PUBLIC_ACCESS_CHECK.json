@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-11-14T21:54:08.145745+00:00",
+  "record": "https://zenodo.org/records/24201563",
+  "authentication_used": false,
+  "files": [
+    {
+      "filename": "prescribed_en.pdf",
+      "public_download": "PASS",
+      "sha256": "70bc7d4dc895687439d67c43ace338455d8e8efe718ec40f539097c61ea12476",
+      "bytes": 256561
+    },
+    {
+      "filename": "prescribed_es.pdf",
+      "public_download": "PASS",
+      "sha256": "8ded4072a0ae86c34fa7ee6bef7d92557ee28489182d1bd4205b5b1034af18e0",
+      "bytes": 260891
+    },
+    {
+      "filename": "CDRIII_Lean_v1.0.zip",
+      "public_download": "PASS",
+      "sha256": "08dcee5b5d67d00d1f561988e8c716c57c92d250ca54270f3d417429fb52e649",
+      "bytes": 8436736
+    },
+    {
+      "filename": "CDR_Paper_III_preprint_1.0.zip",
+      "public_download": "PASS",
+      "sha256": "5c1a75d18ca3015ed8eb0e3eb9f55e0796cce633f562c2cef3e4fc2742c8402a",
+      "bytes": 31325152
+    },
+    {
+      "filename": "CDR_Paper_III_preprint_1.0.zip.sha256",
+      "public_download": "PASS",
+      "sha256": "a59ac72cfb89ce03157f072f0ad1a95c60436faac5b378a0659111a2855e3991",
+      "bytes": 98
+    },
+    {
+      "filename": "companion_en.pdf",
+      "public_download": "PASS",
+      "sha256": "e4c1ba734c04d42e4601c8a0511bb6c818376e1dd91f71ee4823194d74ad9e11",
+      "bytes": 47030
+    },
+    {
+      "filename": "companion_es.pdf",
+      "public_download": "PASS",
+      "sha256": "cde4ff876324d8914c7b3dbd9904c742b1ae12b339288ab0269119a1f48b8c62",
+      "bytes": 47748
+    }
+  ]
+}

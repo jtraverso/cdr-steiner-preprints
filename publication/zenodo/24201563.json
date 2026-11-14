@@ -1,0 +1,18 @@
+{
+  "id": 24201563,
+  "doi": "10.5281/zenodo.24201563",
+  "record_url": "https://zenodo.org/records/24201563",
+  "submitted": true,
+  "state": "done",
+  "version": "1.0",
+  "files": {
+    "prescribed_en.pdf": "3567538811b248bb41d6acfcc2728c46",
+    "prescribed_es.pdf": "3f9bd1b9617e2969fa55e5cabc039b9e",
+    "companion_en.pdf": "8c203c5a23a3c5aaaa39f62b8c08503a",
+    "companion_es.pdf": "c6fe1bc0759b0af53dd9f20b17cad719",
+    "CDRIII_Lean_v1.0.zip": "08508e6344babb3aa684f6177e84cd66",
+    "CDR_Paper_III_preprint_1.0.zip": "6644ec11447d34144fa9eb37c82c5d0f",
+    "CDR_Paper_III_preprint_1.0.zip.sha256": "78d5cb7824961a6fb0e83c1a32b6b827"
+  },
+  "license": "CC-BY-4.0"
+}

@@ -22,6 +22,7 @@ This repository contains the first public preprint edition and its supporting do
 |---|---|
 | Paper I, exact spectrum | [10.5281/zenodo.23987251](https://doi.org/10.5281/zenodo.23987251) |
 | Paper II, conjecture | [10.5281/zenodo.23987256](https://doi.org/10.5281/zenodo.23987256) |
+| Paper III, prescribed types and abundance | [10.5281/zenodo.24201563](https://doi.org/10.5281/zenodo.24201563) |
 
 BKLS is publicly registered as [PALOMAR-2026-11-06-000002 v1](https://palomar-registry.org/entry?id=PALOMAR-2026-11-06-000002&version=1), at the same source revision used by the frozen dependency. See the [public registration record](publication/audit/BKLS_PALOMAR.json).
 
@@ -29,8 +30,10 @@ Supplementary references [S1], [S2], etc. print the resource addresses in each P
 
 The articles, companion and original figures are available under [CC BY 4.0](LICENSE.md). The Lean sources retain their upstream licenses.
 
-[Download Papers I–II release v1.0](https://github.com/jtraverso/cdr-steiner-preprints/releases/tag/v1.0) · [Publication receipts and public-access verification](publication/zenodo/). Both Zenodo records are published.
+[Download Papers I–II release v1.0](https://github.com/jtraverso/cdr-steiner-preprints/releases/tag/v1.0) · [Publication receipts and public-access verification](publication/zenodo/). All three Zenodo records are published.
 
 Paper III extends the series to prescribed interior matrices for fixed numbers of colors, sparse completion, optimal leading counting and Pasch diversity. [Paper III package](preprints/PAPER_III/README.md) · [DOI](https://doi.org/10.5281/zenodo.24201563). Its source-bound reconstruction and release audit are checked by `python scripts/verify_cdr_iii.py`.
 
 [Download Paper III release](https://github.com/jtraverso/cdr-steiner-preprints/releases/tag/paper-iii-v1.0).
+
+[Paper III publication receipts and unauthenticated download checks](publication/zenodo/PAPER_III_PUBLIC_ACCESS_CHECK.json).
