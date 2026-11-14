@@ -1,0 +1,61 @@
+name = "cdr_prescribed_bicolorings"
+version = "0.3.0"
+requiresModuleSystem = true
+defaultTargets = ["CDRIII"]
+
+[leanOptions]
+relaxedAutoImplicit = false
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "c55e6e786f49471c72fbddbec5415808896aec1e"
+
+[[lean_lib]]
+name = "CDRIII"
+globs = ["CDRIII"]
+
+[[lean_lib]]
+name = "BaranyaiLib"
+globs = ["BaranyaiLib.+"]
+
+[[lean_lib]]
+name = "CDRBicolour"
+globs = ["CDRBicolour.+"]
+
+[[lean_lib]]
+name = "CountingCone"
+globs = ["CountingCone.+"]
+
+[[lean_lib]]
+name = "GaleHoffmanLib"
+globs = ["GaleHoffmanLib.+"]
+
+[[lean_lib]]
+name = "GaleHoffmanSolution"
+globs = ["GaleHoffmanSolution"]
+
+[[lean_lib]]
+name = "LeanLab"
+globs = ["LeanLab.+"]
+
+[[lean_lib]]
+name = "LeanPool"
+globs = ["LeanPool.+"]
+
+[[lean_lib]]
+name = "PartitionedTriangleAbsorption"
+globs = ["PartitionedTriangleAbsorption", "PartitionedTriangleAbsorption.+"]
+
+[[lean_lib]]
+name = "RequestProject"
+globs = ["RequestProject.+"]
+
+[[lean_lib]]
+name = "ThreeSquaresLib"
+globs = ["ThreeSquaresLib.+"]
+
+[[lean_lib]]
+name = "rml"
+globs = ["rml.+"]

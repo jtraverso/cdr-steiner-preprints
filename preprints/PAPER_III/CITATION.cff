@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Prescribed block types and abundance in bicolored Steiner triple systems"
+type: article
+version: "1.0"
+date-released: 2026-11-14
+doi: 10.5281/zenodo.24201563
+repository-code: https://github.com/jtraverso/cdr-steiner-preprints
+authors:
+  - family-names: Traverso Gianini
+    given-names: Juan Pablo
+    orcid: https://orcid.org/0009-0003-6068-4096
+license: CC-BY-4.0
+abstract: >-
+  Exact sparse completion, sharp leading counting and Pasch diversity for
+  prescribed interior block-type matrices, with eventual existence for
+  every fixed number of colors at least four. Preprint 1.0.

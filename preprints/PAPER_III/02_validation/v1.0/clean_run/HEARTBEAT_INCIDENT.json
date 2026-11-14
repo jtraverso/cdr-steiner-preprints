@@ -1,0 +1,15 @@
+{
+  "incident": "Native driver's heartbeat thread terminated on Windows atomic file replacement",
+  "last_original_heartbeat": "2026-11-14T01:36:16.463695+00:00",
+  "observed_utc": "2026-11-14T01:45:31Z",
+  "exception": "PermissionError: [WinError 5] Access denied replacing status.tmp with status.json",
+  "status_file_read_only": false,
+  "likely_cause": "Concurrent reader holding the destination without delete sharing; no permanent read-only attribute found",
+  "driver_pid": 37100,
+  "main_process_alive_confirmed": true,
+  "new_module_objects_confirmed_after_last_heartbeat": true,
+  "build_restarted_for_this_incident": false,
+  "mathematical_sources_changed": false,
+  "mitigation": "Separate retrying LIVE_HEARTBEAT observer verifies the actual driver's PID and creation time, object count and log timestamp. Stop polling status.json until the driver exits to avoid interfering with its stage-transition writes.",
+  "final_build_and_axiom_result": "PENDING"
+}

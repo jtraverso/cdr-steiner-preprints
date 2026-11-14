@@ -16,3 +16,8 @@ publication/zenodo/*.json -text
 
 # Compiler transcripts are verbatim evidence, including their whitespace.
 preprints/**/compiler_logs/** -text -whitespace
+
+# Paper III documents and evidence retain their audited byte identities.
+preprints/PAPER_III/** -text
+scripts/verify_cdr_iii.py -text
+scripts/verify_package.py -text

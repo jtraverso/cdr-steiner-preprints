@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite checks supplementing the written universal proofs; no Lean rebuild",
+  "checks": [
+    "12 rational incidence inversions on four class-size triples",
+    "27-pair trade identity and unit type change",
+    "Wilson local weight identities",
+    "admissible congruences below 10000",
+    "uniform geometric-profile endpoint inequalities",
+    "four-color rational margin constants",
+    "150 residual-balance identities"
+  ],
+  "manuscript_sha256": {
+    "en": "8fe2c404e9900540470302c2227a12f43f01207b7ddb3960b1e840f3122f6004",
+    "es": "a009dbd9a27d559be38c39a6f9ed9027286d58b36d178f164b95e3fcef51cb95"
+  }
+}

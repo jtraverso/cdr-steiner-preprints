@@ -1,0 +1,28 @@
+{
+  "status": "PASS_SOURCE_REVIEW_FREEZE",
+  "version": "1.0",
+  "archive": "preprints/PAPER_III/05_formalization/CDRIII_Lean_v1.0.zip",
+  "archive_sha256": "08dcee5b5d67d00d1f561988e8c716c57c92d250ca54270f3d417429fb52e649",
+  "archive_bytes": 8436736,
+  "archive_entries": 1389,
+  "verified_entry_hashes": 1388,
+  "dependency_modules": 1305,
+  "aggregate": "CDRIII",
+  "axiom_check": "checks/Axioms.lean",
+  "toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "mathlib_revision": "c55e6e786f49471c72fbddbec5415808896aec1e",
+  "mathematical_sources_unchanged": true,
+  "axioms": {
+    "CDRBicolour.PaperIII.bicolourable_eventually_unconditional": "propext, Classical.choice, Quot.sound",
+    "CDRBicolour.KBicolor.kbicolour_completion_types_exact": "propext, Classical.choice, Quot.sound",
+    "CDRBicolour.KBicolor.optimal_prescribed_type_count_of_three_le": "propext,\n Classical.choice,\n Quot.sound",
+    "CDRBicolour.KBicolor.kbicolour_types_exact_many_pasch_counts": "propext,\n Classical.choice,\n Quot.sound"
+  },
+  "fresh_full_rebuild": "PASS_PROJECT_SOURCES_PINNED_EXTERNAL_CACHE",
+  "evidence_scope": "Isolated clean project reconstruction, four endpoint axiom queries, unchanged source and final configuration manifests, object hashes",
+  "private_review_repository": "https://github.com/jtraverso/cdr-iii-prescribed-review",
+  "official_location": "https://github.com/jtraverso/cdr-steiner-preprints/tree/main/preprints/PAPER_III",
+  "doi": "10.5281/zenodo.24201563",
+  "doi_status": "PUBLICATION_AUTHORIZED",
+  "public_release": "AUTHORIZED"
+}

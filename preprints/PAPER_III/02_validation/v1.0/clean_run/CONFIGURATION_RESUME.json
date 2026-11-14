@@ -1,0 +1,13 @@
+{
+  "reason": "Restore original provider elaboration options and increase the resource budget; see BUILD_CONFIGURATION_FIX.json",
+  "previous_threads": 4,
+  "new_threads": 4,
+  "stopped_process_tree": 26976,
+  "absence_of_surviving_build_processes_verified": true,
+  "sources_validated": 1307,
+  "same_run_cache_artifacts_validated": 7094,
+  "project_modules_retained": 443,
+  "mathematical_sources_changed": false,
+  "previous_attempt_exit_explained": "The build reported configuration errors (unknown implicit fk and heartbeats exhaustion); it was deliberately stopped after diagnosis. Raw failed log retained as build_attempt4.log.",
+  "configuration_preflight_exit_code": 0
+}

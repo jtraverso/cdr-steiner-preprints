@@ -1,0 +1,10 @@
+note: using only cached resource files
+note: Running TeX ...
+note: Rerunning TeX because "companion_en.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\nw\cdr-prescribed-bicolorings\preprints\PAPER_III\02_validation\v1.0\typeset\companion_en\companion_en.pdf` (45.927734375 KiB)
+note: Writing `C:\nw\cdr-prescribed-bicolorings\preprints\PAPER_III\02_validation\v1.0\typeset\companion_en\companion_en.aux` (3.5078125 KiB)
+note: Writing `C:\nw\cdr-prescribed-bicolorings\preprints\PAPER_III\02_validation\v1.0\typeset\companion_en\companion_en.log` (25.14453125 KiB)
+warning: companion_en.tex:141: Underfull \hbox (badness 2080) in paragraph at lines 140--141
+warning: companion_en.tex:141: Underfull \hbox (badness 2080) in paragraph at lines 140--141
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.

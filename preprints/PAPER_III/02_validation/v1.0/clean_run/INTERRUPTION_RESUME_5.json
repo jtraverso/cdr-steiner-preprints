@@ -1,0 +1,15 @@
+{
+  "reason": "Process tree absent; stale heartbeat at 2026-11-14T06:52:34Z; no terminal build error in retained log; external termination cause not established",
+  "resumed_at": "2026-11-14T08:14:55.918330+00:00",
+  "absence_of_surviving_build_processes_verified": true,
+  "sources_validated": 1307,
+  "configuration_hashes_validated": {
+    "lakefile.toml": "4f0214fc9149b4f15022845c51393c2ea0fd0883068049aed1d081c7e91921a2",
+    "lake-manifest.json": "35dcc0276fa303e30d8612ad9732b4489e7b23aefc662c8753c9e10162f915ec",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47"
+  },
+  "same_run_artifacts_hashed_and_reread": 15145,
+  "project_modules_retained": 947,
+  "mathematical_sources_changed": false,
+  "cache_policy": "Only objects produced in this clean reconstruction; Lake revalidates dependency traces"
+}

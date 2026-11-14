@@ -1,0 +1,11 @@
+{
+  "observer_pid": 1664,
+  "heartbeat": "2026-11-14T02:01:27.601750+00:00",
+  "driver_pid": 37100,
+  "driver_alive": false,
+  "driver_creation_time": 134390929557764905,
+  "compiled_project_modules": 443,
+  "build_log_last_write_utc": "2026-11-14T02:00:22.167417+00:00",
+  "status_file_policy": "Do not poll status.json while the native driver writes it; its original heartbeat thread hit a Windows sharing error.",
+  "scope": "Live process/progress observation, not a build PASS certificate"
+}

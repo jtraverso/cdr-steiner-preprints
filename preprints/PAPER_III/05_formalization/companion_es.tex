@@ -1,0 +1,158 @@
+% Adapted from the author's public Erdos Paper IV v1.23 series_template.tex.
+% Layout provenance is recorded in 02_validation; the Markdown is semantic authority.
+\documentclass[spanish,11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf,BoldItalicFont=lmroman10-bolditalic.otf]
+\setsansfont{lmsans10-regular.otf}[BoldFont=lmsans10-bold.otf]
+\setmonofont{lmmono10-regular.otf}[Scale=MatchLowercase]
+\usepackage{amsmath,amssymb}
+\providecommand{\mathscr}{\mathcal}
+\usepackage[spanish,es-noshorthands,es-tabla]{babel}
+\usepackage{microtype,parskip}
+\usepackage{longtable,booktabs,array,calc}
+\usepackage{xcolor,xurl}
+\usepackage{hyperref,bookmark}
+\usepackage{etoolbox,needspace}
+\setcounter{secnumdepth}{-\maxdimen}
+\setlength{\emergencystretch}{3em}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\newcounter{none}
+\AtBeginEnvironment{longtable}{\Needspace{8\baselineskip}\small}
+\pretocmd{\section}{\Needspace{5\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{7\baselineskip}}{}{}
+\pretocmd{\subsubsection}{\Needspace{6\baselineskip}}{}{}
+\urlstyle{same}
+
+\usepackage{graphicx}
+\providecommand{\pandocbounded}[1]{#1}
+
+\usepackage{float}
+\hypersetup{pdftitle={Companion de formalización: tipos de bloque prescritos y abundancia},pdfauthor={Juan Pablo Traverso Gianini},pdflang={es},colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\title{Companion de formalización: tipos de bloque prescritos y abundancia}
+\author{Juan Pablo Traverso Gianini\\\small Investigador independiente, Santiago, Chile\\\small \href{mailto:jtraverso@gmail.com}{jtraverso@gmail.com}\\\small \href{https://orcid.org/0009-0003-6068-4096}{ORCID: 0009-0003-6068-4096}}
+\date{}\begin{document}\raggedbottom\maketitle
+\textbf{Paper III. Bicoloraciones de sistemas triples de Steiner.}\\
+\textbf{Preprint 1.0 --- 14 de noviembre de 2026.}\\
+DOI: \textbf{10.5281/zenodo.24201563}.
+
+\subsection{1. Alcance y enunciados}\label{alcance-y-enunciados}
+
+Este companion documenta el árbol de pruebas seleccionado para CDR III. No es todo el árbol de investigación. El manuscrito contiene los argumentos matemáticos, incluidas las pruebas técnicas de los Apéndices A--D. Este documento explica sus interfaces formales, la procedencia de las fuentes y la evidencia de verificación.
+
+El módulo conjunto \texttt{CDRIII.\allowbreak{}lean} importa públicamente los cuatro módulos de la tabla. Por tanto, importarlo permite usar las cuatro declaraciones. Sus enunciados literales están en \texttt{THEOREM\_\allowbreak{}STATEMENTS.\allowbreak{}md}, en este mismo directorio, y también se pueden leer en las fuentes.
+
+{\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Teorema del manuscrito
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Declaración exacta
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Módulo que la define
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1.1 & \texttt{CDRBicolour.\allowbreak{}KBicolor.\allowbreak{}kbicolour\_\allowbreak{}completion\_\allowbreak{}types\_\allowbreak{}exact} & \texttt{CDRBicolour.\allowbreak{}KBicolor.\allowbreak{}Completion\allowbreak{}Exact} \\
+1.2 & \texttt{CDRBicolour.\allowbreak{}KBicolor.\allowbreak{}optimal\_\allowbreak{}prescribed\_\allowbreak{}type\_\allowbreak{}count\_\allowbreak{}of\_\allowbreak{}three\_\allowbreak{}le} & \texttt{CDRBicolour.\allowbreak{}KBicolor.\allowbreak{}Prescribed\allowbreak{}Counting.\allowbreak{}Optimal\allowbreak{}Prescribed} \\
+1.3 & \texttt{CDRBicolour.\allowbreak{}KBicolor.\allowbreak{}kbicolour\_\allowbreak{}types\_\allowbreak{}exact\_\allowbreak{}many\_\allowbreak{}pasch\_\allowbreak{}counts} & \texttt{CDRBicolour.\allowbreak{}KBicolor.\allowbreak{}Exact\allowbreak{}Types\allowbreak{}Pasch} \\
+1.4 & \texttt{CDRBicolour.\allowbreak{}Paper\allowbreak{}III.\allowbreak{}bicolourable\_\allowbreak{}eventually\_\allowbreak{}unconditional} & \texttt{CDRBicolour.\allowbreak{}Paper\allowbreak{}III.\allowbreak{}Unconditional} \\
+\end{longtable}
+}
+
+Los enunciados y todos los archivos de pruebas Lean copiados son los de la selección de fuentes congelada. El teorema de completación exacta admite cualquier empaquetamiento permitido disperso prescrito, no solo el vacío. El teorema de conteo fija cada matriz interior compatible antes de contar los sistemas etiquetados. El teorema de Pasch conserva esa matriz exacta y proporciona cualquier cantidad finita fija de conteos distintos. El resultado aritmético prueba existencia en todo orden admisible suficientemente grande para cada cantidad fija de al menos cuatro colores; su umbral es inefectivo.
+
+La declaración de Pasch usa un margen relativo por tipo. El margen absoluto del manuscrito lo implica: de \texttt{t\_ij\ \textgreater{}=\ zeta*n\^{}2} y \texttt{c\_i*c\_j\ \textless{}=\ n\^{}2} se obtiene \texttt{2*t\_ij\ \textgreater{}=\ (2*zeta)*c\_i*c\_j}. Es una aplicación del teorema existente, no un cambio de hipótesis. Las entradas diagonales no tienen papel matemático y se toman iguales a cero en el manuscrito.
+
+\subsection{2. Significado de los objetos formales}\label{significado-de-los-objetos-formales}
+
+\texttt{ksz\ lab\ i} cuenta los vértices de color \texttt{i}. \texttt{bic\allowbreak{}F\ k} permite exactamente los multiconjuntos con dos etiquetas iguales y una distinta. El grafo subyacente de \texttt{k\allowbreak{}Host\ lab} es completo. \texttt{Is\allowbreak{}Decomposition} exige ternas permitidas, conjuntos de aristas disjuntos dos a dos y cobertura de cada arista del grafo. En el grafo completo esto es exactamente un sistema triple de Steiner bicoloreado.
+
+\texttt{k\allowbreak{}Type\allowbreak{}Count\ lab\ D\ i\ j} cuenta los bloques con color repetido \texttt{i} y color simple \texttt{j}. \texttt{exact\allowbreak{}Type\allowbreak{}Count\ lab\ tv} cuenta familias de bloques distintas sobre el conjunto finito fijo de vértices, no clases de isomorfismo. \texttt{Pasch.\allowbreak{}count\ D} cuenta subfamilias de cuatro bloques de Pasch sin orientación. La inyectividad de esa estadística sobre \texttt{Fin\ K} distingue los sistemas incluso si se olvidan sus colores.
+
+\texttt{Bicolourable\ v\ k} incluye un sistema concreto sobre \texttt{Fin\ v} y una asignación sobreyectiva de etiquetas en \texttt{Fin\ k}, con exactamente dos etiquetas por bloque. \texttt{Admissible\ v} significa residuo uno o tres módulo seis. El resultado \texttt{bicolourable\_\allowbreak{}eventually\_\allowbreak{}unconditional} no supone \texttt{Three\allowbreak{}Squares\allowbreak{}Dense} ni \texttt{Gale\allowbreak{}Int}: importa y aplica sus demostraciones.
+
+\Needspace{18\baselineskip}\subsection{3. De las pruebas escritas al árbol de fuentes}\label{de-las-pruebas-escritas-al-uxe1rbol-de-fuentes}
+
+\subsubsection{Corrección de la semilla y completación exacta}\label{correcciuxf3n-de-la-semilla-y-completaciuxf3n-exacta}
+
+\texttt{BRIRatio} demuestra una inversa acotada para tres colores; \texttt{BRIk\allowbreak{}Glue} combina las restricciones que contienen un color central. El Lema B.1 escrito da otra construcción explícita de la misma inversa acotada, separando medias y desviaciones por fila y columna. La prueba formal usa promedios finitos. Los dos argumentos tienen el mismo dominio compatible y la cota escrita no supera la constante formal. No se afirma que la nueva prosa sea una transcripción línea por línea de esa implementación.
+
+\texttt{Gen\allowbreak{}Seed} y \texttt{Residual\allowbreak{}Seed\allowbreak{}K} proporcionan la corrección por contracción después de borrar pares. Su condición de pequeñez y su cota de masas aparecen en el Lema B.2 y en (3.2). \texttt{Residual\allowbreak{}Lattice} contiene el cálculo del cociente con triángulos supervivientes del Lema B.3. \texttt{Hinge} contiene la construcción de seis vértices del Apéndice B.4. \texttt{Exact\allowbreak{}Seed\allowbreak{}K} usa coordenadas de ciclos y convexidad para recuperar masas reales exactas. \texttt{Reserved\allowbreak{}Copies} rechaza las copias que chocan con el empaquetamiento prescrito y acota cuántas se pierden. \texttt{Reserved\allowbreak{}Spectrum} cambia el número entero requerido de copias. \texttt{Completion\allowbreak{}Exact} ensambla estos hechos con la parte de T+ que controla funciones de prueba de triángulos.
+
+\subsubsection{Conteo para cada matriz prescrita}\label{conteo-para-cada-matriz-prescrita}
+
+\texttt{Target\allowbreak{}Seed\allowbreak{}Data} obtiene los datos de semilla robusta a partir de las propias hipótesis del teorema. Los módulos \texttt{Pattern} y \texttt{Wilson} construyen patrones balanceados, colocan grupos iguales en la partición y corrigen la semilla residual concreta. El Apéndice C desarrolla esta construcción, incluido un argumento de compacidad para elegir una colección finita de patrones racionales; no afirma una cota numérica efectiva para esa elección.
+
+\texttt{Reserved\allowbreak{}Core} y \texttt{Modular\allowbreak{}Residual} preparan una reserva acotada y corrigen los residuos de tipos módulo tres. \texttt{Residual\allowbreak{}Quotas} resta los conteos residuales concretos. \texttt{Hilton\allowbreak{}Exact} conserva las tres marginales de la tabla agregada en los repartos del Lema C.2. \texttt{Regular\allowbreak{}Factorizations} y \texttt{Regular\allowbreak{}Entropy} usan la cota inferior del permanente. \texttt{Group\allowbreak{}Entropy\allowbreak{}Assembly} inyecta las elecciones independientes de tablas en la familia de sistemas con matriz exacta. \texttt{Sharp\allowbreak{}Prescribed} elige el orden fijo de grupos y \texttt{Optimal\allowbreak{}Prescribed} añade la cota superior general. El resultado final incluye tres colores mediante el patrón balanceado de tres clases.
+
+\subsubsection{Diversidad de Pasch}\label{diversidad-de-pasch}
+
+\texttt{Latin\allowbreak{}Completion\allowbreak{}Replacement} y \texttt{Latin\allowbreak{}Replacement} conservan el conjunto de pares ocupado y el vector de tipos. \texttt{Pasch\allowbreak{}Partite\allowbreak{}Parity} excluye el caso de tres bloques latinos. \texttt{Latin\allowbreak{}Pasch\allowbreak{}Configuration\allowbreak{}Split} conserva los términos mixtos con uno y dos bloques. \texttt{Latin\allowbreak{}Packing\allowbreak{}Frequencies} y \texttt{Latin\allowbreak{}Mixed\allowbreak{}Average} controlan ambos con un solo promedio. \texttt{Two\allowbreak{}Torsion\allowbreak{}Products}, \texttt{Latin\allowbreak{}Intercalate\allowbreak{}Counting} y \texttt{Dyadic\allowbreak{}Latin\allowbreak{}Family} construyen tablas con conteos internos separados. \texttt{Latin\allowbreak{}Mixed\allowbreak{}Budget} hace que su brecha cúbica supere el error mixto cuadrático. Estos pasos corresponden a la sección 7, incluidas ambas codificaciones de candidatos y la comparación explícita de errores.
+
+\subsubsection{Existencia aritmética}\label{existencia-aritmuxe9tica}
+
+\texttt{Paper\allowbreak{}III.\allowbreak{}Geom} prueba el perfil límite positivo y sus cortes estrictos. \texttt{Arith} y \texttt{Arith\allowbreak{}Main} realizan el redondeo par y la reconstrucción de cuatro coordenadas. \texttt{KBicolor.\allowbreak{}Four} prueba los márgenes explícitos para cuatro colores. \texttt{Unconditional\allowbreak{}Arithmetic} usa \texttt{Three\allowbreak{}Squares\allowbreak{}Lib.\allowbreak{}Three\allowbreak{}Squares\allowbreak{}Dense\allowbreak{}Proof}, que combina la aproximación por tres cuadrados para enteros libres de cuadrados con rotaciones de cuaterniones obtenidas mediante cuatro cuadrados. \texttt{Unconditional} satisface los contratos. El Apéndice D desarrolla el argumento de cortes y flujos y la reducción para factores cuadrados; allí se enuncian y citan explícitamente los dos resultados analíticos usados. La constante inefectiva de Siegel sigue formando parte de esa dependencia.
+
+\subsubsection{Desarrollos analíticos y alcance de su verificación}\label{desarrollos-analuxedticos-y-alcance-de-su-verificaciuxf3n}
+
+El resultado aritmético es incondicional en su enunciado Lean. Esto significa que el teorema final no conserva una hipótesis de densidad en casquetes; no significa que esta revisión editorial haya reconstruido de forma independiente las pruebas analíticas. Hay que distinguir una dependencia matemática, una declaración demostrada que se importa a un entorno y la procedencia de ese entorno.
+
+{\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Resultado de entrada
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Desarrollo en el árbol seleccionado
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Función
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Tres cuadrados libres de cuadrados en casquetes & \texttt{Three\allowbreak{}Squares\allowbreak{}Lib.\allowbreak{}Duke\allowbreak{}Squarefree\allowbreak{}Proof} & Combina las cotas de Weyl por grado de \texttt{Iso\allowbreak{}Degreewise\allowbreak{}Weyl} con la cota inferior basada en Siegel de \texttt{B3\_\allowbreak{}Representation\allowbreak{}Lower} \\
+Cuatro cuadrados en casquetes para radios impares & \texttt{Three\allowbreak{}Squares\allowbreak{}Lib.\allowbreak{}Four\allowbreak{}Squares\allowbreak{}Dense\allowbreak{}Proof} & Combina \texttt{Final\allowbreak{}H2} con el conteo de representaciones de \texttt{Jacobi\allowbreak{}Count} \\
+Todos los radios congruentes con tres módulo ocho & \texttt{Three\allowbreak{}Squares\allowbreak{}Lib.\allowbreak{}Three\allowbreak{}Squares\allowbreak{}Dense\allowbreak{}Proof} & Aplica el resultado para enteros libres de cuadrados y rotaciones por cuaterniones para absorber los factores cuadrados \\
+\end{longtable}
+}
+
+El manuscrito cita a Duke (1988), Duke--Schulze-Pillot (1990), Heath-Brown (1996) y los paquetes formales correspondientes. Pommerenke se incluye como contexto histórico de la distribución en esferas y elipsoides, no como sustituto sin verificar del resultado preciso para radios impares. El Apéndice D enuncia los resultados que se usan. Esta revisión no auditó de forma independiente cada lema analítico de esos desarrollos. La documentación de \texttt{Three\allowbreak{}Squares\allowbreak{}Dense} en Lean atribuye el resultado a Duke--Schulze-Pillot (1990), mientras que el manuscrito atribuye el caso libre de cuadrados a Duke (1988) {[}17{]}, con Duke--Schulze-Pillot como contexto, y el ensamblaje para todos los radios a {[}15{]}. La fuente Lean no se modifica, para que los hashes congelados sigan siendo válidos.
+
+El Apéndice E proporciona las definiciones y los cuantificadores completos de T y de la versión de T+ para estadísticas de triángulos, correspondiente a \texttt{main\_\allowbreak{}theorem\_\allowbreak{}T\_\allowbreak{}with\_\allowbreak{}triangle\_\allowbreak{}monitors}. Sus pruebas son dependencias matemáticas externas, aunque el cierre Lean seleccionado importe sus desarrollos. El argumento de Pasch de este paper usa la parte de T+ sobre estadísticas de triángulos, seguida de una sustitución latina; no aplica la conclusión sobre Pasch de T+.
+
+\subsubsection{Notación local}\label{notaciuxf3n-local}
+
+El primo de la colocación de intercambios se denota por \(p\), el número de copias utilizables por \(s_i\) y la longitud de la cola del perfil geométrico por \(d\). El Apéndice B usa \(c_\ast\) para el tamaño mínimo de clase y \(\chi\) para la imagen de una arista en el cociente residual. El patrón racional del Apéndice C es \(v\), su reserva de vértices es \(W_\ast\) y la norma direccional al cuadrado de D.3 es \(\nu\). La sección 7 conserva \(m\) para el orden latino, usa \(\mathcal R\) para el empaquetamiento exterior y \(E_{\rm mix}\) para la cota del error mixto. El empaquetamiento exterior completado de la sección 4 es \(D_{\rm ext}\), distinto del error real de corrección \(E\). Estos nombres son locales a las pruebas escritas; las fuentes Lean usan sus propios identificadores, con las mismas constantes e hipótesis.
+
+\subsection{4. Contenido e identidad del freeze de fuentes}\label{contenido-e-identidad-del-freeze-de-fuentes}
+
+La selección contiene 1305 módulos de dependencias ajenas a Mathlib, el módulo común \texttt{CDRIII} y su archivo de consulta de axiomas. Mathlib está fijado en \texttt{c55e6e78\allowbreak{}6f49471c\allowbreak{}72fbddbe\allowbreak{}c5415808\allowbreak{}896aec1e}; Lean es \texttt{v4.\allowbreak{}35.\allowbreak{}0-rc3}. Todas las fuentes matemáticas conservan sus hashes registrados. La selección sigue las importaciones y excluye los desarrollos pendientes de descenso y espectro finito. Se incluyen las licencias de origen.
+
+El archivo \texttt{CDRIII\_\allowbreak{}Lean\_\allowbreak{}v1.\allowbreak{}0.\allowbreak{}zip} tiene SHA-256 \texttt{08dcee5b\allowbreak{}5d67d00d\allowbreak{}1f561988\allowbreak{}e8c716c5\allowbreak{}7c92d250\allowbreak{}ca54270f\allowbreak{}3d417429\allowbreak{}fb52e649}. Su manifiesto verifica cada fuente y cada archivo de evidencia incluidos. \texttt{02\_\allowbreak{}validation/\allowbreak{}v1.\allowbreak{}0/\allowbreak{}FREEZE.\allowbreak{}json} registra su identidad; \texttt{CLEAN\_\allowbreak{}REBUILD\_\allowbreak{}AUDIT.\allowbreak{}json} vincula los hashes de fuentes matemáticas y objetos con la ejecución correcta. El manifiesto general del paquete cubre los documentos por separado.
+
+\subsection{5. Reconstrucción terminada y alcance de la verificación}\label{reconstrucciuxf3n-terminada-y-alcance-de-la-verificaciuxf3n}
+
+La ejecución aislada comenzó el 13 de noviembre de 2026 desde la selección del commit \texttt{16010adb\allowbreak{}21ac0d75\allowbreak{}5d594068\allowbreak{}9ce82537\allowbreak{}399e553d}, sin objetos compilados iniciales del proyecto. Los 1306 módulos del proyecto compilaron correctamente el 14 de noviembre. Solo se copió la caché externa de Mathlib y sus dependencias con las revisiones fijadas; no se reconstruyó Mathlib desde sus fuentes. Las reanudaciones conservaron únicamente objetos producidos en esa misma reconstrucción, con comprobaciones de integridad registradas.
+
+La configuración final corresponde al commit \texttt{8756b2ef\allowbreak{}2dbe5600\allowbreak{}2617a86e\allowbreak{}97e1b16a\allowbreak{}790ae069}. Restablece las opciones originales de variables implícitas de las dos bibliotecas de absorción y aumenta el presupuesto de ejecución por pasos. CDR conserva su opción más estricta. No cambió ninguna fuente de prueba \texttt{.\allowbreak{}lean} ni ninguna hipótesis matemática. La ejecución final usó un hilo después de que \texttt{BRIUniform} fallara al asignar memoria con mayor concurrencia; ese mismo módulo, sin modificaciones, compiló después. Los intentos fallidos y los ajustes se conservan en \texttt{02\_\allowbreak{}validation/\allowbreak{}v1.\allowbreak{}0/\allowbreak{}clean\_\allowbreak{}run}.
+
+Ambos comandos terminaron correctamente: \texttt{lake\ -\/\allowbreak{}-no-cache\ -\/\allowbreak{}-fail-fast\ build\ CDRIII} y \texttt{lake\ env\ lean\ checks/\allowbreak{}Axioms.\allowbreak{}lean}. Las cuatro consultas exactas solo muestran \texttt{propext}, \texttt{Classical.\allowbreak{}choice} y \texttt{Quot.\allowbreak{}sound}. Los hashes de las 1307 fuentes Lean coinciden antes y después de la ejecución, al igual que los hashes de la configuración final. La auditoría independiente del paquete verifica los hashes de objetos y los nombres exactos de las declaraciones. Los fallos de lectura de registros en Windows se corrigieron usando UTF-8 en los verificadores; ninguno requirió recompilar Lean.
+
+Esto cierra la comprobación de reconstrucción vinculada a las fuentes. No constituye una revisión especializada independiente de cada prueba analítica importada de trabajos externos. Las reducciones escritas y las interfaces formales se revisaron dentro del alcance declarado; los cálculos de identidades finitas complementan esa revisión. La auditoría bilingüe compara las fórmulas y la numeración, y la revisión de PDF comprueba los destinos URI reales y las páginas renderizadas.
+
+\subsection{6. Reproducción y distribución}\label{reproducciuxf3n-y-distribuciuxf3n}
+
+Desde la raíz del repositorio, \texttt{python\ scripts/\allowbreak{}verify\_\allowbreak{}package.\allowbreak{}py} comprueba el paquete sellado sin modificarlo. Para una reconstrucción completa, se usa la versión fijada de Lean en \texttt{lean/\allowbreak{}}, se obtienen las dependencias fijadas de Mathlib y se ejecuta \texttt{lake\ build\ CDRIII}, seguido de \texttt{lake\ env\ lean\ checks/\allowbreak{}Axioms.\allowbreak{}lean}. Las instrucciones detalladas están en \texttt{preprints/\allowbreak{}PAPER\_\allowbreak{}III/\allowbreak{}03\_\allowbreak{}reproducibility/\allowbreak{}README.\allowbreak{}md}. Los archivos Markdown son las fuentes semánticas; los TeX y PDF son sus documentos de publicación.
+
+La ubicación oficial de este paquete es \texttt{preprints/\allowbreak{}PAPER\_\allowbreak{}III} en \url{https://github.com/jtraverso/cdr-steiner-preprints}, junto a los Papers I--II. El preprint, este companion y el archivo de fuentes Lean se depositan bajo el DOI \textbf{10.5281/zenodo.24201563}. El archivo de fuentes incluye la evidencia completa de reconstrucción vinculada a las fuentes de este preprint.
+
+\end{document}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\nw\cdr_clean_resume_memory.py", line 47, in <module>
+    found=re.findall(r"'([^']+)' depends on axioms:\s*\[([^\]]*)\]",(run/'axioms.log').read_text(),re.S)
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jtraverso\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1028, in read_text
+    return f.read()
+           ^^^^^^^^
+  File "C:\Users\jtraverso\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x9d in position 779: character maps to <undefined>

@@ -1,0 +1,41 @@
+{
+  "phase": "PASS",
+  "pid": 5764,
+  "started": "2026-11-13T22:34:01.742898+00:00",
+  "heartbeat": "2026-11-14T18:05:26.903749+00:00",
+  "source_commit": "8756b2ef2dbe56002617a86e97e1b16a790ae069",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "checks/Axioms.lean"
+  ],
+  "toolchain_exit_code": 0,
+  "threads": 1,
+  "execution_mode": "local_direct",
+  "initial_source_commit": "16010adb21ac0d755d5940689ce82537399e553d",
+  "child_pid": 37972,
+  "build_exit_code": 0,
+  "axioms_exit_code": 0,
+  "postprocessing_fix": "Explicit UTF-8 log decoding; no Lean rebuild or source edits",
+  "axiom_audits": [
+    [
+      "CDRBicolour.PaperIII.bicolourable_eventually_unconditional",
+      "propext, Classical.choice, Quot.sound"
+    ],
+    [
+      "CDRBicolour.KBicolor.kbicolour_completion_types_exact",
+      "propext, Classical.choice, Quot.sound"
+    ],
+    [
+      "CDRBicolour.KBicolor.optimal_prescribed_type_count_of_three_le",
+      "propext,\n Classical.choice,\n Quot.sound"
+    ],
+    [
+      "CDRBicolour.KBicolor.kbicolour_types_exact_many_pasch_counts",
+      "propext,\n Classical.choice,\n Quot.sound"
+    ]
+  ],
+  "sources_unchanged": true
+}

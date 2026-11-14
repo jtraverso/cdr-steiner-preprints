@@ -1,0 +1,30 @@
+{
+  "status": "PASS_FINITE_IDENTITY",
+  "low_high_same_27_pairs": true,
+  "delta_rows_columns_order": [
+    "i",
+    "j",
+    "o"
+  ],
+  "delta": [
+    [
+      0,
+      -1,
+      1
+    ],
+    [
+      1,
+      0,
+      -1
+    ],
+    [
+      -1,
+      1,
+      0
+    ]
+  ],
+  "row_sums_zero": true,
+  "pair_sums_zero": true,
+  "two_scales": "Schematic illustration, not a numerical estimate or replacement for the convexity proof",
+  "visual_review": "PASS_FINAL_BILINGUAL_PDFS"
+}

@@ -1,0 +1,12 @@
+{
+  "reason": "Same-source same-arguments benchmark: 72.766 seconds local direct versus 135.844 seconds default runtime. Moving the remaining build to local direct execution with four workers to limit paging.",
+  "previous_threads": 6,
+  "new_threads": 4,
+  "stopped_process_tree": 24216,
+  "absence_of_surviving_build_processes_verified": true,
+  "sources_validated": 1307,
+  "same_run_cache_artifacts_validated": 5270,
+  "project_modules_retained": 329,
+  "mathematical_sources_changed": false,
+  "previous_attempt_exit_explained": "Operator stop for resource adjustment; log preserved"
+}

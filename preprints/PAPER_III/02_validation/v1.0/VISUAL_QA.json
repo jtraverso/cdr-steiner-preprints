@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "reviewed_at_utc": "2026-11-14T21:43:06.266444+00:00",
+  "scope": "All71 final pages examined in contact sheets; dense residual-quotient and freeze-identity pages additionally inspected at page resolution",
+  "pages": 71,
+  "documents": {
+    "prescribed_en": {
+      "pages": 30,
+      "pdf_sha256": "70bc7d4dc895687439d67c43ace338455d8e8efe718ec40f539097c61ea12476",
+      "md_sha256": "8fe2c404e9900540470302c2227a12f43f01207b7ddb3960b1e840f3122f6004",
+      "tex_sha256": "a56e2dd32e904ae80f17969cf5c162c78cfcf250c86321e63d4616ae39d1b660"
+    },
+    "prescribed_es": {
+      "pages": 31,
+      "pdf_sha256": "8ded4072a0ae86c34fa7ee6bef7d92557ee28489182d1bd4205b5b1034af18e0",
+      "md_sha256": "a009dbd9a27d559be38c39a6f9ed9027286d58b36d178f164b95e3fcef51cb95",
+      "tex_sha256": "499361a2fd7320db09852ff46e72d384c7f5b51536a5cbe484a786496e187c33"
+    },
+    "companion_en": {
+      "pages": 5,
+      "pdf_sha256": "e4c1ba734c04d42e4601c8a0511bb6c818376e1dd91f71ee4823194d74ad9e11",
+      "md_sha256": "3bee003a8e1f471bda279e15da10977754a9d04dac7edcfc65ed41b13816a015",
+      "tex_sha256": "19a03d2b9e800d3cbbd4f32c8712b9ea3cf7a8529476fb9e0019c1233694a6b6"
+    },
+    "companion_es": {
+      "pages": 5,
+      "pdf_sha256": "cde4ff876324d8914c7b3dbd9904c742b1ae12b339288ab0269119a1f48b8c62",
+      "md_sha256": "1f7b3f771bfaf5caea74f424ddfa5472815692668a2e28a9e4403d473d48fcd9",
+      "tex_sha256": "ebf94eb13728ac4654ca16c7edef9e6289e59689cf914c199a7fb553541c4c4c"
+    }
+  },
+  "issues": [],
+  "layout_authority": "CDR Paper II profiles_en.tex and profiles_es.tex; template hashes in ARTIFACT_BUILD.json",
+  "figures": "Circulation and scale diagrams checked in both final PDFs; corrected labels and high-to-low direction preserved"
+}

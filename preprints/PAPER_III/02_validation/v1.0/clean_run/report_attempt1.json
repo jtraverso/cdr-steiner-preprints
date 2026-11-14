@@ -1,0 +1,17 @@
+{
+  "phase": "FAILED",
+  "pid": 25180,
+  "started": "2026-11-13T22:34:01.742898+00:00",
+  "heartbeat": "2026-11-13T22:58:45.939518+00:00",
+  "source_commit": "16010adb21ac0d755d5940689ce82537399e553d",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "command": [
+    "lake",
+    "build",
+    "CDRIII"
+  ],
+  "child_pid": 33640,
+  "toolchain_exit_code": 0,
+  "build_exit_code": 1,
+  "error": "RuntimeError('build failed: 1')"
+}

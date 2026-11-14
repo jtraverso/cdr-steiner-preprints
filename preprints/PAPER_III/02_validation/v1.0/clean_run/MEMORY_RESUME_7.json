@@ -1,0 +1,16 @@
+{
+  "reason": "BRIUniform failed with std::bad_alloc; reduce LEAN_NUM_THREADS from4 to1 to reduce concurrent module memory pressure; no mathematical edits",
+  "launch_policy": "Detached hidden process; independent of unified exec session",
+  "resumed_at": "2026-11-14T11:06:06.779555+00:00",
+  "absence_of_surviving_build_processes_verified": true,
+  "sources_validated": 1307,
+  "configuration_hashes_validated": {
+    "lakefile.toml": "4f0214fc9149b4f15022845c51393c2ea0fd0883068049aed1d081c7e91921a2",
+    "lake-manifest.json": "35dcc0276fa303e30d8612ad9732b4489e7b23aefc662c8753c9e10162f915ec",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47"
+  },
+  "same_run_artifacts_hashed_and_reread": 16049,
+  "project_modules_retained": 1003,
+  "mathematical_sources_changed": false,
+  "cache_policy": "Only objects produced in this clean reconstruction; Lake revalidates dependency traces"
+}

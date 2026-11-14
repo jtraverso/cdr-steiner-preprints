@@ -1,0 +1,17 @@
+{
+  "exit_code": 0,
+  "wall_seconds": 72.76599999982864,
+  "source_sha256": "889604488a9f665db78150439a63730e023e47184ddb4334cfcd9c88c4235c3f",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j1",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "C:\\nw\\cdr-clean-20261113\\snapshot\\lean\\ThreeSquaresLib\\RootsUnitary.lean",
+    "-o",
+    "C:\\nw\\cdr-benchmark\\RootsUnitary.olean"
+  ],
+  "scope": "Isolated performance experiment; output never imported into the clean reconstruction"
+}

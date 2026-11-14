@@ -1,0 +1,601 @@
+⚠ [8958/9038] Built ThreeSquaresLib.RootsUnitary (194s)
+warning: ThreeSquaresLib/RootsUnitary.lean:12:0: 'Mathlib.Data.Complex.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Complex.Basic
+⚠ [8959/9048] Built rml.carlitz.formal_algebra (240s)
+warning: rml/carlitz/formal_algebra.lean:85:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [coeff_mul_C]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: rml/carlitz/formal_algebra.lean:131:0: 'RML.ExpSum.Carlitz.recurrence_of_generating_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: rml/carlitz/formal_algebra.lean:145:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [coeff_mul_C]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: rml/carlitz/formal_algebra.lean:178:0: 'RML.ExpSum.Carlitz.K_two_eq_of_generating_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: rml/carlitz/formal_algebra.lean:247:8: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hsum]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: rml/carlitz/formal_algebra.lean:269:0: 'RML.ExpSum.Carlitz.exists_spectral_roots_of_generating_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [8960/9055] Built ThreeSquaresLib.Lattice (252s)
+⚠ [8961/9055] Built ThreeSquaresLib.FundDom (252s)
+warning: ThreeSquaresLib/FundDom.lean:64:24: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: ThreeSquaresLib/FundDom.lean:77:26: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: ThreeSquaresLib/FundDom.lean:133:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ThreeSquaresLib/FundDom.lean:146:69: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.adjugate_fin_two, Matrix.of_apply, Matrix.cons_val', Matrix.cons_val_zero,
+    Matrix.cons_val_one, Matrix.empty_val', Matrix.cons_val_fin_one, Matrix.head_fin_const]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ThreeSquaresLib/FundDom.lean:147:4: This simp argument is unused:
+  Matrix.head_fin_const
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.adjugate_fin_two, Matrix.of_apply, Matrix.cons_val', Matrix.cons_val_zero,
+    Matrix.cons_val_one, Matrix.empty_val', Matrix.cons_val_fin_one, Matrix.head_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ThreeSquaresLib/FundDom.lean:187:22: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: ThreeSquaresLib/FundDom.lean:193:22: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+✔ [8962/9055] Built ThreeSquaresLib.GaussSum (253s)
+⚠ [8963/9055] Built rml.carlitz.dickson_finite_algebra (252s)
+warning: rml/carlitz/dickson_finite_algebra.lean:40:5: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: rml/carlitz/dickson_finite_algebra.lean:55:15: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/carlitz/dickson_finite_algebra.lean:55:27: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [h0]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: rml/carlitz/dickson_finite_algebra.lean:74:19: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/carlitz/dickson_finite_algebra.lean:75:17: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/carlitz/dickson_finite_algebra.lean:76:17: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/carlitz/dickson_finite_algebra.lean:123:23: This simp argument is unused:
+  Polynomial.nextCoeff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [etaPoly, ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: rml/carlitz/dickson_finite_algebra.lean:118:2: Unused tactic linter: `change
+  etaPoly p t (X + C (a 0)) = if e a = 0 then 0 else ZMod.stdAddChar (e a + t * (e a)⁻¹)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: rml/carlitz/dickson_finite_algebra.lean:207:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/carlitz/dickson_finite_algebra.lean:237:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/carlitz/dickson_finite_algebra.lean:282:10: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: rml/carlitz/dickson_finite_algebra.lean:317:6: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/carlitz/dickson_finite_algebra.lean:347:32: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/carlitz/dickson_finite_algebra.lean:394:24: This simp argument is unused:
+  hn
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [shiftLastEquiv, hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: rml/carlitz/dickson_finite_algebra.lean:409:24: This simp argument is unused:
+  hn
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [shiftLastEquiv, hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: rml/carlitz/dickson_finite_algebra.lean:455:17: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/carlitz/dickson_finite_algebra.lean:455:42: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/carlitz/dickson_finite_algebra.lean:501:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp at hz
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8964/9055] Built rml.stepanov.algebra (254s)
+warning: rml/stepanov/algebra.lean:205:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [8965/9055] Built ThreeSquaresLib.PrimeT (254s)
+warning: ThreeSquaresLib/PrimeT.lean:166:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: ThreeSquaresLib/PrimeT.lean:174:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+⚠ [8966/9055] Built ThreeSquaresLib.Lipschitz (254s)
+warning: ThreeSquaresLib/Lipschitz.lean:169:37: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ThreeSquaresLib/Lipschitz.lean:221:14: This simp argument is unused:
+  Complex.norm_two
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [abs_of_pos Real.pi_pos]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8967/9055] Built ThreeSquaresLib.Minkowski (294s)
+✔ [8968/9056] Built ThreeSquaresLib.Fischer (295s)
+⚠ [8969/9056] Built ThreeSquaresLib.Split (158s)
+warning: ThreeSquaresLib/Split.lean:10:0: 'Mathlib.Data.Complex.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Complex.Basic
+✔ [8970/9056] Built rml.stepanov.power_sum_spectral (198s)
+⚠ [8971/9061] Built rml.stepanov.curve_count (163s)
+warning: rml/stepanov/curve_count.lean:46:16: `Set.toFinset_setOf` has been deprecated: Use `Set.toFinset_ofPred` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵t̵o̵F̵i̵n̵s̵e̵t̵_̵s̵e̵t̵O̵f̵S̲e̲t̲.̲t̲o̲F̲i̲n̲s̲e̲t̲_̲o̲f̲P̲r̲e̲d̲
+ℹ [8972/9061] Built rml.carlitz.factor_data (207s)
+info: rml/carlitz/factor_data.lean:100:0: 'RML.ExpSum.Carlitz.factorData_left_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: rml/carlitz/factor_data.lean:101:0: 'RML.ExpSum.Carlitz.factorData_right_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8973/9061] Built ThreeSquaresLib.HInt (210s)
+warning: ThreeSquaresLib/HInt.lean:81:45: This simp argument is unused:
+  Complex.equivRealProd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Sc, Complex.measurableEquivRealProd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ThreeSquaresLib/HInt.lean:112:10: This simp argument is unused:
+  symm_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [dens, Complex.mk_eq_add_mul_I]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ThreeSquaresLib/HInt.lean:141:10: This simp argument is unused:
+  symm_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Complex.mk_eq_add_mul_I]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8974/9061] Built ThreeSquaresLib.Level (210s)
+warning: ThreeSquaresLib/Level.lean:276:8: `MeasureTheory.lintegral_finset_sum` has been deprecated: Use `MeasureTheory.lintegral_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  lintegral_finset_̵s̵S̲um
+warning: ThreeSquaresLib/Level.lean:278:6: `Measurable.ennreal_tsum` has been deprecated: Use `Measurable.tsum` from `Mathlib.MeasureTheory.Constructions.Polish.Basic` instead
+✔ [8975/9061] Built ThreeSquaresLib.Kloosterman (211s)
+⚠ [8976/9061] Built rml.weil.prime_foundation (464s)
+warning: rml/weil/prime_foundation.lean:150:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/weil/prime_foundation.lean:150:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [8977/9071] Built ThreeSquaresLib.PrimePowGauss (217s)
+warning: ThreeSquaresLib/PrimePowGauss.lean:62:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/PrimePowGauss.lean:62:65: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/PrimePowGauss.lean:63:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowGauss.lean:63:67: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowGauss.lean:80:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ThreeSquaresLib/PrimePowGauss.lean:81:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ThreeSquaresLib/PrimePowGauss.lean:82:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [8978/9073] Built rml.stepanov.auxiliary (177s)
+warning: rml/stepanov/auxiliary.lean:119:32: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: rml/stepanov/auxiliary.lean:134:32: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/stepanov/auxiliary.lean:171:28: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/stepanov/auxiliary.lean:189:8: `FiniteField.expand_card` has been deprecated: Use `FiniteField.Polynomial.expand_card` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.expand_card` to `FiniteField.Polynomial.expand_card x`).
+
+Hint: Replace the deprecated name:
+  FiniteField.P̲o̲l̲y̲n̲o̲m̲i̲a̲l̲.̲expand_card
+warning: rml/stepanov/auxiliary.lean:199:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/stepanov/auxiliary.lean:330:28: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+✔ [8979/9073] Built ThreeSquaresLib.Theta (222s)
+✔ [8980/9076] Built CDRBicolour.PaperIII.Defs (313s)
+✔ [8981/9076] Built ThreeSquaresLib.Glue1 (115s)
+⚠ [8982/9076] Built ThreeSquaresLib.BesselInt (177s)
+warning: ThreeSquaresLib/BesselInt.lean:129:12: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+
+Hint: Replace the deprecated name:
+  ofReal_norm_̵e̵q̵_̵e̵n̵o̵r̵m̵
+warning: ThreeSquaresLib/BesselInt.lean:129:36: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+
+Hint: Replace the deprecated name:
+  ofReal_norm_̵e̵q̵_̵e̵n̵o̵r̵m̵
+✔ [8983/9076] Built ThreeSquaresLib.Unimodular (163s)
+✔ [8984/9076] Built ThreeSquaresLib.DivisorBound (140s)
+ℹ [8985/9076] Built rml.carlitz.coeff_equiv (151s)
+info: rml/carlitz/coeff_equiv.lean:83:0: 'RML.ExpSum.Carlitz.coeffVector_left_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: rml/carlitz/coeff_equiv.lean:84:0: 'RML.ExpSum.Carlitz.coeffVector_right_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8986/9095] Built ThreeSquaresLib.Unfold (160s)
+warning: ThreeSquaresLib/Unfold.lean:100:12: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+
+Hint: Replace the deprecated name:
+  ofReal_norm_̵e̵q̵_̵e̵n̵o̵r̵m̵
+warning: ThreeSquaresLib/Unfold.lean:100:36: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+
+Hint: Replace the deprecated name:
+  ofReal_norm_̵e̵q̵_̵e̵n̵o̵r̵m̵
+warning: ThreeSquaresLib/Unfold.lean:106:12: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+
+Hint: Replace the deprecated name:
+  ofReal_norm_̵e̵q̵_̵e̵n̵o̵r̵m̵
+warning: ThreeSquaresLib/Unfold.lean:106:36: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+
+Hint: Replace the deprecated name:
+  ofReal_norm_̵e̵q̵_̵e̵n̵o̵r̵m̵
+warning: ThreeSquaresLib/Unfold.lean:162:67: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+
+Hint: Replace the deprecated name:
+  ofReal_norm_̵e̵q̵_̵e̵n̵o̵r̵m̵
+⚠ [8987/9097] Built ThreeSquaresLib.Weyl (175s)
+warning: ThreeSquaresLib/Weyl.lean:100:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/Weyl.lean:100:20: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/Weyl.lean:117:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/Weyl.lean:117:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+✔ [8988/9110] Built ThreeSquaresLib.Twisted (162s)
+⚠ [8989/9113] Built ThreeSquaresLib.HarmDim (172s)
+warning: ThreeSquaresLib/HarmDim.lean:65:36: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: ThreeSquaresLib/HarmDim.lean:66:60: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: ThreeSquaresLib/HarmDim.lean:68:73: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: ThreeSquaresLib/HarmDim.lean:69:23: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: ThreeSquaresLib/HarmDim.lean:72:36: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: ThreeSquaresLib/HarmDim.lean:75:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8990/9114] Built ThreeSquaresLib.PrimePowKl (173s)
+warning: ThreeSquaresLib/PrimePowKl.lean:76:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/PrimePowKl.lean:76:23: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/PrimePowKl.lean:79:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowKl.lean:79:23: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowKl.lean:92:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ThreeSquaresLib/PrimePowKl.lean:93:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ThreeSquaresLib/PrimePowKl.lean:141:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowKl.lean:142:43: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowKl.lean:167:16: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/PrimePowKl.lean:219:29: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ThreeSquaresLib/PrimePowKl.lean:232:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/PrimePowKl.lean:232:35: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/PrimePowKl.lean:233:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowKl.lean:233:47: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [8991/9114] Built rml.carlitz.extension_defs (258s)
+warning: rml/carlitz/extension_defs.lean:64:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: rml/carlitz/extension_defs.lean:81:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: rml/carlitz/extension_defs.lean:81:26: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+info: rml/carlitz/extension_defs.lean:95:0: 'RML.ExpSum.Carlitz.Kext_one_eq_kloostermanSumPrime' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8992/9114] Built rml.stepanov.parameters (264s)
+✔ [8993/9114] Built ThreeSquaresLib.ArithSums (193s)
+⚠ [8994/9114] Built rml.carlitz.factor_weight (164s)
+warning: rml/carlitz/factor_weight.lean:89:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: rml/carlitz/factor_weight.lean:100:0: 'RML.ExpSum.Carlitz.etaPoly_multiset_prod_of_monic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: rml/carlitz/factor_weight.lean:101:0: 'RML.ExpSum.Carlitz.A_eq_factorData_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8995/9114] Built ThreeSquaresLib.SmoothSum (185s)
+✔ [8996/9115] Built ThreeSquaresLib.B3_Forms (156s)
+✔ [8997/9115] Built ThreeSquaresLib.Construct (192s)
+✔ [8998/9115] Built ThreeSquaresLib.BesselClosed (169s)
+✔ [8999/9116] Built ThreeSquaresLib.TSum (170s)
+✔ [9000/9116] Built ThreeSquaresLib.ThetaMult (228s)
+⚠ [9001/9116] Built ThreeSquaresLib.PrimePowSalie (184s)
+warning: ThreeSquaresLib/PrimePowSalie.lean:43:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/PrimePowSalie.lean:43:23: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/PrimePowSalie.lean:45:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowSalie.lean:45:23: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowSalie.lean:25:83: Variable name `hk0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hk0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ThreeSquaresLib/PrimePowSalie.lean:66:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ThreeSquaresLib/PrimePowSalie.lean:67:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ThreeSquaresLib/PrimePowSalie.lean:120:23: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ThreeSquaresLib/PrimePowSalie.lean:143:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ThreeSquaresLib/PrimePowSalie.lean:144:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ThreeSquaresLib/PrimePowSalie.lean:195:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowSalie.lean:196:43: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowSalie.lean:228:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/PrimePowSalie.lean:257:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/PrimePowSalie.lean:257:35: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/PrimePowSalie.lean:258:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowSalie.lean:258:47: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowSalie.lean:280:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: ThreeSquaresLib/PrimePowSalie.lean:304:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ThreeSquaresLib/PrimePowSalie.lean:336:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+✔ [9002/9118] Built ThreeSquaresLib.B3_Hyp (171s)
+✔ [9003/9118] Built rml.stepanov.defect (131s)
+✔ [9004/9121] Built LeanLab.PNTPort.DirichletZF.SiegelSign (130s)
+✔ [9005/9121] Built LeanLab.PNTPort.DirichletZF.Growth (285s)

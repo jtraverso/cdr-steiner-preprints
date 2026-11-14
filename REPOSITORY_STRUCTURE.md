@@ -9,3 +9,5 @@ Each paper uses the same five-part publication layout:
 - `05_formalization/`: the shared bilingual formal companion and source-snapshot notes.
 
 `archives/` holds the unchanged, portable shared Lean source snapshot with its source manifest and dependency/provenance records. `publication/` holds the joint audit, editorial records, public dependency registrations and publication receipts. `scripts/` contains executable verifiers. The private/public visibility setting is operational and does not change the mathematical content of preprint 1.0.
+
+Paper III uses the same five-part layout, with its own source-only Lean freeze and source-bound clean-reconstruction evidence in `preprints/PAPER_III`. Only the first public edition is included. Run `python scripts/verify_cdr_iii.py` for its four-document release audit. Papers I–II and their shared source archive are unchanged.

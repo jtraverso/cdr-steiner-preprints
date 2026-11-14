@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-j2",
+    "-DrelaxedAutoImplicit=true",
+    "-DmaxSynthPendingDepth=3",
+    "-DmaxHeartbeats=2000000",
+    "RequestProject/S07V26/ForkModes.lean",
+    "-o",
+    "C:\\nw\\cdr-config-preflight\\ForkModes.olean"
+  ],
+  "scope": "Configuration diagnosis only; separate output is not copied into the clean build"
+}

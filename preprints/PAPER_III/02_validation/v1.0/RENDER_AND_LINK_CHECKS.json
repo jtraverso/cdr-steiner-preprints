@@ -1,0 +1,540 @@
+{
+  "prescribed_en": {
+    "pdf_sha256": "70bc7d4dc895687439d67c43ace338455d8e8efe718ec40f539097c61ea12476",
+    "tex_sha256": "a56e2dd32e904ae80f17969cf5c162c78cfcf250c86321e63d4616ae39d1b660",
+    "md_sha256": "8fe2c404e9900540470302c2227a12f43f01207b7ddb3960b1e840f3122f6004",
+    "pages": 30,
+    "bibliography_uri_annotations": "PASS",
+    "expected_bibliography_urls": 25,
+    "actual_uri_annotations": [
+      "https://arxiv.org/abs/1108.5042",
+      "https://arxiv.org/abs/1807.05770",
+      "https://doi.org/10.1002/1520-6610(2000)8:4%3C300::AID-JCD7%3E3.0.CO;2-R",
+      "https://doi.org/10.1002/rsa.20487",
+      "https://doi.org/10.1007/BF01139954",
+      "https://doi.org/10.1007/BF01215371",
+      "https://doi.org/10.1007/BF01393993",
+      "https://doi.org/10.1016/0001-8708(81)90044-X",
+      "https://doi.org/10.1515/crll.1996.481.149",
+      "https://doi.org/10.37236/1457",
+      "https://doi.org/10.4064/aa-5-2-227-257",
+      "https://doi.org/10.4153/CJM-1956-045-5",
+      "https://doi.org/10.4171/JEMS/779",
+      "https://doi.org/10.5281/zenodo.23867836",
+      "https://doi.org/10.5281/zenodo.23987251",
+      "https://doi.org/10.5281/zenodo.23987256",
+      "https://github.com/jtraverso/cdr-steiner-preprints",
+      "https://github.com/jtraverso/certo-math",
+      "https://github.com/jtraverso/four-squares-in-caps",
+      "https://grannell.net/Papers/maxpasch.pdf",
+      "https://msp.org/pjm/1957/7-2/pjm-v7-n2-p04-s.pdf",
+      "https://orcid.org/0009-0003-6068-4096",
+      "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-07-000007&version=2",
+      "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-08-000002&version=1",
+      "https://www.math.ucla.edu/~wdduke/preprints/lattice2.pdf",
+      "https://www.sciencedirect.com/science/chapter/bookseries/pii/S0304020808728895",
+      "mailto:jtraverso@gmail.com"
+    ],
+    "page_records": [
+      {
+        "page": 1,
+        "words": 389,
+        "outside_page_bounds": 0,
+        "render_sha256": "202dcc4391f2a2e0b26fb638af1bfe7476443ebd8ba97df6c0ef75237db51a27"
+      },
+      {
+        "page": 2,
+        "words": 513,
+        "outside_page_bounds": 0,
+        "render_sha256": "d0e20f9063bac9f9e1a0752c1d109a7426d537af1678e64b764a93ec10ff9d79"
+      },
+      {
+        "page": 3,
+        "words": 538,
+        "outside_page_bounds": 0,
+        "render_sha256": "aaa3dcf550d0fe5b454925beab0255e15d6437d8c309f0f09cb9a257b708799a"
+      },
+      {
+        "page": 4,
+        "words": 417,
+        "outside_page_bounds": 0,
+        "render_sha256": "f892b94cdc68c2f8d28b30d752d808089d723a35eff5f51f18634d689e528f12"
+      },
+      {
+        "page": 5,
+        "words": 510,
+        "outside_page_bounds": 0,
+        "render_sha256": "17f4dd6a648fbee3f003b433061e5cec7d2f586fdad8595b16b84e278fb0708e"
+      },
+      {
+        "page": 6,
+        "words": 512,
+        "outside_page_bounds": 0,
+        "render_sha256": "444001496e9c3e03d2813ca59fe77b06a42b95e0fef598591fff65671c92e510"
+      },
+      {
+        "page": 7,
+        "words": 511,
+        "outside_page_bounds": 0,
+        "render_sha256": "3eafd7d9acc13589101e2b514bfce0e00089cb680edc5210cd487ca401d48e73"
+      },
+      {
+        "page": 8,
+        "words": 447,
+        "outside_page_bounds": 0,
+        "render_sha256": "ce6d0fe8bf0560eb10a627271b20ba5c7fbf628e2ce0a2acd0159c52e695bb85"
+      },
+      {
+        "page": 9,
+        "words": 309,
+        "outside_page_bounds": 0,
+        "render_sha256": "64aa07df33a29e282809e7fd8284bb18569e7fa67f8531ea9060d599e176d20f"
+      },
+      {
+        "page": 10,
+        "words": 452,
+        "outside_page_bounds": 0,
+        "render_sha256": "96eb7e9f5164782839e1b0cca2dd3d87d5ce656b910ca21dd502067c8c8081d0"
+      },
+      {
+        "page": 11,
+        "words": 521,
+        "outside_page_bounds": 0,
+        "render_sha256": "29856575a8a2bbb40178fa559df2f286bb7ba2413a499cb4b6c101ab8d44eea0"
+      },
+      {
+        "page": 12,
+        "words": 370,
+        "outside_page_bounds": 0,
+        "render_sha256": "3a133c5188c97f246a356f52c23fc3d995324fe8eec215610c449bf91011c717"
+      },
+      {
+        "page": 13,
+        "words": 468,
+        "outside_page_bounds": 0,
+        "render_sha256": "7ddee039e26f29d4875117e187a2d7f92dcc7993da24cef8f63307b2f6160cfd"
+      },
+      {
+        "page": 14,
+        "words": 395,
+        "outside_page_bounds": 0,
+        "render_sha256": "953be9f60438caf4e9b491d5f9c8984bc203b10a0b228e5e116ade18684f54dd"
+      },
+      {
+        "page": 15,
+        "words": 530,
+        "outside_page_bounds": 0,
+        "render_sha256": "89e240cfa19ec8e7c48407ee86eef9f040d6ac55aed95ce783188347fae2d95d"
+      },
+      {
+        "page": 16,
+        "words": 348,
+        "outside_page_bounds": 0,
+        "render_sha256": "4a1ee776fdc444c68488a673f7279274a5ac551a5516bd9f66c4a02a174e6032"
+      },
+      {
+        "page": 17,
+        "words": 555,
+        "outside_page_bounds": 0,
+        "render_sha256": "b2f8f4c63d8db2224ea2fc82c8eff72061c574c8e26482371bd471b7198db91b"
+      },
+      {
+        "page": 18,
+        "words": 500,
+        "outside_page_bounds": 0,
+        "render_sha256": "fdfbb192a7d0dda0efe3beaefa909da6323c99b83ce8bd748ea0e41691b86e47"
+      },
+      {
+        "page": 19,
+        "words": 461,
+        "outside_page_bounds": 0,
+        "render_sha256": "9206fe8615dd9624ded75d2b89af80639dd312a5f9622a1601b8323841df02ac"
+      },
+      {
+        "page": 20,
+        "words": 652,
+        "outside_page_bounds": 0,
+        "render_sha256": "d5340ebd2fb25ad2e1018335b82213e81d107bdee6a554b748ec998282cfad24"
+      },
+      {
+        "page": 21,
+        "words": 576,
+        "outside_page_bounds": 0,
+        "render_sha256": "9d45f10d6bae34ea6e0054d9cf27926db1971ae311e4c9732dfdff16b9793835"
+      },
+      {
+        "page": 22,
+        "words": 489,
+        "outside_page_bounds": 0,
+        "render_sha256": "2aa87ccce1f065b59915c52d3f3c7e61fb1180db8eb35a3fcff5c6c077d79afb"
+      },
+      {
+        "page": 23,
+        "words": 635,
+        "outside_page_bounds": 0,
+        "render_sha256": "a45ba5d3b9c1acc37d0e76ed988b58b20dd1b15409208c88a395b795360954ef"
+      },
+      {
+        "page": 24,
+        "words": 449,
+        "outside_page_bounds": 0,
+        "render_sha256": "c1babd6ecb9dc57da89c90d04d7912ad25ef259f3e40f93d5049a32763f4142e"
+      },
+      {
+        "page": 25,
+        "words": 529,
+        "outside_page_bounds": 0,
+        "render_sha256": "29a3cfa271e74e93e7cc89ccbdde184a035f394f3ab99db0de47ef89ec9c3d81"
+      },
+      {
+        "page": 26,
+        "words": 624,
+        "outside_page_bounds": 0,
+        "render_sha256": "3524857b91309e52fdda437196dcf1934e595f9786a1601895ea7e2723589389"
+      },
+      {
+        "page": 27,
+        "words": 420,
+        "outside_page_bounds": 0,
+        "render_sha256": "0b9eaf80be07c1bee658b0168772eeafd5b733bc118356622eaebb12a1f29e6e"
+      },
+      {
+        "page": 28,
+        "words": 409,
+        "outside_page_bounds": 0,
+        "render_sha256": "c65952a5cae237ffeadd9f5f7d205b772e088b573c9a215c6fdcbf1334c9fc7a"
+      },
+      {
+        "page": 29,
+        "words": 427,
+        "outside_page_bounds": 0,
+        "render_sha256": "56d42a0f1779f6b7fb9d69388fb56dcdaab849a9ce583ed018783a6724d9cfbf"
+      },
+      {
+        "page": 30,
+        "words": 163,
+        "outside_page_bounds": 0,
+        "render_sha256": "460d878da4ea295b4434967bd04c264bc47f197072c472e8dc0cc76944f7fb68"
+      }
+    ],
+    "visual_inspection": "PASS_RENDERED_PAGE_REVIEW"
+  },
+  "prescribed_es": {
+    "pdf_sha256": "8ded4072a0ae86c34fa7ee6bef7d92557ee28489182d1bd4205b5b1034af18e0",
+    "tex_sha256": "499361a2fd7320db09852ff46e72d384c7f5b51536a5cbe484a786496e187c33",
+    "md_sha256": "a009dbd9a27d559be38c39a6f9ed9027286d58b36d178f164b95e3fcef51cb95",
+    "pages": 31,
+    "bibliography_uri_annotations": "PASS",
+    "expected_bibliography_urls": 25,
+    "actual_uri_annotations": [
+      "https://arxiv.org/abs/1108.5042",
+      "https://arxiv.org/abs/1807.05770",
+      "https://doi.org/10.1002/1520-6610(2000)8:4%3C300::AID-JCD7%3E3.0.CO;2-R",
+      "https://doi.org/10.1002/rsa.20487",
+      "https://doi.org/10.1007/BF01139954",
+      "https://doi.org/10.1007/BF01215371",
+      "https://doi.org/10.1007/BF01393993",
+      "https://doi.org/10.1016/0001-8708(81)90044-X",
+      "https://doi.org/10.1515/crll.1996.481.149",
+      "https://doi.org/10.37236/1457",
+      "https://doi.org/10.4064/aa-5-2-227-257",
+      "https://doi.org/10.4153/CJM-1956-045-5",
+      "https://doi.org/10.4171/JEMS/779",
+      "https://doi.org/10.5281/zenodo.23867836",
+      "https://doi.org/10.5281/zenodo.23987251",
+      "https://doi.org/10.5281/zenodo.23987256",
+      "https://github.com/jtraverso/cdr-steiner-preprints",
+      "https://github.com/jtraverso/certo-math",
+      "https://github.com/jtraverso/four-squares-in-caps",
+      "https://grannell.net/Papers/maxpasch.pdf",
+      "https://msp.org/pjm/1957/7-2/pjm-v7-n2-p04-s.pdf",
+      "https://orcid.org/0009-0003-6068-4096",
+      "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-07-000007&version=2",
+      "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-08-000002&version=1",
+      "https://www.math.ucla.edu/~wdduke/preprints/lattice2.pdf",
+      "https://www.sciencedirect.com/science/chapter/bookseries/pii/S0304020808728895",
+      "mailto:jtraverso@gmail.com"
+    ],
+    "page_records": [
+      {
+        "page": 1,
+        "words": 432,
+        "outside_page_bounds": 0,
+        "render_sha256": "dc3f377aa90217ec1f68846d4485ad104ca474c4d81256ffd6ffa254a8516b01"
+      },
+      {
+        "page": 2,
+        "words": 507,
+        "outside_page_bounds": 0,
+        "render_sha256": "fb2df2053a2ab827d50986f10157ff0ca708dce748e131ee9f9e6f6d85e67d79"
+      },
+      {
+        "page": 3,
+        "words": 542,
+        "outside_page_bounds": 0,
+        "render_sha256": "a2fcd1e5d073a67382b453c5249b272fd7e34f6d42ef97569540702cdbb3b843"
+      },
+      {
+        "page": 4,
+        "words": 480,
+        "outside_page_bounds": 0,
+        "render_sha256": "abdc8beab4ba954a702cf9ee6bc87aa376a80c357e2f3e8e53923b32590cacdf"
+      },
+      {
+        "page": 5,
+        "words": 510,
+        "outside_page_bounds": 0,
+        "render_sha256": "41baa020add3cba5bf653c94880602babc1f7d61230a66a75e8e06e1d585c40f"
+      },
+      {
+        "page": 6,
+        "words": 467,
+        "outside_page_bounds": 0,
+        "render_sha256": "bc0dea07dc8b47f6227ddac50122b431174e964bfb6587bfa488502e4f6d5435"
+      },
+      {
+        "page": 7,
+        "words": 606,
+        "outside_page_bounds": 0,
+        "render_sha256": "ecced5c2140b52bc5de8c4a10d279cfb95aeae02c7aebc601dbd14135ead9bb6"
+      },
+      {
+        "page": 8,
+        "words": 457,
+        "outside_page_bounds": 0,
+        "render_sha256": "c6f98528fce9a5871c5483e37fb559171d3ad09d88eab970b453960a7319012f"
+      },
+      {
+        "page": 9,
+        "words": 496,
+        "outside_page_bounds": 0,
+        "render_sha256": "5b5964e4c1a55489b11ba8e44d47efa5ebfdfd9f35d56b961ddf60090bf7371e"
+      },
+      {
+        "page": 10,
+        "words": 374,
+        "outside_page_bounds": 0,
+        "render_sha256": "76b174d63d6931e717052eeaa55389e1af218cdba28d0b141a821c3ca9095910"
+      },
+      {
+        "page": 11,
+        "words": 540,
+        "outside_page_bounds": 0,
+        "render_sha256": "7fb01b1487d22322a8660f40ee8b2ae89d8fb24edfd0727c537bf6ca613c9510"
+      },
+      {
+        "page": 12,
+        "words": 470,
+        "outside_page_bounds": 0,
+        "render_sha256": "0102efc79779dcac3bda4d8794cde104f31d8d54d8eeceaf899172facfa91d68"
+      },
+      {
+        "page": 13,
+        "words": 416,
+        "outside_page_bounds": 0,
+        "render_sha256": "169bf8b94ad7fd9297b5b21495639e5dbd4c553c84990f8005ed5a1bc82c59b6"
+      },
+      {
+        "page": 14,
+        "words": 447,
+        "outside_page_bounds": 0,
+        "render_sha256": "5c1bfe78fdbfb99e564fd70d478e8833fb3170f22e82a430eaad4bbb4619f3a9"
+      },
+      {
+        "page": 15,
+        "words": 512,
+        "outside_page_bounds": 0,
+        "render_sha256": "99db9eadb844196599bebfc30aa03c32c02d646c1ea5a7952ef8aefc6f9cac08"
+      },
+      {
+        "page": 16,
+        "words": 542,
+        "outside_page_bounds": 0,
+        "render_sha256": "ae379f35edd89767e48a8553e684e702a3c6759b486e14bac71fd44703666a1e"
+      },
+      {
+        "page": 17,
+        "words": 246,
+        "outside_page_bounds": 0,
+        "render_sha256": "afd3865c65555f270b484ae5a347195f47f94bca300b418307c696e62c0b3c1c"
+      },
+      {
+        "page": 18,
+        "words": 578,
+        "outside_page_bounds": 0,
+        "render_sha256": "78b6be7959e7456167b0d3bcbd9adc0006de8ccebf14964df741381a19d8ebe4"
+      },
+      {
+        "page": 19,
+        "words": 562,
+        "outside_page_bounds": 0,
+        "render_sha256": "8729920817b749f6069f2bbbdd51a4b373ad997803efb5c4e4d36bd547378277"
+      },
+      {
+        "page": 20,
+        "words": 516,
+        "outside_page_bounds": 0,
+        "render_sha256": "4fa7cd816c42d9564bba7af4563689c5bd1035367b415f686bac5cf9dd6c553b"
+      },
+      {
+        "page": 21,
+        "words": 552,
+        "outside_page_bounds": 0,
+        "render_sha256": "d14b06461a56568ccb4b3be75a00496cf2cc03848f3ac799afe01486b78db787"
+      },
+      {
+        "page": 22,
+        "words": 631,
+        "outside_page_bounds": 0,
+        "render_sha256": "e2018d838df18aa0fab5e597437fd3e64b73079eb5f86befbefe61365fef2d9b"
+      },
+      {
+        "page": 23,
+        "words": 522,
+        "outside_page_bounds": 0,
+        "render_sha256": "712abb753afba8b839d932bf565c6fe4205b7009486c93a87239811b47c76955"
+      },
+      {
+        "page": 24,
+        "words": 650,
+        "outside_page_bounds": 0,
+        "render_sha256": "ebf6a351b434dc4e073d21960fa8f485c645fb17b660e635e5ca9dea37e13b31"
+      },
+      {
+        "page": 25,
+        "words": 651,
+        "outside_page_bounds": 0,
+        "render_sha256": "8a5b33ad4125e502908198049a8c409b7ccb55e7ea7dbb0057a8c290705c9015"
+      },
+      {
+        "page": 26,
+        "words": 591,
+        "outside_page_bounds": 0,
+        "render_sha256": "70080fe2e8270988d53f4501dae69b232f7e82428134543b817f3c7b53ed225a"
+      },
+      {
+        "page": 27,
+        "words": 690,
+        "outside_page_bounds": 0,
+        "render_sha256": "11b86163eb782861464dd38465edefa0aaba33da16041e571e47112be7c599a2"
+      },
+      {
+        "page": 28,
+        "words": 445,
+        "outside_page_bounds": 0,
+        "render_sha256": "718700b042b6b3cfa2ffd497e673f243a6cc36046f33650734577d2c7b259a27"
+      },
+      {
+        "page": 29,
+        "words": 412,
+        "outside_page_bounds": 0,
+        "render_sha256": "cae0d33a3be88943e0db8bcf43f4cc2dd939946511f72b0fee479e575a7aac64"
+      },
+      {
+        "page": 30,
+        "words": 443,
+        "outside_page_bounds": 0,
+        "render_sha256": "61c8e6c97b52fa014ca0a9b3e83f7aec1eaa740d6e587ebea371340c56c0f8b3"
+      },
+      {
+        "page": 31,
+        "words": 326,
+        "outside_page_bounds": 0,
+        "render_sha256": "fc29f43497f4142d6989309c9a476566b0c6444037e566223089e6bdfd24ffe5"
+      }
+    ],
+    "visual_inspection": "PASS_RENDERED_PAGE_REVIEW"
+  },
+  "companion_en": {
+    "pdf_sha256": "e4c1ba734c04d42e4601c8a0511bb6c818376e1dd91f71ee4823194d74ad9e11",
+    "tex_sha256": "19a03d2b9e800d3cbbd4f32c8712b9ea3cf7a8529476fb9e0019c1233694a6b6",
+    "md_sha256": "3bee003a8e1f471bda279e15da10977754a9d04dac7edcfc65ed41b13816a015",
+    "pages": 5,
+    "bibliography_uri_annotations": "PASS",
+    "expected_bibliography_urls": 1,
+    "actual_uri_annotations": [
+      "https://github.com/jtraverso/cdr-steiner-preprints",
+      "https://orcid.org/0009-0003-6068-4096",
+      "mailto:jtraverso@gmail.com"
+    ],
+    "page_records": [
+      {
+        "page": 1,
+        "words": 261,
+        "outside_page_bounds": 0,
+        "render_sha256": "af26fbc13c5376786f2e396d4ba5cadd82d1fc244a37efb92db8ba2a8f30b242"
+      },
+      {
+        "page": 2,
+        "words": 504,
+        "outside_page_bounds": 0,
+        "render_sha256": "d5be05398f7872bca3df8d6001f7a0d571e9e7d9105b3bbab8b0f6c9894bbdcc"
+      },
+      {
+        "page": 3,
+        "words": 433,
+        "outside_page_bounds": 0,
+        "render_sha256": "4888eb4eca8b0c96e1aad866852797e537f95d22ea3cf54f6a5d356373d1a45e"
+      },
+      {
+        "page": 4,
+        "words": 490,
+        "outside_page_bounds": 0,
+        "render_sha256": "1cc989787e51d23c03c95f0d53773cf85ecc5098975fae9a91d18dc246c0a046"
+      },
+      {
+        "page": 5,
+        "words": 107,
+        "outside_page_bounds": 0,
+        "render_sha256": "7eda88d166048e31ee704a28fe7eb1ac21f2827c3824e9930f800085d24a2251"
+      }
+    ],
+    "visual_inspection": "PASS_RENDERED_PAGE_REVIEW"
+  },
+  "companion_es": {
+    "pdf_sha256": "cde4ff876324d8914c7b3dbd9904c742b1ae12b339288ab0269119a1f48b8c62",
+    "tex_sha256": "ebf94eb13728ac4654ca16c7edef9e6289e59689cf914c199a7fb553541c4c4c",
+    "md_sha256": "1f7b3f771bfaf5caea74f424ddfa5472815692668a2e28a9e4403d473d48fcd9",
+    "pages": 5,
+    "bibliography_uri_annotations": "PASS",
+    "expected_bibliography_urls": 1,
+    "actual_uri_annotations": [
+      "https://github.com/jtraverso/cdr-steiner-preprints",
+      "https://orcid.org/0009-0003-6068-4096",
+      "mailto:jtraverso@gmail.com"
+    ],
+    "page_records": [
+      {
+        "page": 1,
+        "words": 284,
+        "outside_page_bounds": 0,
+        "render_sha256": "c4393b3860939434d88cf1e9075d8ff4f7277c6ee6e2109f23e84206be4e0acf"
+      },
+      {
+        "page": 2,
+        "words": 534,
+        "outside_page_bounds": 0,
+        "render_sha256": "d33d861ad3a2564a246803d7d0216d4166c93b8c0a3f52894b0f9a5fb2516eef"
+      },
+      {
+        "page": 3,
+        "words": 431,
+        "outside_page_bounds": 0,
+        "render_sha256": "1ada8f9609ebaaeb59b90711894800941d11ada024fdc03eabf36806f1708994"
+      },
+      {
+        "page": 4,
+        "words": 526,
+        "outside_page_bounds": 0,
+        "render_sha256": "8bc3d183885e60649d043630bf1ec98281096d93e6a0cb15a520a40976144560"
+      },
+      {
+        "page": 5,
+        "words": 277,
+        "outside_page_bounds": 0,
+        "render_sha256": "9bdd01cb9eb4fe0bd5afcbac60cad715020fdae02644a4d531448d167e64685d"
+      }
+    ],
+    "visual_inspection": "PASS_RENDERED_PAGE_REVIEW"
+  }
+}

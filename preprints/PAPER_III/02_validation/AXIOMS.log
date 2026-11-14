@@ -1,0 +1,91 @@
+'CDRBicolour.PaperIII.bicolourable_eventually_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CDRBicolour.KBicolor.kbicolour_completion_types_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CDRBicolour.KBicolor.optimal_prescribed_type_count_of_three_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CDRBicolour.KBicolor.kbicolour_types_exact_many_pasch_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+CDRBicolour.PaperIII.bicolourable_eventually_unconditional {k : ℕ} (hk : 4 ≤ k) :
+  ∃ v₀, ∀ (v : ℕ), v₀ ≤ v → CDRBicolour.PaperIII.Admissible v → CDRBicolour.PaperIII.Bicolourable v k
+CDRBicolour.KBicolor.kbicolour_completion_types_exact (k : ℕ) (hk : 3 ≤ k) {δ ε : ℝ} (hδ : 0 < δ) (hδ1 : δ ≤ 1)
+  (hε : 0 < ε) :
+  ∃ γ,
+    0 < γ ∧
+      ∃ n₀,
+        ∀ (n : ℕ) (lab : Fin n → Fin k),
+          n₀ ≤ n →
+            Odd n →
+              (∀ (X : Fin k), δ * ↑n ≤ ↑(CDRBicolour.KBicolor.ksz lab X)) →
+                (∀ (X Y : Fin k), X ≠ Y → Even (CDRBicolour.KBicolor.ksz lab X * CDRBicolour.KBicolor.ksz lab Y)) →
+                  3 * ∑ X, CDRBicolour.KBicolor.ksz lab X * (CDRBicolour.KBicolor.ksz lab X - 1) = n * (n - 1) →
+                    ∀ (t : Fin k → Fin k → ℕ),
+                      (∀ (X Y : Fin k),
+                          X ≠ Y →
+                            2 * (t X Y + t Y X) = CDRBicolour.KBicolor.ksz lab X * CDRBicolour.KBicolor.ksz lab Y) →
+                        (∀ (X : Fin k),
+                            2 * ∑ Y with Y ≠ X, t X Y =
+                              CDRBicolour.KBicolor.ksz lab X * (CDRBicolour.KBicolor.ksz lab X - 1)) →
+                          (∀ (X Y : Fin k), X ≠ Y → ε * ↑n ^ 2 ≤ ↑(t X Y)) →
+                            ∀ (Q : Finset (Finset (Fin n))) (ΔQ : ℕ),
+                              (∀ T ∈ Q,
+                                  TypedTriangle.IsAllowed (CDRBicolour.KBicolor.kHost lab) (CDRBicolour.KBicolor.bicF k)
+                                    T) →
+                                (↑Q).PairwiseDisjoint TypedTriangle.triEdges →
+                                  (∀ (p : Fin n),
+                                      CDRBicolour.Absorption.degL (Q.biUnion TypedTriangle.triEdges) p ≤ ΔQ) →
+                                    ↑ΔQ ≤ γ * ↑n →
+                                      ∃ D,
+                                        TypedTriangle.IsDecomposition (CDRBicolour.KBicolor.kHost lab)
+                                            (CDRBicolour.KBicolor.bicF k)
+                                            (TypedTriangle.edges (CDRBicolour.KBicolor.kHost lab)) D ∧
+                                          Q ⊆ D ∧
+                                            ∀ (X Y : Fin k), X ≠ Y → CDRBicolour.KBicolor.kTypeCount lab D X Y = t X Y
+CDRBicolour.KBicolor.optimal_prescribed_type_count_of_three_le (k : ℕ) (hk : 3 ≤ k) {δ ζ ε : ℝ} (hδ : 0 < δ)
+  (hζ : 0 < ζ) (hε : 0 < ε) :
+  ∃ n₀,
+    ∀ (n : ℕ) (lab : Fin n → Fin k),
+      n₀ ≤ n →
+        Odd n →
+          (∀ (i : Fin k), δ * ↑n ≤ ↑(CDRBicolour.KBicolor.ksz lab i)) →
+            (∀ (i j : Fin k), i ≠ j → Even (CDRBicolour.KBicolor.ksz lab i * CDRBicolour.KBicolor.ksz lab j)) →
+              3 * ∑ i, CDRBicolour.KBicolor.ksz lab i * (CDRBicolour.KBicolor.ksz lab i - 1) = n * (n - 1) →
+                ∀ (target : Fin k → Fin k → ℕ),
+                  (∀ (i j : Fin k),
+                      i ≠ j →
+                        2 * (target i j + target j i) =
+                          CDRBicolour.KBicolor.ksz lab i * CDRBicolour.KBicolor.ksz lab j) →
+                    (∀ (i : Fin k),
+                        2 * ∑ j with j ≠ i, target i j =
+                          CDRBicolour.KBicolor.ksz lab i * (CDRBicolour.KBicolor.ksz lab i - 1)) →
+                      (∀ (i j : Fin k), i ≠ j → ζ * ↑n ^ 2 ≤ ↑(target i j)) →
+                        have tv := fun q => target (↑q).1 (↑q).2;
+                        0 < CDRBicolour.KBicolor.exactTypeCount lab tv ∧
+                          (1 / 6 - ε) * ↑n ^ 2 * Real.log ↑n ≤ Real.log ↑(CDRBicolour.KBicolor.exactTypeCount lab tv) ∧
+                            Real.log ↑(CDRBicolour.KBicolor.exactTypeCount lab tv) ≤ (1 / 6 + ε) * ↑n ^ 2 * Real.log ↑n
+CDRBicolour.KBicolor.kbicolour_types_exact_many_pasch_counts (K k : ℕ) (hk : 3 ≤ k) {δ η : ℝ} (hδ : 0 < δ) (hδ1 : δ ≤ 1)
+  (hη : 0 < η) :
+  ∃ n₀,
+    ∀ (n : ℕ) (lab : Fin n → Fin k),
+      n₀ ≤ n →
+        Odd n →
+          (∀ (X : Fin k), δ * ↑n ≤ ↑(CDRBicolour.KBicolor.ksz lab X)) →
+            (∀ (X Y : Fin k), X ≠ Y → Even (CDRBicolour.KBicolor.ksz lab X * CDRBicolour.KBicolor.ksz lab Y)) →
+              3 * ∑ X, CDRBicolour.KBicolor.ksz lab X * (CDRBicolour.KBicolor.ksz lab X - 1) = n * (n - 1) →
+                ∀ (t : Fin k → Fin k → ℕ),
+                  (∀ (X Y : Fin k),
+                      X ≠ Y → 2 * (t X Y + t Y X) = CDRBicolour.KBicolor.ksz lab X * CDRBicolour.KBicolor.ksz lab Y) →
+                    (∀ (X : Fin k),
+                        2 * ∑ Y with Y ≠ X, t X Y =
+                          CDRBicolour.KBicolor.ksz lab X * (CDRBicolour.KBicolor.ksz lab X - 1)) →
+                      (∀ (X Y : Fin k),
+                          X ≠ Y →
+                            η * ↑(CDRBicolour.KBicolor.ksz lab X) * ↑(CDRBicolour.KBicolor.ksz lab Y) ≤ 2 * ↑(t X Y)) →
+                        ∃ D,
+                          (∀ (i : Fin K),
+                              TypedTriangle.IsDecomposition (CDRBicolour.KBicolor.kHost lab)
+                                (CDRBicolour.KBicolor.bicF k) (TypedTriangle.edges (CDRBicolour.KBicolor.kHost lab))
+                                (D i)) ∧
+                            (∀ (i : Fin K) (X Y : Fin k),
+                                X ≠ Y → CDRBicolour.KBicolor.kTypeCount lab (D i) X Y = t X Y) ∧
+                              Function.Injective fun i => TypedTriangle.Pasch.count (D i)

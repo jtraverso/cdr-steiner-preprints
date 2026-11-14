@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\nw\cdr_clean_resume_detached.py", line 40, in <module>
+    command(['lake','--no-cache','--fail-fast','build','CDRIII'],'build')
+  File "C:\nw\cdr_clean_resume_detached.py", line 38, in command
+    if code:raise RuntimeError(f'{name} failed: {code}')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: build failed: 1

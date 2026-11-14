@@ -1,0 +1,12 @@
+{
+  "status": "CONFIGURATION_FIX_APPLIED",
+  "source_commit_before": "16010adb21ac0d755d5940689ce82537399e553d",
+  "source_commit_after": "8756b2ef2dbe56002617a86e97e1b16a790ae069",
+  "lean_proof_files_changed": false,
+  "original_provider_default": "relaxedAutoImplicit=true (no override in original package; Lean Elab/AutoBound.lean default true)",
+  "flattening_issue": "Combined package global false had unintentionally overridden the original defaults for both PhysicalTypedAbsorption libraries",
+  "fix": "Restore relaxedAutoImplicit=true only in RequestProject and PartitionedTriangleAbsorption; CDR remains strict. Add weakLeanArgs maxHeartbeats=2000000 (resource-only, trace-compatible).",
+  "failed_module": "RequestProject.S07V26.ForkModes",
+  "evidence": "Unknown fk at piece_subset under false, followed by heartbeats exhaustion at fork_modes. The same unmodified file passed with original relaxed implicit binding and a larger resource budget; necessity of each change was not separately benchmarked.",
+  "config_sha256": "4f0214fc9149b4f15022845c51393c2ea0fd0883068049aed1d081c7e91921a2"
+}

@@ -1,0 +1,9 @@
+note: using only cached resource files
+note: Running TeX ...
+note: Rerunning TeX because "prescribed_en.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\nw\cdr-prescribed-bicolorings\preprints\PAPER_III\02_validation\v1.0\typeset\prescribed_en\prescribed_en.pdf` (250.5478515625 KiB)
+note: Writing `C:\nw\cdr-prescribed-bicolorings\preprints\PAPER_III\02_validation\v1.0\typeset\prescribed_en\prescribed_en.aux` (14.5859375 KiB)
+note: Writing `C:\nw\cdr-prescribed-bicolorings\preprints\PAPER_III\02_validation\v1.0\typeset\prescribed_en\prescribed_en.log` (25.1513671875 KiB)
+warning: Object @figure.1 already defined.
+warning: Object @figure.2 already defined.

@@ -1,0 +1,330 @@
+{
+  "scope": "Four existing mathematical endpoint statements; no theorem changes",
+  "elements": [
+    {
+      "manuscript_theorem": "1.1",
+      "declaration": "CDRBicolour.KBicolor.kbicolour_completion_types_exact",
+      "path": "lean/CDRBicolour/KBicolor/CompletionExact.lean",
+      "statement": "theorem kbicolour_completion_types_exact (k : ℕ) (hk : 3 ≤ k) {δ ε : ℝ} (hδ : 0 < δ) (hδ1 : δ ≤ 1)\n    (hε : 0 < ε) :\n    ∃ γ : ℝ, 0 < γ ∧ ∃ n₀ : ℕ, ∀ (n : ℕ) (lab : Fin n → Fin k), n₀ ≤ n → Odd n →\n      (∀ X, δ * n ≤ ksz lab X) →\n      (∀ X Y, X ≠ Y → Even (ksz lab X * ksz lab Y)) →\n      3 * ∑ X, ksz lab X * (ksz lab X - 1) = n * (n - 1) →\n      ∀ t : Fin k → Fin k → ℕ,\n      (∀ X Y, X ≠ Y → 2 * (t X Y + t Y X) = ksz lab X * ksz lab Y) →\n      (∀ X, 2 * ∑ Y ∈ univ.filter (fun Y => Y ≠ X), t X Y = ksz lab X * (ksz lab X - 1)) →\n      (∀ X Y, X ≠ Y → ε * (n : ℝ) ^ 2 ≤ t X Y) →\n      ∀ (Q : Finset (Finset (Fin n))) (ΔQ : ℕ),\n      (∀ T ∈ Q, IsAllowed (kHost lab) (bicF k) T) →\n      (Q : Set (Finset (Fin n))).PairwiseDisjoint triEdges →\n      (∀ p, degL (Q.biUnion triEdges) p ≤ ΔQ) → (ΔQ : ℝ) ≤ γ * n →\n      ∃ D : Finset (Finset (Fin n)), IsDecomposition (kHost lab) (bicF k) (edges (kHost lab)) D ∧\n        Q ⊆ D ∧ ∀ X Y, X ≠ Y → kTypeCount lab D X Y = t X Y",
+      "statement_sha256": "1aba6eeca6d309f6e7c564539b95d63fd01e3c16fa7a0c39706a4226f1d83246",
+      "allowed_edits": "Mathematical statement locked; current literal extraction includes local let definitions"
+    },
+    {
+      "manuscript_theorem": "1.2",
+      "declaration": "CDRBicolour.KBicolor.optimal_prescribed_type_count_of_three_le",
+      "path": "lean/CDRBicolour/KBicolor/PrescribedCounting/OptimalPrescribed.lean",
+      "statement": "theorem optimal_prescribed_type_count_of_three_le (k : ℕ) (hk : 3 ≤ k) {δ ζ ε : ℝ}\n    (hδ : 0 < δ) (hζ : 0 < ζ) (hε : 0 < ε) :\n    ∃ n₀ : ℕ, ∀ (n : ℕ) (lab : Fin n → Fin k), n₀ ≤ n → Odd n →\n      (∀ i, δ*n ≤ ksz lab i) →\n      (∀ i j, i ≠ j → Even (ksz lab i*ksz lab j)) →\n      3*∑ i,ksz lab i*(ksz lab i-1)=n*(n-1) →\n      ∀ target : Fin k → Fin k → ℕ,\n      (∀ i j, i ≠ j → 2*(target i j+target j i)=ksz lab i*ksz lab j) →\n      (∀ i, 2*∑ j ∈ univ.filter (fun j => j ≠ i), target i j=ksz lab i*(ksz lab i-1)) →\n      (∀ i j, i ≠ j → ζ*(n : ℝ)^2 ≤ target i j) →\n      let tv : TypeCoord k → ℕ := fun q => target q.1.1 q.1.2\n      0 < exactTypeCount lab tv ∧\n        (1/6-ε)*(n : ℝ)^2*Real.log n ≤ Real.log (exactTypeCount lab tv) ∧\n        Real.log (exactTypeCount lab tv) ≤ (1/6+ε)*(n : ℝ)^2*Real.log n",
+      "statement_sha256": "039d51c182669267e4bed7b054d677f40efa4dc302144289bfe4e49c80c1d6d3",
+      "allowed_edits": "Mathematical statement locked; current literal extraction includes local let definitions"
+    },
+    {
+      "manuscript_theorem": "1.3",
+      "declaration": "CDRBicolour.KBicolor.kbicolour_types_exact_many_pasch_counts",
+      "path": "lean/CDRBicolour/KBicolor/ExactTypesPasch.lean",
+      "statement": "theorem kbicolour_types_exact_many_pasch_counts (K k : ℕ) (hk : 3 ≤ k) {δ η : ℝ}\n    (hδ : 0 < δ) (hδ1 : δ ≤ 1) (hη : 0 < η) :\n    ∃ n₀ : ℕ, ∀ (n : ℕ) (lab : Fin n → Fin k), n₀ ≤ n → Odd n →\n      (∀ X, δ*n ≤ ksz lab X) →\n      (∀ X Y, X ≠ Y → Even (ksz lab X * ksz lab Y)) →\n      3 * ∑ X, ksz lab X * (ksz lab X-1) = n*(n-1) →\n      ∀ t : Fin k → Fin k → ℕ,\n      (∀ X Y, X ≠ Y → 2*(t X Y+t Y X) = ksz lab X * ksz lab Y) →\n      (∀ X, 2*∑ Y ∈ univ.filter (fun Y => Y ≠ X), t X Y = ksz lab X * (ksz lab X-1)) →\n      (∀ X Y, X ≠ Y → η*ksz lab X*ksz lab Y ≤ 2*t X Y) →\n      ∃ D : Fin K → Finset (Finset (Fin n)),\n        (∀ i, IsDecomposition (kHost lab) (bicF k) (edges (kHost lab)) (D i)) ∧\n        (∀ i X Y, X ≠ Y → kTypeCount lab (D i) X Y = t X Y) ∧\n        Function.Injective (fun i => Pasch.count (D i))",
+      "statement_sha256": "6ed103ce829d209b85c6efe065a922d8f20b49b87ad530951fa3895ceac62b54",
+      "allowed_edits": "Mathematical statement locked; current literal extraction includes local let definitions"
+    },
+    {
+      "manuscript_theorem": "1.4",
+      "declaration": "CDRBicolour.PaperIII.bicolourable_eventually_unconditional",
+      "path": "lean/CDRBicolour/PaperIII/Unconditional.lean",
+      "statement": "theorem bicolourable_eventually_unconditional {k : ℕ} (hk : 4 ≤ k) :\n    ∃ v₀ : ℕ, ∀ v, v₀ ≤ v → Admissible v → Bicolourable v k :=\n  bicolourable_eventually_with_registered_gale threeSquaresDense_verified hk\n\n/-- CDR Conjecture 3.5 for every sufficiently large admissible order. -/\ntheorem conj35_large_unconditional :\n    ∃ v₀ : ℕ, ∀ v, v₀ ≤ v → Admissible v → Bicolourable v 4 :=\n  bicolourable_eventually_unconditional (by norm_num)\n\n/-- CDR Conjecture 3.6 for every sufficiently large admissible order. -/\ntheorem conj36_large_unconditional :\n    ∃ v₀ : ℕ, ∀ v, v₀ ≤ v → Admissible v → Bicolourable v 5 :=\n  bicolourable_eventually_unconditional (by norm_num)\n\ntheorem capRep_eventually_verified :\n    ∃ V₀ : ℕ, ∀ v, V₀ ≤ v → Admissible v → CapRep v :=\n  capRep_eventually threeSquaresDense_verified\n\ntheorem two_cap_at_verified : ∃ N₀ : ℕ, TwoCapAt N₀ :=\n  threeSquaresDense_supplies_two_cap threeSquaresDense_verified\n\ntheorem cap_two_eventually_verified :\n    ∃ V₀ : ℕ, ∀ v, V₀ ≤ v → Admissible v → CapRepTwo v :=\n  cap_two_eventually_of_radius_caps two_cap_at_verified\n\n/-- The same labelled profile satisfies both bounds; no arithmetic input remains. -/\ntheorem four_colour_sharp_counting_eventually {ε : ℝ} (hε : 0 < ε) :\n    ∃ V₀ : ℕ, ∀ v, V₀ ≤ v → Admissible v →\n      ∃ lab : Fin v → Fin 4, (∀ X, 0 < ksz lab X) ∧ 0 < kCount lab ∧\n        (1/6-ε)*(v : ℝ)^2*Real.log v ≤ Real.log (kCount lab) ∧\n        Real.log (kCount lab) ≤ (1/6+ε)*(v : ℝ)^2*Real.log v",
+      "statement_sha256": "b40991cba996442a01e87c1c0aa914ae4562e3f59c5ead04ecb54e63e8ff79ce",
+      "allowed_edits": "Mathematical statement locked; current literal extraction includes local let definitions"
+    }
+  ],
+  "manuscript_protected_blocks": [
+    {
+      "location": "# Prescribed block types and abundance in bicolored Steiner triple systems",
+      "sha256": "4f26dd2f5fa60a33006fc3e38831c3dd9249c4d5285b26ead9cd1991aec3866b",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## Abstract",
+      "sha256": "ddca7f6a0d492aa76e4a02af51762968f6b24b6ac327e883a8f99ad9e23939ab",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## 1. What can be prescribed?",
+      "sha256": "ca58b0f1d369571f763f0e751f274bd8674f9906573fd357557c9998c74f65bb",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## 2. Pair identities and the free coordinates",
+      "sha256": "a39f962a4220262b58fdbdc32412ad76ba634a6d5c93c737bd6f42b5ca0509dd",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## 3. The absorption input on the actual residual graph",
+      "sha256": "e43ea8a8837ad26c3ca4e95bcebdc1957c866c886ba9896b73e89f699097f473",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## 4. Sparse completion with exact types",
+      "sha256": "31731fd133500bd5046e5582a06257ca334b0ee5d2a520c0490c3307c6630c65",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## 5. Counting inside each prescribed matrix",
+      "sha256": "8e2f5c9d28f94c7a7b535e75e37cd829ee174ccb96bdc710cdbae993e66cea3f",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## 6. A profile at every large admissible order",
+      "sha256": "849f395409576871e80d3daedbd25ae5ba59179a9f5f675ec7f1f888c97ee388",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## 7. Different Pasch counts with the same exact matrix",
+      "sha256": "138e55616ed7e9533c21abb6a99826e5aa519caa4495267cbc75ad00ca1eb101",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## 8. Questions beyond the interior regime",
+      "sha256": "08a03ecbd68dd1e6c3c0818446abe855d91e893f1a36c86f3a06c8f93b50a579",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## Appendix A. Splitting the integer quotas",
+      "sha256": "6002faf94c740789ef8c7611ac1e273a5d98423c9c36f845df4e3809a950074c",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## Appendix B. Correction on the residual graph",
+      "sha256": "2aa2c7bc47fe419565c0bc082dbee4b22db2c2a6e9e912aeb84752997cda67b7",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## Appendix C. The counting construction in full",
+      "sha256": "6b17fab37f5fcd6db5c4b951a3bdf39f3a9b7de0ed9982494970b759a6d9be05",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## Appendix D. The arithmetic passage to integer profiles",
+      "sha256": "2f7f5a707e3f246c4fa6bb572fdb0484a8d5aefb5e3feaa89a71f2f6c5991c19",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## Appendix E. The absorption theorems used here",
+      "sha256": "f4b0119c0d6964a5c4c76779ac734bbdf0243b420e18f55cc94af441aab9b599",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## Formal verification",
+      "sha256": "e2c7b8835a323da6934df020ff9ddd198e71e62b7d17c75297484a0a2fa450dc",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## Acknowledgments",
+      "sha256": "adcbe01f3187042cc59f97857125e70f960a5c84dacb72dcecf81ba2f3bd4738",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## Use of artificial intelligence and computational tools",
+      "sha256": "df86df2f73cc1c2e5e0b7e357e920fe7ece049b908cf47c90aec6c02fa15aa21",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    },
+    {
+      "location": "## References",
+      "sha256": "21d3904426c7c8088890498a070d093a0eebc20a720a31747dd3f3ddc3ec08a1",
+      "protection": "Preprint 1.0 statement, formula and dependency baseline"
+    }
+  ],
+  "bilingual_manuscript_protected_blocks": {
+    "en": [
+      {
+        "location": "# Prescribed block types and abundance in bicolored Steiner triple systems",
+        "sha256": "4f26dd2f5fa60a33006fc3e38831c3dd9249c4d5285b26ead9cd1991aec3866b",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Abstract",
+        "sha256": "ddca7f6a0d492aa76e4a02af51762968f6b24b6ac327e883a8f99ad9e23939ab",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 1. What can be prescribed?",
+        "sha256": "ca58b0f1d369571f763f0e751f274bd8674f9906573fd357557c9998c74f65bb",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 2. Pair identities and the free coordinates",
+        "sha256": "a39f962a4220262b58fdbdc32412ad76ba634a6d5c93c737bd6f42b5ca0509dd",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 3. The absorption input on the actual residual graph",
+        "sha256": "e43ea8a8837ad26c3ca4e95bcebdc1957c866c886ba9896b73e89f699097f473",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 4. Sparse completion with exact types",
+        "sha256": "31731fd133500bd5046e5582a06257ca334b0ee5d2a520c0490c3307c6630c65",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 5. Counting inside each prescribed matrix",
+        "sha256": "8e2f5c9d28f94c7a7b535e75e37cd829ee174ccb96bdc710cdbae993e66cea3f",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 6. A profile at every large admissible order",
+        "sha256": "849f395409576871e80d3daedbd25ae5ba59179a9f5f675ec7f1f888c97ee388",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 7. Different Pasch counts with the same exact matrix",
+        "sha256": "138e55616ed7e9533c21abb6a99826e5aa519caa4495267cbc75ad00ca1eb101",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 8. Questions beyond the interior regime",
+        "sha256": "08a03ecbd68dd1e6c3c0818446abe855d91e893f1a36c86f3a06c8f93b50a579",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Appendix A. Splitting the integer quotas",
+        "sha256": "6002faf94c740789ef8c7611ac1e273a5d98423c9c36f845df4e3809a950074c",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Appendix B. Correction on the residual graph",
+        "sha256": "2aa2c7bc47fe419565c0bc082dbee4b22db2c2a6e9e912aeb84752997cda67b7",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Appendix C. The counting construction in full",
+        "sha256": "6b17fab37f5fcd6db5c4b951a3bdf39f3a9b7de0ed9982494970b759a6d9be05",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Appendix D. The arithmetic passage to integer profiles",
+        "sha256": "2f7f5a707e3f246c4fa6bb572fdb0484a8d5aefb5e3feaa89a71f2f6c5991c19",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Appendix E. The absorption theorems used here",
+        "sha256": "f4b0119c0d6964a5c4c76779ac734bbdf0243b420e18f55cc94af441aab9b599",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Formal verification",
+        "sha256": "e2c7b8835a323da6934df020ff9ddd198e71e62b7d17c75297484a0a2fa450dc",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Acknowledgments",
+        "sha256": "adcbe01f3187042cc59f97857125e70f960a5c84dacb72dcecf81ba2f3bd4738",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Use of artificial intelligence and computational tools",
+        "sha256": "df86df2f73cc1c2e5e0b7e357e920fe7ece049b908cf47c90aec6c02fa15aa21",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## References",
+        "sha256": "21d3904426c7c8088890498a070d093a0eebc20a720a31747dd3f3ddc3ec08a1",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      }
+    ],
+    "es": [
+      {
+        "location": "# Tipos de bloque prescritos y abundancia en sistemas triples de Steiner bicoloreados",
+        "sha256": "b1db5ec87298a044cc1458d72cfa002482937dd96f015bc0dff7eebfd5f70aa7",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Resumen",
+        "sha256": "c700e85738f6a6e889dc16611e8ce093bad48e7f7e9cf2ad9ff8570405217d6a",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 1. ¿Qué podemos prescribir?",
+        "sha256": "123ce8776611a83cbf387afda36875180fe85c706b8d5a0267faae6e0c505d3f",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 2. Las identidades de pares y las coordenadas libres",
+        "sha256": "75682f6d401e9b261b60eda786db18a02fb34bcf556935e3bcaef256578fc459",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 3. La absorción en el grafo residual concreto",
+        "sha256": "695164f7c093307539aa89e96b9a113730f6ba1f339c8a1b857a656663048fde",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 4. Completación dispersa con tipos exactos",
+        "sha256": "eb53e4ccb28eb8e6ea0458c06b50b1757d0f721be5c9cefee47140854669cde2",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 5. Conteo para cada matriz prescrita",
+        "sha256": "7aa0763692ca1852a22d70e4624604dd59422b3f0091762cfe0c7bda0d5883ae",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 6. Un perfil para cada orden admisible grande",
+        "sha256": "afd78f40349f75c348300aa2bdd647b834cf3926ddd899b7d7f90221e3c59eda",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 7. Distintos conteos de Pasch con la misma matriz exacta",
+        "sha256": "14b26eba25288c92ac1e2ba20f19429368f430ac993eaa6a37c186d6567cdca9",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## 8. Preguntas más allá del régimen interior",
+        "sha256": "b5485abeba8ce950bd6397251cac105375c409516a56cc15dad8dfc8a68be09f",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Apéndice A. Reparto de las cuotas enteras",
+        "sha256": "0e85d7e27db3a974e769d2dc82939afef3772ab855e4ccac0db00ff6763e3c07",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Apéndice B. Corrección en el grafo residual",
+        "sha256": "7d4294df36264f01ddd4ae1b18a7169911048423abf3dba3cb868f2158c58579",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Apéndice C. La construcción de conteo completa",
+        "sha256": "90aac6c0ef0ea133cb6fdf41fc980f7f165653f9fb6d8fe63fa854f86acbd328",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Apéndice D. El paso aritmético a perfiles enteros",
+        "sha256": "02e40305b1848fae6dc71cdd3490eab7a6c4e329800d83ea36d7f6f0bb59826b",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Apéndice E. Los teoremas de absorción utilizados",
+        "sha256": "bfe0abf35f542fe54fde6af5d2e1ad91823779031456a389c3bcbe1f2f5e6b2d",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Verificación formal",
+        "sha256": "575fa8984189c374377862eed0fdfa85d519a02ec8c3cc1c96b9695ba5246ca1",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Agradecimientos",
+        "sha256": "8486128d76f5841e045abe2182e020fe4a7a88d1455fa3c54a87e51cbedbda5b",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Uso de inteligencia artificial y herramientas computacionales",
+        "sha256": "19affaf34ad31844cb8b23a8b7ac62fe5c349e855d071a9ed791edae5a1147d2",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      },
+      {
+        "location": "## Referencias",
+        "sha256": "ab206b181884aabc48a83994bf88124a3995f8d2915defd57c41a45340c97c02",
+        "protection": "Preprint 1.0 statement, formula and dependency baseline"
+      }
+    ]
+  }
+}

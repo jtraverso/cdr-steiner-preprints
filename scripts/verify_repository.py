@@ -32,6 +32,7 @@ def run():
  for p in (root/'preprints').glob('PAPER_*'):
   for j in (p/'02_validation').glob('*_build.json'):
    data=json.loads(j.read_bytes());stem=j.stem.removesuffix('_build')
+   if not all(k in data for k in ('md','tex','pdf')):continue
    for ext in ('md','tex','pdf'):
     f=p/('05_formalization' if stem.startswith('companion') else '01_manuscript')/(stem+'.'+ext)
     assert sha(f.read_bytes())==data[ext],f

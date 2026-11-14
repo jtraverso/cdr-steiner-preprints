@@ -1,11 +1,12 @@
 # Bicolorings of Steiner triple systems
 
-**Preprint 1.0 — 6 November 2026.** Each paper can be read independently. These manuscripts have not undergone journal peer review.
+**Preprint editions 1.0.** Papers I–II: 6 November 2026; Paper III: 14 November 2026. Each paper can be read independently. These manuscripts have not undergone journal peer review.
 
 | Paper | English title | Título en español | Manuscripts |
 |---|---|---|---|
 | I | The exact block-type spectrum in the Colbourn–Dinitz–Rosa problem | El espectro exacto de tipos de bloque en el problema de Colbourn–Dinitz–Rosa | [EN](preprints/PAPER_I/01_manuscript/spectrum_en.pdf) · [ES](preprints/PAPER_I/01_manuscript/spectrum_es.pdf) |
 | II | A proof of the Colbourn–Dinitz–Rosa conjecture | Una demostración de la conjetura de Colbourn–Dinitz–Rosa | [EN](preprints/PAPER_II/01_manuscript/profiles_en.pdf) · [ES](preprints/PAPER_II/01_manuscript/profiles_es.pdf) |
+| III | Prescribed block types and abundance in bicolored Steiner triple systems | Tipos de bloque prescritos y abundancia en sistemas triples de Steiner bicoloreados | [EN](preprints/PAPER_III/01_manuscript/prescribed_en.pdf) · [ES](preprints/PAPER_III/01_manuscript/prescribed_es.pdf) |
 
 Paper I characterizes prescribed block-type counts at sufficiently large admissible order, using physical typed absorption. Paper II constructs every admissible class-size profile by descent, edge coloring and the published small-order theorem.
 
@@ -28,4 +29,8 @@ Supplementary references [S1], [S2], etc. print the resource addresses in each P
 
 The articles, companion and original figures are available under [CC BY 4.0](LICENSE.md). The Lean sources retain their upstream licenses.
 
-[Download release v1.0](https://github.com/jtraverso/cdr-steiner-preprints/releases/tag/v1.0) · [Publication receipts and public-access verification](publication/zenodo/). Both Zenodo records are published.
+[Download Papers I–II release v1.0](https://github.com/jtraverso/cdr-steiner-preprints/releases/tag/v1.0) · [Publication receipts and public-access verification](publication/zenodo/). Both Zenodo records are published.
+
+Paper III extends the series to prescribed interior matrices for fixed numbers of colors, sparse completion, optimal leading counting and Pasch diversity. [Paper III package](preprints/PAPER_III/README.md) · [DOI](https://doi.org/10.5281/zenodo.24201563). Its source-bound reconstruction and release audit are checked by `python scripts/verify_cdr_iii.py`.
+
+[Download Paper III release](https://github.com/jtraverso/cdr-steiner-preprints/releases/tag/paper-iii-v1.0).

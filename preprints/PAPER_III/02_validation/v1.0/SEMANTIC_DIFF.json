@@ -1,0 +1,56 @@
+{
+  "status": "PASS_PROTECTED_CONTRACTS",
+  "baseline_commit": "112277fbe775e0354d18d0040f15cf80cd536eae",
+  "baseline": "review 0.5 with the Spanish terminology revision",
+  "documents": {
+    "en": {
+      "theorem_paragraphs_unchanged": 4,
+      "appendix_lemma_paragraphs_unchanged": 9,
+      "display_formulas_unchanged": 73,
+      "equation_tags_unchanged": 23,
+      "headings_unchanged": 49,
+      "inline_formulas_added": [
+        "R=1/\\delta",
+        "R\\ge1",
+        "\\Delta_Q",
+        "\\Delta_Q\\le\\gamma n",
+        "\\eta=2\\zeta",
+        "\\eta>0",
+        "\\mu(T)\\ge\\eta/n",
+        "n\\le R\\min_ic_i",
+        "p"
+      ],
+      "inline_formulas_removed": [
+        "R",
+        "\\eta"
+      ],
+      "md_sha256": "8fe2c404e9900540470302c2227a12f43f01207b7ddb3960b1e840f3122f6004"
+    },
+    "es": {
+      "theorem_paragraphs_unchanged": 4,
+      "appendix_lemma_paragraphs_unchanged": 9,
+      "display_formulas_unchanged": 73,
+      "equation_tags_unchanged": 23,
+      "headings_unchanged": 49,
+      "inline_formulas_added": [
+        "R=1/\\delta",
+        "R\\ge1",
+        "\\Delta_Q",
+        "\\Delta_Q\\le\\gamma n",
+        "\\eta=2\\zeta",
+        "\\eta>0",
+        "\\mu(T)\\ge\\eta/n",
+        "n\\le R\\min_ic_i",
+        "p"
+      ],
+      "inline_formulas_removed": [
+        "R",
+        "\\eta"
+      ],
+      "md_sha256": "a009dbd9a27d559be38c39a6f9ed9027286d58b36d178f164b95e3fcef51cb95"
+    }
+  },
+  "scope": "Literal theorem and appendix-lemma paragraphs, all display formulas, equation tags and headings compared with the baseline commit; inline formulas added only by the definitions of eta, R and Delta_Q and one occurrence of p",
+  "definition_wording_changed": "Section 1, allowed triples and strict k-bicoloring: reworded by the author; the requirement that every block be allowed is retained",
+  "lean_sources_changed": false
+}

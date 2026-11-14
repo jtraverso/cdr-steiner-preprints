@@ -1,0 +1,12 @@
+{
+  "reason": "Observed paging: workers 400\u20133700 MB private but many under 100 MB resident; only 4\u20135 GB physical memory free",
+  "previous_threads": 12,
+  "new_threads": 4,
+  "stopped_process_tree": 33640,
+  "absence_of_surviving_build_processes_verified": true,
+  "sources_validated": 1307,
+  "same_run_cache_artifacts_validated": 780,
+  "project_modules_retained": 48,
+  "mathematical_sources_changed": false,
+  "first_attempt_exit_explained": "Operator stop for resource adjustment; log preserved"
+}

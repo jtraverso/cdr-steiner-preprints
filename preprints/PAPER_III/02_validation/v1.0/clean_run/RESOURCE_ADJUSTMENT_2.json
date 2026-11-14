@@ -1,0 +1,13 @@
+{
+  "reason": "Free physical memory increased to 8 GB; six workers chosen to use released memory while avoiding the original twelve-worker pressure",
+  "previous_threads": 4,
+  "new_threads": 6,
+  "stopped_process_tree": 29140,
+  "absence_of_surviving_build_processes_verified": true,
+  "sources_validated": 1307,
+  "same_run_cache_artifacts_validated": 3588,
+  "project_modules_retained": 224,
+  "mathematical_sources_changed": false,
+  "record_correction": "Replaced an inherited first-adjustment reason and its encoding corruption; source/cache validation results are unchanged",
+  "second_attempt_exit_explained": "Operator stop for resource adjustment; log preserved"
+}

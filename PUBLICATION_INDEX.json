@@ -22,6 +22,17 @@
       "record_url": "https://zenodo.org/records/23987256",
       "submitted": true,
       "zenodo_status": "published"
+    },
+    {
+      "id": 24201563,
+      "title": "Prescribed block types and abundance in bicolored Steiner triple systems",
+      "title_es": "Tipos de bloque prescritos y abundancia en sistemas triples de Steiner bicoloreados",
+      "directory": "preprints/PAPER_III",
+      "doi": "10.5281/zenodo.24201563",
+      "version": "1.0",
+      "record_url": "https://zenodo.org/records/24201563",
+      "zenodo_status": "publication_prepared",
+      "github_release": "https://github.com/jtraverso/cdr-steiner-preprints/releases/tag/paper-iii-v1.0"
     }
   ],
   "shared_source_sha256": "20bdbe78c88b2ebdd44daa7fe15355ce121430b0bd6e85e13951edc60472f5c9",

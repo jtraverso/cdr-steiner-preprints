@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "scope": "Source-bound isolated project reconstruction; pinned external Mathlib cache only",
+  "source_commit": "8756b2ef2dbe56002617a86e97e1b16a790ae069",
+  "run": "clean_run",
+  "phase": "build"
+}

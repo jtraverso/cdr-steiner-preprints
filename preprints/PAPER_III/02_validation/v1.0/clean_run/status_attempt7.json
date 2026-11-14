@@ -1,0 +1,22 @@
+{
+  "phase": "FAILED",
+  "pid": 38052,
+  "started": "2026-11-13T22:34:01.742898+00:00",
+  "heartbeat": "2026-11-14T11:02:16.007504+00:00",
+  "source_commit": "8756b2ef2dbe56002617a86e97e1b16a790ae069",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "command": [
+    "lake",
+    "--no-cache",
+    "--fail-fast",
+    "build",
+    "CDRIII"
+  ],
+  "toolchain_exit_code": 0,
+  "threads": 4,
+  "execution_mode": "local_direct",
+  "initial_source_commit": "16010adb21ac0d755d5940689ce82537399e553d",
+  "child_pid": 12420,
+  "build_exit_code": 1,
+  "error": "RuntimeError('build failed: 1')"
+}
